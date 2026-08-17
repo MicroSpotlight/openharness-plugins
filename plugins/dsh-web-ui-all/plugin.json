@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-web-ui-all",
+  "displayName": "DSH Web UI Suite",
+  "summary": "Install the main dsh-web-ui feature plugins and bundled skins together.",
+  "description": "Aggregates the task board, Git graph, pet, mobile remote, live statistics, settings, community index, compatibility support, skin center, and bundled themes for DSH Web.",
+  "version": "0.1.20",
+  "publisher": {
+    "name": "zhu1090093659",
+    "url": "https://github.com/zhu1090093659"
+  },
+  "authors": [
+    {
+      "name": "zhu1090093659",
+      "url": "https://github.com/zhu1090093659"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhu1090093659/dsh-web-ui",
+    "issues": "https://github.com/zhu1090093659/dsh-web-ui/issues"
+  },
+  "homepage": "https://github.com/zhu1090093659/dsh-web-ui#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@linxin666/dsh-web-ui-all"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["command", "event-handler", "ui-extension", "workflow"],
+  "categories": ["developer-tools", "productivity", "web"],
+  "keywords": ["dsh", "plugins", "suite", "theme", "web-ui"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": ["workspace", "~/.dsh"],
+    "filesystemWrite": ["workspace", "~/.dsh"],
+    "environment": [],
+    "commands": ["cloudflared", "git"]
+  }
+}
