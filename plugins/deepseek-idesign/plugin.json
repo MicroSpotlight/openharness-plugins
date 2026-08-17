@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-idesign",
+  "displayName": "DeepSeek iDesign",
+  "summary": "Design websites, app prototypes, posters, and reports in a native DSH view.",
+  "description": "Adds the iPolloWork Design Studio as a native DSH conversation view with direct canvas editing, templates, AI-assisted changes, and workspace-backed HTML and CSS projects. The source-available license limits commercial and multi-user use.",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "Different AI, Inc.",
+    "url": "https://github.com/Devin-AXIS"
+  },
+  "authors": [
+    {
+      "name": "Different AI, Inc.",
+      "url": "https://github.com/Devin-AXIS"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devin-AXIS/iPolloWork",
+    "issues": "https://github.com/Devin-AXIS/iPolloWork/issues"
+  },
+  "homepage": "https://github.com/Devin-AXIS/deepseek-design#deepseek-idesign",
+  "license": "LicenseRef-iPolloWork-1.0",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-idesign"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["ui-extension", "workflow"],
+  "categories": ["ai", "productivity", "web"],
+  "keywords": ["design", "dsh", "prototype", "studio", "ui"],
+  "permissions": {
+    "network": [],
+    "filesystemRead": ["workspace/design"],
+    "filesystemWrite": ["workspace/design"],
+    "environment": [],
+    "commands": []
+  }
+}
