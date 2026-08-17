@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-tui",
+  "displayName": "DSH TUI",
+  "summary": "Run DeepSeek Harness through a Claude Code-style terminal interface.",
+  "description": "Adds a full-screen terminal front door with streaming thought display, status and context meters, approvals, session rewind, clipboard integration, themes, and its own dsh-tui profile.",
+  "version": "0.8.0",
+  "publisher": {
+    "name": "ccch1mneyyy",
+    "url": "https://github.com/ccch1mneyyy"
+  },
+  "authors": [
+    {
+      "name": "ccch1mneyyy",
+      "url": "https://github.com/ccch1mneyyy"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ccch1mneyyy/dsh-TUI",
+    "issues": "https://github.com/ccch1mneyyy/dsh-TUI/issues"
+  },
+  "homepage": "https://github.com/ccch1mneyyy/dsh-TUI#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@deepseek-harness-tui/dsh-tui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["dsh-tui"],
+    "platforms": ["node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["event-handler", "ui-extension", "workflow"],
+  "categories": ["developer-tools", "productivity"],
+  "keywords": ["cli", "dsh", "terminal", "tui"],
+  "permissions": {
+    "network": ["https://registry.npmjs.org"],
+    "filesystemRead": ["workspace", "~/.dsh-tui"],
+    "filesystemWrite": ["workspace", "~/.dsh-tui"],
+    "environment": ["DEEPSEEK_API_KEY"],
+    "commands": ["osascript", "pbpaste", "powershell", "pwsh", "tmux", "wl-copy", "wl-paste", "xclip", "xsel"]
+  }
+}
