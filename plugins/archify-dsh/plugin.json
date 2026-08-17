@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "archify-dsh",
+  "displayName": "Archify for DSH",
+  "summary": "Create verifiable architecture diagrams through the Archify skill.",
+  "description": "Installs the Archify skill as a DSH filesystem skill provider for producing self-contained architecture, workflow, sequence, data-flow, and lifecycle diagrams in the current workspace.",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "tt-a1i",
+    "url": "https://github.com/tt-a1i"
+  },
+  "authors": [
+    {
+      "name": "tt-a1i",
+      "url": "https://github.com/tt-a1i"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tt-a1i/archify",
+    "issues": "https://github.com/tt-a1i/archify/issues"
+  },
+  "homepage": "https://github.com/tt-a1i/archify/tree/main/integrations/deepseek-harness",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@tt-a1i/archify-dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["prompt-provider", "workflow"],
+  "categories": ["developer-tools", "productivity"],
+  "keywords": ["architecture", "diagram", "dsh", "skill", "visualization"],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
