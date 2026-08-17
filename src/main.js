@@ -67,6 +67,7 @@ const ICONS = {
 
 const app = document.querySelector('#app')
 const locale = navigator.language || 'en'
+let searchComposing = false
 
 const state = {
   status: 'loading',
@@ -202,7 +203,7 @@ function renderFilters(resultCount) {
           <span class="sr-only">Platform</span>
           <select data-filter="platform">
             <option value="">All platforms</option>
-            ${platforms.map(platform => `<option value="${platform}" ${state.platform === platform ? 'selected' : ''}>${platform}</option>`).join('')}
+            ${platforms.map(platform => `<option value="${escapeHtml(platform)}" ${state.platform === platform ? 'selected' : ''}>${escapeHtml(platform)}</option>`).join('')}
           </select>
           <i data-lucide="chevron-down"></i>
         </label>
@@ -210,7 +211,7 @@ function renderFilters(resultCount) {
           <input type="checkbox" data-filter="openharness" ${state.openHarnessOnly ? 'checked' : ''} />
           <span>OpenHarness compatible</span>
         </label>
-        <div class="sync-state"><span class="sync-dot"></span>Synced ${relativeTime(state.catalog.generatedAt)}<span>·</span>${resultCount} ${resultCount === 1 ? 'result' : 'results'}</div>
+        <div class="sync-state" role="status" aria-live="polite"><span class="sync-dot"></span>Synced ${relativeTime(state.catalog.generatedAt)}<span>·</span>${resultCount} ${resultCount === 1 ? 'result' : 'results'}</div>
         <button class="icon-button" data-action="reload" aria-label="Refresh catalog" title="Refresh catalog"><i data-lucide="refresh-cw"></i></button>
         <label class="select-control sort-control">
           <span class="sr-only">Sort plugins</span>
@@ -256,7 +257,7 @@ function renderList(plugins) {
     `
   }
   return `
-    <div class="plugin-table" role="list">
+    <div class="plugin-table">
       <div class="table-header" aria-hidden="true">
         <span>Plugin</span><span>Publisher</span><span>Version</span><span>Compatibility</span><span>Permissions</span>
       </div>
@@ -366,9 +367,9 @@ function renderDetails(plugin) {
       </div>
       <a class="primary-button detail-action" href="${escapeHtml(plugin.repository.url)}" target="_blank" rel="noreferrer"><i data-lucide="git-fork"></i>View repository</a>
       <div class="detail-tabs" role="tablist">
-        ${[['overview', 'Overview'], ['compatibility', 'Compatibility'], ['permissions', 'Permissions']].map(([value, label]) => `<button role="tab" aria-selected="${state.selectedTab === value}" class="${state.selectedTab === value ? 'active' : ''}" data-tab="${value}">${label}</button>`).join('')}
+        ${[['overview', 'Overview'], ['compatibility', 'Compatibility'], ['permissions', 'Permissions']].map(([value, label]) => `<button id="plugin-tab-${value}" role="tab" aria-controls="plugin-detail-tabpanel" aria-selected="${state.selectedTab === value}" class="${state.selectedTab === value ? 'active' : ''}" data-tab="${value}">${label}</button>`).join('')}
       </div>
-      <div class="detail-content">${renderDetailTab(plugin)}</div>
+      <div id="plugin-detail-tabpanel" class="detail-content" role="tabpanel" aria-labelledby="plugin-tab-${state.selectedTab}">${renderDetailTab(plugin)}</div>
     </aside>
   `
 }
@@ -448,8 +449,20 @@ async function loadCatalog() {
   renderApp()
 }
 
+app.addEventListener('compositionstart', event => {
+  if (event.target.matches('#plugin-search')) searchComposing = true
+})
+
+app.addEventListener('compositionend', event => {
+  if (!event.target.matches('#plugin-search')) return
+  searchComposing = false
+  state.query = event.target.value
+  renderApp({ preserveSearch: true })
+})
+
 app.addEventListener('input', event => {
   if (event.target.matches('#plugin-search')) {
+    if (event.isComposing || searchComposing) return
     state.query = event.target.value
     renderApp({ preserveSearch: true })
   }

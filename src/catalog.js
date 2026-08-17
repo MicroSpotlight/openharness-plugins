@@ -1,4 +1,29 @@
 const MAX_CATALOG_BYTES = 2 * 1024 * 1024
+const PLATFORMS = new Set(['web', 'node', 'macos', 'windows', 'linux'])
+const CAPABILITIES = new Set([
+  'agent-preset',
+  'command',
+  'context-provider',
+  'event-handler',
+  'model-provider',
+  'prompt-provider',
+  'tool-provider',
+  'ui-extension',
+  'workflow',
+])
+const CATEGORIES = new Set([
+  'ai',
+  'automation',
+  'communication',
+  'data',
+  'developer-tools',
+  'files',
+  'productivity',
+  'search',
+  'security',
+  'system',
+  'web',
+])
 
 function isRecord(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
@@ -8,15 +33,54 @@ function hasStrings(value) {
   return Array.isArray(value) && value.every(item => typeof item === 'string')
 }
 
+function hasAllowedStrings(value, allowed) {
+  return hasStrings(value) && value.length > 0 && value.every(item => allowed.has(item))
+}
+
+function isNonEmptyString(value) {
+  return typeof value === 'string' && value.length > 0
+}
+
+function isHttpsUrl(value) {
+  if (!isNonEmptyString(value)) return false
+  try {
+    return new URL(value).protocol === 'https:'
+  } catch {
+    return false
+  }
+}
+
+function isPerson(value) {
+  return isRecord(value) && isNonEmptyString(value.name) && isHttpsUrl(value.url)
+}
+
+function hasLocalizations(value) {
+  if (value === undefined) return true
+  if (!isRecord(value)) return false
+  return Object.values(value).every(copy => isRecord(copy)
+    && Object.keys(copy).length > 0
+    && Object.entries(copy).every(([key, text]) => (
+      ['displayName', 'summary', 'description'].includes(key) && isNonEmptyString(text)
+    )))
+}
+
 function isPlugin(value) {
   if (!isRecord(value) || !isRecord(value.publisher) || !isRecord(value.repository)) return false
   if (!isRecord(value.distribution) || !isRecord(value.compatibility) || !isRecord(value.permissions)) return false
-  if (!['name', 'displayName', 'summary', 'description', 'version', 'license'].every(key => typeof value[key] === 'string')) return false
-  if (!hasStrings(value.categories) || !hasStrings(value.capabilities) || !hasStrings(value.keywords)) return false
-  return typeof value.publisher.name === 'string'
-    && typeof value.repository.url === 'string'
-    && typeof value.distribution.package === 'string'
-    && hasStrings(value.compatibility.platforms)
+  if (!['name', 'displayName', 'summary', 'description', 'version', 'license'].every(key => isNonEmptyString(value[key]))) return false
+  if (!hasAllowedStrings(value.categories, CATEGORIES) || !hasAllowedStrings(value.capabilities, CAPABILITIES) || !hasStrings(value.keywords)) return false
+  if (!Array.isArray(value.authors) || value.authors.length === 0 || !value.authors.every(isPerson)) return false
+  if (!isPerson(value.publisher) || value.repository.type !== 'git') return false
+  if (!isHttpsUrl(value.repository.url) || !isHttpsUrl(value.repository.issues) || !isHttpsUrl(value.homepage)) return false
+  if (!['npm', 'git'].includes(value.distribution.type) || !isNonEmptyString(value.distribution.package)) return false
+  if (value.distribution.type === 'git' && (!isHttpsUrl(value.distribution.url) || !/^[0-9a-f]{40}$/.test(value.distribution.ref))) return false
+  if (!isNonEmptyString(value.compatibility.dsh) || (value.compatibility.openharness !== undefined && !isNonEmptyString(value.compatibility.openharness))) return false
+  if (!hasStrings(value.compatibility.profiles) || value.compatibility.profiles.length === 0) return false
+  if (!hasAllowedStrings(value.compatibility.platforms, PLATFORMS)) return false
+  const permissionKeys = ['network', 'filesystemRead', 'filesystemWrite', 'environment', 'commands']
+  if (!permissionKeys.every(key => hasStrings(value.permissions[key]))) return false
+  if (!value.permissions.network.every(isHttpsUrl)) return false
+  return hasLocalizations(value.localizations)
 }
 
 export function parseCatalog(value) {
@@ -60,6 +124,8 @@ function searchScore(plugin, query) {
   if (!query) return 1
   const name = normalizedText(plugin.name)
   const displayName = normalizedText(plugin.displayName)
+  const localizedCopy = Object.values(plugin.localizations ?? {})
+    .flatMap(copy => Object.values(copy))
   const haystack = [
     plugin.summary,
     plugin.description,
@@ -67,6 +133,7 @@ function searchScore(plugin, query) {
     ...plugin.keywords,
     ...plugin.categories,
     ...plugin.capabilities,
+    ...localizedCopy,
   ].map(normalizedText)
   if (name === query || displayName === query) return 100
   if (name.startsWith(query) || displayName.startsWith(query)) return 60
