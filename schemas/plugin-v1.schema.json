@@ -89,9 +89,14 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": ["type", "url", "ref"],
+          "required": ["type", "package", "url", "ref"],
           "properties": {
             "type": { "const": "git" },
+            "package": {
+              "type": "string",
+              "pattern": "^(?:@[a-z0-9][a-z0-9._-]*/)?[a-z0-9][a-z0-9._-]*$",
+              "maxLength": 214
+            },
             "url": {
               "type": "string",
               "format": "uri",
@@ -239,4 +244,3 @@
     }
   }
 }
-

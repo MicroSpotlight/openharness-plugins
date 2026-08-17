@@ -13,10 +13,12 @@ The descriptor records:
 - declared network, filesystem, environment, and command permissions;
 - optional localized display copy.
 
-For Git distributions, `distribution.ref` must be the exact 40-character commit
-SHA to install. Branch names and tags are intentionally rejected. For npm
-distributions, `version` is combined with `distribution.package` to form the
-exact package version.
+Every distribution declares its actual package identifier in
+`distribution.package`; OpenHarness uses it as a strong local identity signal.
+For Git distributions, `distribution.ref` must be the exact 40-character
+commit SHA to install. Branch names and tags are intentionally rejected. For
+npm distributions, `version` is combined with `distribution.package` to form
+the exact package version.
 
 Before opening a pull request, run:
 
@@ -30,4 +32,3 @@ pnpm build
 Changes to existing plugin versions should update both `version` and the pinned
 distribution. Reviewers should verify that declared permissions match the code
 at that immutable source revision.
-
