@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-ippt",
+  "displayName": "DeepSeek iPPT",
+  "summary": "Create and edit slide decks in a native DSH presentation studio.",
+  "description": "Adds the iPolloWork PPT Studio as a native DSH conversation view with slide templates, direct visual editing, AI-assisted revisions, and PDF or PPTX export. The source-available license limits commercial and multi-user use.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "Different AI, Inc.",
+    "url": "https://github.com/Devin-AXIS"
+  },
+  "authors": [
+    {
+      "name": "Different AI, Inc.",
+      "url": "https://github.com/Devin-AXIS"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devin-AXIS/iPolloWork",
+    "issues": "https://github.com/Devin-AXIS/iPolloWork/issues"
+  },
+  "homepage": "https://github.com/Devin-AXIS/deepseek-design#deepseek-ippt",
+  "license": "LicenseRef-iPolloWork-1.0",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-ippt"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["ui-extension", "workflow"],
+  "categories": ["ai", "productivity"],
+  "keywords": ["dsh", "presentation", "slides", "studio"],
+  "permissions": {
+    "network": [],
+    "filesystemRead": ["workspace/design"],
+    "filesystemWrite": ["workspace/design"],
+    "environment": [],
+    "commands": []
+  }
+}
