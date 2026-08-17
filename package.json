@@ -5,14 +5,21 @@
   "type": "module",
   "description": "Curated plugin metadata and catalog builder for OpenHarness",
   "scripts": {
-    "build": "node scripts/build-catalog.mjs",
+    "build": "pnpm run build:catalog && pnpm run build:web",
+    "build:catalog": "node scripts/build-catalog.mjs",
+    "build:web": "vite build",
+    "dev": "node scripts/build-catalog.mjs && vite",
     "test": "node --test tests/*.test.mjs",
     "validate": "node scripts/build-catalog.mjs --check",
     "verify:distributions": "node scripts/verify-distributions.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1",
-    "ajv-formats": "^3.0.1"
+    "ajv-formats": "^3.0.1",
+    "vite": "^8.2.1"
   },
-  "packageManager": "pnpm@11.19.0"
+  "packageManager": "pnpm@11.19.0",
+  "dependencies": {
+    "lucide": "^1.31.0"
+  }
 }

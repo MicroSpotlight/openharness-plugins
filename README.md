@@ -29,6 +29,18 @@ Pages. The public endpoint is:
 https://microspotlight.github.io/openharness-plugins/catalog/v1/catalog.json
 ```
 
+The GitHub Pages root also hosts the searchable catalog UI:
+
+```text
+https://microspotlight.github.io/openharness-plugins/
+```
+
+The web catalog reads the same generated JSON as plugin clients. It is a
+read-only surface for search, platform filtering, compatibility details,
+declared permissions, and repository links. It does not inspect local plugins,
+report installation state, or initiate installation. Those capabilities belong
+to the in-app OpenHarness Find Plugin.
+
 Run the same checks locally:
 
 ```sh
@@ -36,6 +48,12 @@ pnpm install
 pnpm validate
 pnpm test
 pnpm build
+```
+
+Run the catalog UI locally with:
+
+```sh
+pnpm dev
 ```
 
 ## Trust model
@@ -50,4 +68,3 @@ workflow.
 ## License
 
 Apache License 2.0.
-
