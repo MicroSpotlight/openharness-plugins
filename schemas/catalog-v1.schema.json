@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://microspotlight.github.io/openharness-plugins/schemas/catalog-v1.schema.json",
+  "title": "OpenHarness plugin catalog v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "revision", "generatedAt", "plugins"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "revision": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "$ref": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json"
+      }
+    }
+  }
+}
+

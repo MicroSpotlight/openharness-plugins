@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "title": "OpenHarness plugin descriptor v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "name",
+    "displayName",
+    "summary",
+    "description",
+    "version",
+    "publisher",
+    "authors",
+    "repository",
+    "homepage",
+    "license",
+    "distribution",
+    "compatibility",
+    "capabilities",
+    "categories",
+    "keywords",
+    "permissions"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json"
+    },
+    "schemaVersion": { "const": 1 },
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 64
+    },
+    "displayName": { "type": "string", "minLength": 2, "maxLength": 80 },
+    "summary": { "type": "string", "minLength": 10, "maxLength": 200 },
+    "description": { "type": "string", "minLength": 20, "maxLength": 2000 },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?(?:\\+[0-9A-Za-z-]+(?:\\.[0-9A-Za-z-]+)*)?$"
+    },
+    "icon": {
+      "type": "string",
+      "pattern": "^assets/[A-Za-z0-9._-]+\\.(?:png|webp|svg)$",
+      "maxLength": 160
+    },
+    "publisher": { "$ref": "#/$defs/person" },
+    "authors": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/person" },
+      "minItems": 1,
+      "maxItems": 20
+    },
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "url", "issues"],
+      "properties": {
+        "type": { "const": "git" },
+        "url": { "$ref": "#/$defs/httpsUrl" },
+        "issues": { "$ref": "#/$defs/httpsUrl" }
+      }
+    },
+    "homepage": { "$ref": "#/$defs/httpsUrl" },
+    "license": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9.+()-]+$",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "distribution": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "package"],
+          "properties": {
+            "type": { "const": "npm" },
+            "package": {
+              "type": "string",
+              "pattern": "^(?:@[a-z0-9][a-z0-9._-]*/)?[a-z0-9][a-z0-9._-]*$",
+              "maxLength": 214
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "url", "ref"],
+          "properties": {
+            "type": { "const": "git" },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://.+\\.git$",
+              "maxLength": 500
+            },
+            "ref": { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+          }
+        }
+      ]
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dsh", "profiles", "platforms"],
+      "properties": {
+        "dsh": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "openharness": { "type": "string", "minLength": 1, "maxLength": 80 },
+        "profiles": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "platforms": {
+          "type": "array",
+          "items": { "enum": ["web", "node", "macos", "windows", "linux"] },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "agent-preset",
+          "command",
+          "context-provider",
+          "event-handler",
+          "model-provider",
+          "prompt-provider",
+          "tool-provider",
+          "ui-extension",
+          "workflow"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "ai",
+          "automation",
+          "communication",
+          "data",
+          "developer-tools",
+          "files",
+          "productivity",
+          "search",
+          "security",
+          "system",
+          "web"
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 5,
+      "uniqueItems": true
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+        "maxLength": 40
+      },
+      "maxItems": 20,
+      "uniqueItems": true
+    },
+    "permissions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["network", "filesystemRead", "filesystemWrite", "environment", "commands"],
+      "properties": {
+        "network": {
+          "type": "array",
+          "items": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "uniqueItems": true
+        },
+        "filesystemRead": { "$ref": "#/$defs/stringSet" },
+        "filesystemWrite": { "$ref": "#/$defs/stringSet" },
+        "environment": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z][A-Z0-9_]*$" },
+          "uniqueItems": true
+        },
+        "commands": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9._+-]+$" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "localizations": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z]{2,3}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}|[0-9]{3}))?$"
+      },
+      "additionalProperties": { "$ref": "#/$defs/localizedCopy" },
+      "maxProperties": 30
+    }
+  },
+  "$defs": {
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "person": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "url": { "$ref": "#/$defs/httpsUrl" }
+      }
+    },
+    "stringSet": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "uniqueItems": true
+    },
+    "localizedCopy": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "displayName": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "summary": { "type": "string", "minLength": 10, "maxLength": 200 },
+        "description": { "type": "string", "minLength": 20, "maxLength": 2000 }
+      }
+    }
+  }
+}
+

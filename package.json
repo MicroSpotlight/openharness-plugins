@@ -1,0 +1,18 @@
+{
+  "name": "@microspotlight/openharness-plugins-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Curated plugin metadata and catalog builder for OpenHarness",
+  "scripts": {
+    "build": "node scripts/build-catalog.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "validate": "node scripts/build-catalog.mjs --check",
+    "verify:distributions": "node scripts/verify-distributions.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "packageManager": "pnpm@11.19.0"
+}
