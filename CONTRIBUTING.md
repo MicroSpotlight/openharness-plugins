@@ -20,6 +20,11 @@ commit SHA to install. Branch names and tags are intentionally rejected. For
 npm distributions, `version` is combined with `distribution.package` to form
 the exact package version.
 
+Git distributions must commit their package entry point and other runtime
+artifacts. Catalog CI verifies the descriptor package name, DSH metadata, and
+entry file at the pinned SHA, and rejects install-time lifecycle scripts. A
+user's plugin profile should not have to authorize repository build scripts.
+
 Before opening a pull request, run:
 
 ```sh

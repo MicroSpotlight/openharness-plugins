@@ -21,6 +21,26 @@ async function verifyGit(plugin) {
     if (stdout.trim() !== plugin.distribution.ref) {
       throw new Error(`resolved to ${stdout.trim()}`)
     }
+    const packageResult = await execFileAsync('git', ['-C', directory, 'show', 'FETCH_HEAD:package.json'])
+    const packageJson = JSON.parse(packageResult.stdout)
+    if (packageJson.name !== plugin.distribution.package) {
+      throw new Error(`package.json name ${packageJson.name ?? '<missing>'} does not match ${plugin.distribution.package}`)
+    }
+    if (typeof packageJson.main !== 'string'
+      || packageJson.main.includes('..')
+      || !/^(?:\.\/)?[A-Za-z0-9_./-]+$/.test(packageJson.main)) {
+      throw new Error('package.json must declare a safe relative main entry')
+    }
+    const entry = packageJson.main.replace(/^\.\//, '')
+    await execFileAsync('git', ['-C', directory, 'cat-file', '-e', `FETCH_HEAD:${entry}`])
+    if (typeof packageJson.dsh !== 'object' || packageJson.dsh === null) {
+      throw new Error('package.json does not declare DSH metadata')
+    }
+    const lifecycleScripts = ['preinstall', 'install', 'postinstall', 'prepare']
+      .filter(name => typeof packageJson.scripts?.[name] === 'string')
+    if (lifecycleScripts.length > 0) {
+      throw new Error(`Git distribution must be install-ready; blocked lifecycle scripts: ${lifecycleScripts.join(', ')}`)
+    }
   } finally {
     await rm(directory, { recursive: true, force: true })
   }
@@ -49,4 +69,3 @@ main().catch(error => {
   process.stderr.write(`${error instanceof Error ? error.message : String(error)}\n`)
   process.exitCode = 1
 })
-
