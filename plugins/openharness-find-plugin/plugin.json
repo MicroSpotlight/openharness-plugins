@@ -27,7 +27,7 @@
     "type": "git",
     "package": "@microspotlight/openharness-find-plugin",
     "url": "https://github.com/MicroSpotlight/openharness-find-plugin.git",
-    "ref": "fc619402a14ad185f3aa750f3a6ebdbd2abf94b9"
+    "ref": "6158c25ce58f67f70d1918eb98b359a659e6cc83"
   },
   "compatibility": {
     "dsh": "0.1.0-rc.6",
