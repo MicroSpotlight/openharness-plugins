@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "mirage-dsh",
+  "displayName": "Mirage for DSH",
+  "summary": "Back DSH filesystem and shell services with a Mirage virtual workspace.",
+  "description": "Provides DSH filesystem and shell services over resources mounted in a Mirage virtual workspace, allowing agent tools to operate through the Mirage backend.",
+  "version": "0.0.1",
+  "publisher": {
+    "name": "Strukto",
+    "url": "https://github.com/strukto-ai"
+  },
+  "authors": [
+    {
+      "name": "Strukto",
+      "url": "https://github.com/strukto-ai"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strukto-ai/mirage",
+    "issues": "https://github.com/strukto-ai/mirage/issues"
+  },
+  "homepage": "https://github.com/strukto-ai/mirage/tree/main/typescript/packages/dsh",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@struktoai/mirage-dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web", "headless"],
+    "platforms": ["node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["tool-provider"],
+  "categories": ["developer-tools", "files", "system"],
+  "keywords": ["dsh", "filesystem", "mirage", "shell", "virtual-filesystem"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": ["mirage-mounted-resources"],
+    "filesystemWrite": ["mirage-mounted-resources"],
+    "environment": [],
+    "commands": []
+  }
+}
