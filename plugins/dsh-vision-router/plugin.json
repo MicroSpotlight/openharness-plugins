@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-vision-router",
+  "displayName": "DSH Vision Router",
+  "summary": "Route image tasks through free or configured vision providers from DSH.",
+  "description": "Adds a no-Python vision chain and pixel-level tools for image Q&A, OCR, grounding, crops, color inspection, pixel diffs, cutouts, screenshots, and provider fallback.",
+  "version": "1.4.5",
+  "publisher": {
+    "name": "ysr666",
+    "url": "https://github.com/ysr666"
+  },
+  "authors": [
+    {
+      "name": "ysr666",
+      "url": "https://github.com/ysr666"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ysr666/dsh-vision-router",
+    "issues": "https://github.com/ysr666/dsh-vision-router/issues"
+  },
+  "homepage": "https://github.com/ysr666/dsh-vision-router#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-vision-router"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["tool-provider", "ui-extension"],
+  "categories": ["ai", "developer-tools", "files"],
+  "keywords": ["dsh", "image", "ocr", "router", "vision"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": ["workspace"],
+    "filesystemWrite": ["~/.dsh"],
+    "environment": [],
+    "commands": []
+  }
+}
