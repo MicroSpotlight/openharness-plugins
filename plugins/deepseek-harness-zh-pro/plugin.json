@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-harness-zh-pro",
+  "displayName": "Deepseek Harness Zh Pro",
+  "summary": "DSH 中文增强插件：中文界面修正残留英文、统一术语与格式，统计行完整显示，并可注入「中文优先提示」让大模型优先用中文回复与思考（默认关闭）",
+  "description": "DSH 中文增强插件：中文界面修正残留英文、统一术语与格式，统计行完整显示，并可注入「中文优先提示」让大模型优先用中文回复与思考（默认关闭）",
+  "version": "0.6.1",
+  "publisher": {
+    "name": "magian1127",
+    "url": "https://github.com/magian1127"
+  },
+  "authors": [
+    {
+      "name": "magian1127",
+      "url": "https://github.com/magian1127"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magian1127/deepseek-harness-zh_pro",
+    "issues": "https://github.com/magian1127/deepseek-harness-zh_pro/issues"
+  },
+  "homepage": "https://github.com/magian1127/deepseek-harness-zh_pro#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-harness-zh_pro"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "harness",
+    "zh",
+    "pro"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
