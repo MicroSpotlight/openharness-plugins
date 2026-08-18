@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-continual-evolve",
+  "displayName": "DSH Continual Evolve",
+  "summary": "Continual self-evolution plugin for DeepSeek Harness: versioned, auditable, rollback-safe harness state (prompt notes, memories, skills, subagent specs) refined from session trajectories.",
+  "description": "Continual self-evolution plugin for DeepSeek Harness: versioned, auditable, rollback-safe harness state (prompt notes, memories, skills, subagent specs) refined from session trajectories.",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "ZK-Andy",
+    "url": "https://github.com/ZK-Andy"
+  },
+  "authors": [
+    {
+      "name": "ZK-Andy",
+      "url": "https://github.com/ZK-Andy"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZK-Andy/dsh-continual-evolve",
+    "issues": "https://github.com/ZK-Andy/dsh-continual-evolve/issues"
+  },
+  "homepage": "https://github.com/ZK-Andy/dsh-continual-evolve#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-continual-evolve"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "continual",
+    "evolve"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
