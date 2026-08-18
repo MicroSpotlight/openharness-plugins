@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-genui",
+  "displayName": "DSH Plugin Genui",
+  "summary": "Code-first generative UI artifacts for DeepSeek Harness",
+  "description": "Code-first generative UI artifacts for DeepSeek Harness",
+  "version": "0.12.2",
+  "publisher": {
+    "name": "pengyue-polaron",
+    "url": "https://github.com/pengyue-polaron"
+  },
+  "authors": [
+    {
+      "name": "pengyue-polaron",
+      "url": "https://github.com/pengyue-polaron"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pengyue-polaron/deepseek-harness-genui",
+    "issues": "https://github.com/pengyue-polaron/deepseek-harness-genui/issues"
+  },
+  "homepage": "https://github.com/pengyue-polaron/deepseek-harness-genui#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-plugin-genui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "genui"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
