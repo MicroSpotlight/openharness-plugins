@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-openpencil",
+  "displayName": "OpenPencil for DSH",
+  "summary": "The DeepSeek Harness plugin for OpenPencil — preview, inspect, and edit real .op documents inside a conversation.",
+  "description": "The DeepSeek Harness plugin for OpenPencil — preview, inspect, and edit real .op documents inside a conversation.",
+  "version": "0.1.0-rc.1",
+  "publisher": {
+    "name": "ZSeven-W",
+    "url": "https://github.com/ZSeven-W"
+  },
+  "authors": [
+    {
+      "name": "ZSeven-W",
+      "url": "https://github.com/ZSeven-W"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZSeven-W/dsh-openpencil",
+    "issues": "https://github.com/ZSeven-W/dsh-openpencil/issues"
+  },
+  "homepage": "https://github.com/ZSeven-W/dsh-openpencil#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@zseven-w/dsh-openpencil"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "openpencil"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
