@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-harness-wallet",
+  "displayName": "Deepseek Harness Wallet",
+  "summary": "Local-first account monitoring, usage accounting, official recharge, completion reminders, flexible layout, and host-gated session controls for DeepSeek Harness.",
+  "description": "Local-first account monitoring, usage accounting, official recharge, completion reminders, flexible layout, and host-gated session controls for DeepSeek Harness.",
+  "version": "0.1.5",
+  "publisher": {
+    "name": "feibi-mochi",
+    "url": "https://github.com/feibi-mochi"
+  },
+  "authors": [
+    {
+      "name": "feibi-mochi",
+      "url": "https://github.com/feibi-mochi"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feibi-mochi/deepseek-harness-control-center",
+    "issues": "https://github.com/feibi-mochi/deepseek-harness-control-center/issues"
+  },
+  "homepage": "https://github.com/feibi-mochi/deepseek-harness-control-center#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-harness-wallet"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "harness",
+    "wallet"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
