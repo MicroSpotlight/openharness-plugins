@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-codex",
+  "displayName": "DSH Codex",
+  "summary": "ChatGPT OAuth, Codex models, search, read_image URL support, and gpt-image-2 generation for DeepSeek Harness",
+  "description": "ChatGPT OAuth, Codex models, search, read_image URL support, and gpt-image-2 generation for DeepSeek Harness",
+  "version": "0.2.4",
+  "publisher": {
+    "name": "Yan-Zero",
+    "url": "https://github.com/Yan-Zero"
+  },
+  "authors": [
+    {
+      "name": "Yan-Zero",
+      "url": "https://github.com/Yan-Zero"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yan-Zero/dsh-codex",
+    "issues": "https://github.com/Yan-Zero/dsh-codex/issues"
+  },
+  "homepage": "https://github.com/Yan-Zero/dsh-codex#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-codex"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "codex"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
