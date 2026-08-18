@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-catppuccin",
+  "displayName": "DSH Catppuccin",
+  "summary": "Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully rema...",
+  "description": "Catppuccin themes + a toggleable glassmorphism skin for the DeepSeek Harness web GUI — Latte, Frappé, Macchiato and Mocha registered into the official theme system (Appearance settings), fully remapping the --dsw-* token ladder, with adjustable frosted glass for the top bar, sidebar, composer, stats line and trajectory view.",
+  "version": "0.2.7-beta.0",
+  "publisher": {
+    "name": "NoNameLeGo",
+    "url": "https://github.com/NoNameLeGo"
+  },
+  "authors": [
+    {
+      "name": "NoNameLeGo",
+      "url": "https://github.com/NoNameLeGo"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoNameLeGo/dsh-catppuccin-theme",
+    "issues": "https://github.com/NoNameLeGo/dsh-catppuccin-theme/issues"
+  },
+  "homepage": "https://github.com/NoNameLeGo/dsh-catppuccin-theme#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@nonamelego/dsh-catppuccin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "catppuccin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
