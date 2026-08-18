@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "mstar-harness-dsh",
+  "displayName": "DSH",
+  "summary": "Morning Star harness dsh (DeepSeek Harness) cordis function plugin — in-process engine gates (status/dispatch/lease) with hard refusal channels.",
+  "description": "Morning Star harness dsh (DeepSeek Harness) cordis function plugin — in-process engine gates (status/dispatch/lease) with hard refusal channels.",
+  "version": "2.4.1",
+  "publisher": {
+    "name": "btspoony",
+    "url": "https://github.com/btspoony"
+  },
+  "authors": [
+    {
+      "name": "btspoony",
+      "url": "https://github.com/btspoony"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/btspoony/mstar-harness",
+    "issues": "https://github.com/btspoony/mstar-harness/issues"
+  },
+  "homepage": "https://github.com/btspoony/mstar-harness#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@mstar-harness/dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "mstar",
+    "harness"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
