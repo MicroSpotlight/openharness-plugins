@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-vision",
+  "displayName": "DSH Vision",
+  "summary": "Near-native image understanding for DeepSeek Harness",
+  "description": "Near-native image understanding for DeepSeek Harness",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "oil-oil",
+    "url": "https://github.com/oil-oil"
+  },
+  "authors": [
+    {
+      "name": "oil-oil",
+      "url": "https://github.com/oil-oil"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oil-oil/dsh-vision",
+    "issues": "https://github.com/oil-oil/dsh-vision/issues"
+  },
+  "homepage": "https://github.com/oil-oil/dsh-vision#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@oil-oil/dsh-vision",
+    "url": "https://github.com/oil-oil/dsh-vision.git",
+    "ref": "a12800eeb02eb6dd45f5e2cda6c7db3c16088883"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "vision"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
