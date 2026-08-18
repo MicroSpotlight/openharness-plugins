@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-session-manager",
+  "displayName": "DSH Session Manager",
+  "summary": "Full session management for the DSH web UI: delete (with trash/restore/purge), restore archived sessions, activity stats, continue/pause, fork to a new chat, unread markers, and open log folders. P...",
+  "description": "Full session management for the DSH web UI: delete (with trash/restore/purge), restore archived sessions, activity stats, continue/pause, fork to a new chat, unread markers, and open log folders. Plus a global context compaction threshold. No harness changes.",
+  "version": "0.1.7",
+  "publisher": {
+    "name": "dream12347",
+    "url": "https://github.com/dream12347"
+  },
+  "authors": [
+    {
+      "name": "dream12347",
+      "url": "https://github.com/dream12347"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dream12347/dsh-session-manager",
+    "issues": "https://github.com/dream12347/dsh-session-manager/issues"
+  },
+  "homepage": "https://github.com/dream12347/dsh-session-manager#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-session-manager",
+    "url": "https://github.com/dream12347/dsh-session-manager.git",
+    "ref": "d046be08f7d82185d1592bd66735593404eb29a1"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "session",
+    "manager"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
