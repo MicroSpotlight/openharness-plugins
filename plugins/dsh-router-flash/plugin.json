@@ -1,0 +1,73 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-router-flash",
+  "displayName": "DSH Router Flash",
+  "summary": "DSH agent preset 分发包：V4 Flash 神模式（opencode-go）——启动时自动把 router-flash preset 安装到 ~/.dsh/.agent-presets。",
+  "description": "DSH agent preset 分发包：V4 Flash 神模式（opencode-go）——启动时自动把 router-flash preset 安装到 ~/.dsh/.agent-presets。",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "xiaoxianyu-office",
+    "url": "https://github.com/xiaoxianyu-office"
+  },
+  "authors": [
+    {
+      "name": "xiaoxianyu-office",
+      "url": "https://github.com/xiaoxianyu-office"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoxianyu-office/dsh-router-flash",
+    "issues": "https://github.com/xiaoxianyu-office/dsh-router-flash/issues"
+  },
+  "homepage": "https://github.com/xiaoxianyu-office/dsh-router-flash#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-router-flash",
+    "url": "https://github.com/xiaoxianyu-office/dsh-router-flash.git",
+    "ref": "554d3aedf76202f82eb263833f55d934774cc58f"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "agent-preset",
+    "model-provider",
+    "tool-provider"
+  ],
+  "categories": [
+    "files",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "router",
+    "flash"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
