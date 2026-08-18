@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "plugin-team-board",
+  "displayName": "Plugin Team Board",
+  "summary": "DSH plugin: a shared task board for multi-agent / subagent collaboration — create, claim, transition, and query tasks via a Cordis service key.",
+  "description": "DSH plugin: a shared task board for multi-agent / subagent collaboration — create, claim, transition, and query tasks via a Cordis service key.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "whyihaveyou",
+    "url": "https://github.com/whyihaveyou"
+  },
+  "authors": [
+    {
+      "name": "whyihaveyou",
+      "url": "https://github.com/whyihaveyou"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whyihaveyou/dsh-suite",
+    "issues": "https://github.com/whyihaveyou/dsh-suite/issues"
+  },
+  "homepage": "https://github.com/whyihaveyou/dsh-suite#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@dsh-suite/plugin-team-board"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "automation",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "team",
+    "board"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
