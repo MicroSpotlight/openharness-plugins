@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "linenxi-ctrl-dsh-vision",
+  "displayName": "DSH Vision",
+  "summary": "为 DeepSeek Harness 提供外挂识图模型：网页配置面板、发送图片识图自动回传、模型自主截图识图工具，支持多协议与一键安装/卸载。",
+  "description": "为 DeepSeek Harness 提供外挂识图模型：网页配置面板、发送图片识图自动回传、模型自主截图识图工具，支持多协议与一键安装/卸载。",
+  "version": "0.2.6",
+  "publisher": {
+    "name": "linenxi-ctrl",
+    "url": "https://github.com/linenxi-ctrl"
+  },
+  "authors": [
+    {
+      "name": "linenxi-ctrl",
+      "url": "https://github.com/linenxi-ctrl"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linenxi-ctrl/dsh-vision",
+    "issues": "https://github.com/linenxi-ctrl/dsh-vision/issues"
+  },
+  "homepage": "https://github.com/linenxi-ctrl/dsh-vision#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@linenxi-ctrl/dsh-vision",
+    "url": "https://github.com/linenxi-ctrl/dsh-vision.git",
+    "ref": "50f6ba065e8cf42c4ecc5a06c4e96dc2d5c69b11"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "linenxi",
+    "ctrl",
+    "vision"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
