@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "captain1275-dsh-pet",
+  "displayName": "DSH Pet",
+  "summary": "鲸鱼娘宠物插件 for the dsh web GUI: a soft healing whale-girl companion that reacts to model activity (idle/waiting/thinking/tool/done), with petting/feeding interactions and an affinity score",
+  "description": "鲸鱼娘宠物插件 for the dsh web GUI: a soft healing whale-girl companion that reacts to model activity (idle/waiting/thinking/tool/done), with petting/feeding interactions and an affinity score",
+  "version": "0.2.7",
+  "publisher": {
+    "name": "CAPTAIN1275",
+    "url": "https://github.com/CAPTAIN1275"
+  },
+  "authors": [
+    {
+      "name": "CAPTAIN1275",
+      "url": "https://github.com/CAPTAIN1275"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CAPTAIN1275/dsh-ui-web",
+    "issues": "https://github.com/CAPTAIN1275/dsh-ui-web/issues"
+  },
+  "homepage": "https://github.com/CAPTAIN1275/dsh-ui-web#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@captain1275/dsh-pet"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "captain1275",
+    "pet"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
