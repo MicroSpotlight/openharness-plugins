@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-turn-rewind",
+  "displayName": "DSH Turn Rewind",
+  "summary": "deepseek harness对话和代码状态回退插件 | DSH — rewind conversation and workspace state, powered by a persistent Change Ledger",
+  "description": "deepseek harness对话和代码状态回退插件 | DSH — rewind conversation and workspace state, powered by a persistent Change Ledger",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "Anionex",
+    "url": "https://github.com/Anionex"
+  },
+  "authors": [
+    {
+      "name": "Anionex",
+      "url": "https://github.com/Anionex"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anionex/dsh-turn-rewind",
+    "issues": "https://github.com/Anionex/dsh-turn-rewind/issues"
+  },
+  "homepage": "https://github.com/Anionex/dsh-turn-rewind#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "npm",
+    "package": "@anionex/dsh-turn-rewind"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "turn",
+    "rewind"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
