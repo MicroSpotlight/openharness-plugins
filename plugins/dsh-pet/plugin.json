@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-pet",
+  "displayName": "DSH Pet",
+  "summary": "DSH 桌面宠物：一行命令安装现成宠物（28 个透明动画，即装即用），或内置素材链从 AI 视频自造专属宠物 | One-line install desktop pet for DeepSeek Harness + DIY asset pipeline",
+  "description": "DSH 桌面宠物：一行命令安装现成宠物（28 个透明动画，即装即用），或内置素材链从 AI 视频自造专属宠物 | One-line install desktop pet for DeepSeek Harness + DIY asset pipeline",
+  "version": "0.1.4",
+  "publisher": {
+    "name": "PC2005-cloud",
+    "url": "https://github.com/PC2005-cloud"
+  },
+  "authors": [
+    {
+      "name": "PC2005-cloud",
+      "url": "https://github.com/PC2005-cloud"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PC2005-cloud/dsh-pet",
+    "issues": "https://github.com/PC2005-cloud/dsh-pet/issues"
+  },
+  "homepage": "https://github.com/PC2005-cloud/dsh-pet#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-pet"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "productivity",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "pet"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
