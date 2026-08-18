@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-context",
+  "displayName": "DSH Context",
+  "summary": "Best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understandi...",
+  "description": "Best DeepSeek Harness plugin for context insight and management, with context dashboard / browser and context command, for context statistics, composition, breakdown, evolution details, understanding how the context is made of, and how it evolves. 一站式 DeepSeek Harness 上下文可视化插件，Context 面板及浏览器与 Context 命令，透视上下文组成、演进、压缩、剪枝等事件与动作。",
+  "version": "0.12.0",
+  "publisher": {
+    "name": "bowenliang123",
+    "url": "https://github.com/bowenliang123"
+  },
+  "authors": [
+    {
+      "name": "bowenliang123",
+      "url": "https://github.com/bowenliang123"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bowenliang123/dsh-context",
+    "issues": "https://github.com/bowenliang123/dsh-context/issues"
+  },
+  "homepage": "https://github.com/bowenliang123/dsh-context#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-context"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "context"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
