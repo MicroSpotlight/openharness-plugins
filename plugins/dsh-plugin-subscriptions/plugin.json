@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-subscriptions",
+  "displayName": "DSH Plugin Subscriptions",
+  "summary": "Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers, with OAuth login from the web Settings page",
+  "description": "Use ChatGPT (Codex), Claude, and Grok (X Premium) subscriptions as DeepSeek Harness LLM providers, with OAuth login from the web Settings page",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "V1ki",
+    "url": "https://github.com/V1ki"
+  },
+  "authors": [
+    {
+      "name": "V1ki",
+      "url": "https://github.com/V1ki"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/V1ki/dsh-plugin-subscriptions",
+    "issues": "https://github.com/V1ki/dsh-plugin-subscriptions/issues"
+  },
+  "homepage": "https://github.com/V1ki/dsh-plugin-subscriptions#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-plugin-subscriptions"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "subscriptions"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
