@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-mobile",
+  "displayName": "DSH Mobile",
+  "summary": "DeepSeek Harness 移动端适配与安全局域网访问插件，支持 Android App 和手机浏览器。",
+  "description": "DeepSeek Harness 移动端适配与安全局域网访问插件，支持 Android App 和手机浏览器。",
+  "version": "0.1.0-alpha.25",
+  "publisher": {
+    "name": "saya-ch",
+    "url": "https://github.com/saya-ch"
+  },
+  "authors": [
+    {
+      "name": "saya-ch",
+      "url": "https://github.com/saya-ch"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saya-ch/dsh-mobile",
+    "issues": "https://github.com/saya-ch/dsh-mobile/issues"
+  },
+  "homepage": "https://github.com/saya-ch/dsh-mobile#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-mobile"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "mobile"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
