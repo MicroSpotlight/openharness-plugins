@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dockyard-dsh",
+  "displayName": "Dockyard for DSH",
+  "summary": "A macOS-only native account-pool and provider plugin for DeepSeek Harness.",
+  "description": "A macOS-only native account-pool and provider plugin for DeepSeek Harness.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "AITabby",
+    "url": "https://github.com/AITabby"
+  },
+  "authors": [
+    {
+      "name": "AITabby",
+      "url": "https://github.com/AITabby"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AITabby/dockyard-dsh",
+    "issues": "https://github.com/AITabby/dockyard-dsh/issues"
+  },
+  "homepage": "https://github.com/AITabby/dockyard-dsh#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dockyard-dsh/plugin",
+    "url": "https://github.com/AITabby/dockyard-dsh.git",
+    "ref": "8dca9e3087c65c6e9277b9b16a4d93640d774859"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "dockyard",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
