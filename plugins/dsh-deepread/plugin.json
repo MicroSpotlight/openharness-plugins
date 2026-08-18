@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-deepread",
+  "displayName": "DSH Deepread",
+  "summary": "AI deep-reading assistant: extract core claims, argument structure, and key evidence from books and articles. Five modes (quick, deep, knowledge map, Feynman, full book); knowledge-map reports incl...",
+  "description": "AI deep-reading assistant: extract core claims, argument structure, and key evidence from books and articles. Five modes (quick, deep, knowledge map, Feynman, full book); knowledge-map reports include confidence levels, data facts, relation labels, Mermaid mindmaps, and recall questions. Reads WeChat article URLs, TXT/Markdown/HTML/PDF files, or pasted text (built-in pure-JS PDF extractor). Exports Markdown, FreeMind/XMind mindmaps, and HTML reports. DeepSeek Harness plugin.",
+  "version": "0.5.4",
+  "publisher": {
+    "name": "xiehuan123",
+    "url": "https://github.com/xiehuan123"
+  },
+  "authors": [
+    {
+      "name": "xiehuan123",
+      "url": "https://github.com/xiehuan123"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiehuan123/dsh-deepread",
+    "issues": "https://github.com/xiehuan123/dsh-deepread/issues"
+  },
+  "homepage": "https://github.com/xiehuan123/dsh-deepread#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-deepread"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "files",
+    "communication",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "deepread"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
