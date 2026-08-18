@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-auto-memory",
+  "displayName": "DSH Auto Memory",
+  "summary": "DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每轮对话自动沉淀、每日反思、可视化面板与设置页,支持继承其他 AI 工具的记忆。",
+  "description": "DSH 自动记忆插件:三层记忆(用户级/项目笔记/每日日志)自动注入与检索、每轮对话自动沉淀、每日反思、可视化面板与设置页,支持继承其他 AI 工具的记忆。",
+  "version": "0.1.26",
+  "publisher": {
+    "name": "Aik358",
+    "url": "https://github.com/Aik358"
+  },
+  "authors": [
+    {
+      "name": "Aik358",
+      "url": "https://github.com/Aik358"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aik358/dsh-auto-memory",
+    "issues": "https://github.com/Aik358/dsh-auto-memory/issues"
+  },
+  "homepage": "https://github.com/Aik358/dsh-auto-memory#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "npm",
+    "package": "@a9i5k4/dsh-auto-memory"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "auto",
+    "memory"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
