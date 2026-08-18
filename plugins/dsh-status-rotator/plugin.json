@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-status-rotator",
+  "displayName": "DSH Status Rotator",
+  "summary": "Rotates the DSH chat turn-status label (\"Deep diving...\") through user-defined phrases every few seconds.",
+  "description": "Rotates the DSH chat turn-status label (\"Deep diving...\") through user-defined phrases every few seconds.",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "01Virex",
+    "url": "https://github.com/01Virex"
+  },
+  "authors": [
+    {
+      "name": "01Virex",
+      "url": "https://github.com/01Virex"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/01Virex/dsh-status-rotator",
+    "issues": "https://github.com/01Virex/dsh-status-rotator/issues"
+  },
+  "homepage": "https://github.com/01Virex/dsh-status-rotator#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-status-rotator",
+    "url": "https://github.com/01Virex/dsh-status-rotator.git",
+    "ref": "09836ff04330a17fc670c27a4bed6855547c88ad"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "status",
+    "rotator"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
