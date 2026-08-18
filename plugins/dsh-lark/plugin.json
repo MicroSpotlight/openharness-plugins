@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-lark",
+  "displayName": "DSH Lark",
+  "summary": "Feishu/Lark WebSocket channel plugin for DeepSeek Harness",
+  "description": "Feishu/Lark WebSocket channel plugin for DeepSeek Harness",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "sugarforever",
+    "url": "https://github.com/sugarforever"
+  },
+  "authors": [
+    {
+      "name": "sugarforever",
+      "url": "https://github.com/sugarforever"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sugarforever/dsh-lark",
+    "issues": "https://github.com/sugarforever/dsh-lark/issues"
+  },
+  "homepage": "https://github.com/sugarforever/dsh-lark#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@sugarforever/dsh-lark"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "communication",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "lark"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
