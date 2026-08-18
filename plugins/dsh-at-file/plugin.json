@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-at-file",
+  "displayName": "DSH @File",
+  "summary": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
+  "description": "Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their path to prompts.",
+  "version": "0.6.3",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-at-file",
+    "issues": "https://github.com/omdsh-dev/dsh-at-file/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-at-file#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-at-file",
+    "url": "https://github.com/omdsh-dev/dsh-at-file.git",
+    "ref": "898369ece56ae6ec41afd8e014f187bb5b723409"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "at",
+    "file"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
