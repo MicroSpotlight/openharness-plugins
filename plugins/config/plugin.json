@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "config",
+  "displayName": "Config",
+  "summary": "Shared dshrb runtime configuration owning the dshrb settings namespace.",
+  "description": "Shared dshrb runtime configuration owning the dshrb settings namespace.",
+  "version": "0.1.5",
+  "publisher": {
+    "name": "chaojixinren",
+    "url": "https://github.com/chaojixinren"
+  },
+  "authors": [
+    {
+      "name": "chaojixinren",
+      "url": "https://github.com/chaojixinren"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaojixinren/dsh-reviewer-bot",
+    "issues": "https://github.com/chaojixinren/dsh-reviewer-bot/issues"
+  },
+  "homepage": "https://github.com/chaojixinren/dsh-reviewer-bot#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@dshrb/config"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "communication",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "config"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
