@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-share",
+  "displayName": "DSH Share",
+  "summary": "Share DSH Q&As or selected conversation groups as PNG or Markdown.",
+  "description": "Share DSH Q&As or selected conversation groups as PNG or Markdown.",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "hellodigua",
+    "url": "https://github.com/hellodigua"
+  },
+  "authors": [
+    {
+      "name": "hellodigua",
+      "url": "https://github.com/hellodigua"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellodigua/dsh-share",
+    "issues": "https://github.com/hellodigua/dsh-share/issues"
+  },
+  "homepage": "https://github.com/hellodigua/dsh-share#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-share"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "share"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
