@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-notification",
+  "displayName": "DSH Notification",
+  "summary": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.",
+  "description": "Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-notification",
+    "issues": "https://github.com/omdsh-dev/dsh-notification/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-notification#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-notification",
+    "url": "https://github.com/omdsh-dev/dsh-notification.git",
+    "ref": "2399457a1f96ed86f761f3bc771539d131eb684f"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "communication",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "notification"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
