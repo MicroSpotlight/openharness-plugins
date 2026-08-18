@@ -1,0 +1,72 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-workbench-plugin",
+  "displayName": "DSH Workbench Plugin",
+  "summary": "DeepSeek Harness Web UI 工作台：聊天 / 编辑器（语法高亮） / 文件与 Git、侧边栏、模型工具",
+  "description": "DeepSeek Harness Web UI 工作台：聊天 / 编辑器（语法高亮） / 文件与 Git、侧边栏、模型工具",
+  "version": "0.1.16",
+  "publisher": {
+    "name": "loadingvx",
+    "url": "https://github.com/loadingvx"
+  },
+  "authors": [
+    {
+      "name": "loadingvx",
+      "url": "https://github.com/loadingvx"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loadingvx/deepseek-harness-workbench-plugin",
+    "issues": "https://github.com/loadingvx/deepseek-harness-workbench-plugin/issues"
+  },
+  "homepage": "https://github.com/loadingvx/deepseek-harness-workbench-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-workbench-plugin",
+    "url": "https://github.com/loadingvx/deepseek-harness-workbench-plugin.git",
+    "ref": "89cf39849441fac361a19319b0371c0fe5016173"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "workbench",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "git"
+    ]
+  }
+}
