@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-whale-balance",
+  "displayName": "DSH Whale Balance",
+  "summary": "DeepSeek Harness 原生插件：页面右下角的小鲸鱼余额提醒挂件",
+  "description": "DeepSeek Harness 原生插件：页面右下角的小鲸鱼余额提醒挂件",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "enchangcui340-cloud",
+    "url": "https://github.com/enchangcui340-cloud"
+  },
+  "authors": [
+    {
+      "name": "enchangcui340-cloud",
+      "url": "https://github.com/enchangcui340-cloud"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enchangcui340-cloud/dsh-whale-balance",
+    "issues": "https://github.com/enchangcui340-cloud/dsh-whale-balance/issues"
+  },
+  "homepage": "https://github.com/enchangcui340-cloud/dsh-whale-balance#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-whale-balance",
+    "url": "https://github.com/enchangcui340-cloud/dsh-whale-balance.git",
+    "ref": "f903fb849e2bc2b8ca32578d93798f1b5daaa5b1"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "whale",
+    "balance"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
