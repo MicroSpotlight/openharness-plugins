@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-flow",
+  "displayName": "Deepseek Flow",
+  "summary": "DeepSeek Flow — Markdown-first visual workflow plugin for DeepSeek Harness with executable Boolean gate semantics, two-way canvas sync, and AI review/optimization.",
+  "description": "DeepSeek Flow — Markdown-first visual workflow plugin for DeepSeek Harness with executable Boolean gate semantics, two-way canvas sync, and AI review/optimization.",
+  "version": "0.4.0",
+  "publisher": {
+    "name": "kanghelyu",
+    "url": "https://github.com/kanghelyu"
+  },
+  "authors": [
+    {
+      "name": "kanghelyu",
+      "url": "https://github.com/kanghelyu"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kanghelyu/dsh-deepseek-flow",
+    "issues": "https://github.com/kanghelyu/dsh-deepseek-flow/issues"
+  },
+  "homepage": "https://github.com/kanghelyu/dsh-deepseek-flow#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-flow"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "automation",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "flow"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
