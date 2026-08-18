@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-blender",
+  "displayName": "DSH Blender",
+  "summary": "DeepSeek Harness Blender production, reconstruction, validation, and export plugin",
+  "description": "DeepSeek Harness Blender production, reconstruction, validation, and export plugin",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "CheshireJCat",
+    "url": "https://github.com/CheshireJCat"
+  },
+  "authors": [
+    {
+      "name": "CheshireJCat",
+      "url": "https://github.com/CheshireJCat"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CheshireJCat/blender",
+    "issues": "https://github.com/CheshireJCat/blender/issues"
+  },
+  "homepage": "https://github.com/CheshireJCat/blender#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-blender"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "blender"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
