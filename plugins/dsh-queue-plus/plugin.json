@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-queue-plus",
+  "displayName": "DSH Queue Plus",
+  "summary": "A calm, unified prompt queue for DeepSeek Harness with smart expansion, persistent confirmations, editing, steering, accessible reordering, and official queue removal.",
+  "description": "A calm, unified prompt queue for DeepSeek Harness with smart expansion, persistent confirmations, editing, steering, accessible reordering, and official queue removal.",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "starslittle",
+    "url": "https://github.com/starslittle"
+  },
+  "authors": [
+    {
+      "name": "starslittle",
+      "url": "https://github.com/starslittle"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/starslittle/dsh-queue-plus",
+    "issues": "https://github.com/starslittle/dsh-queue-plus/issues"
+  },
+  "homepage": "https://github.com/starslittle/dsh-queue-plus#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-queue-plus"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "queue",
+    "plus"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
