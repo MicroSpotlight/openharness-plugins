@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "weshop-dsh-plugin",
+  "displayName": "Weshop DSH Plugin",
+  "summary": "Native Cordis WeShop canvas, tools, skills, and Web UI for DeepSeek Harness",
+  "description": "Native Cordis WeShop canvas, tools, skills, and Web UI for DeepSeek Harness",
+  "version": "1.0.1",
+  "publisher": {
+    "name": "weshopai",
+    "url": "https://github.com/weshopai"
+  },
+  "authors": [
+    {
+      "name": "weshopai",
+      "url": "https://github.com/weshopai"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weshopai/weshop-dsh-plugin",
+    "issues": "https://github.com/weshopai/weshop-dsh-plugin/issues"
+  },
+  "homepage": "https://github.com/weshopai/weshop-dsh-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "weshop-dsh-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "weshop",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
