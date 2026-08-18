@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-memory-evolve",
+  "displayName": "DSH Memory Evolve",
+  "summary": "为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。",
+  "description": "为 DeepSeek Harness 带来「跨会话长期记忆 + 后台自我进化」能力的纯插件实现：五轨记忆 · git 分支感知 · 回合内自我审查 · 技能自我进化与技能管理器 · 四轨待办 · COI 调度 · 会话广播 · 会话搜索 · 提示词管理器 · 临时信息便签——零核心修改、零运行时依赖，随装随用、卸载即净。",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "csyangwen",
+    "url": "https://github.com/csyangwen"
+  },
+  "authors": [
+    {
+      "name": "csyangwen",
+      "url": "https://github.com/csyangwen"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/csyangwen/dsh-memory-evolve",
+    "issues": "https://github.com/csyangwen/dsh-memory-evolve/issues"
+  },
+  "homepage": "https://github.com/csyangwen/dsh-memory-evolve#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-memory-evolve",
+    "url": "https://github.com/csyangwen/dsh-memory-evolve.git",
+    "ref": "8ede93752149ede3a28bc551b5a19a0233b33b04"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "ai",
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "memory",
+    "evolve"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
