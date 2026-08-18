@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-harness-auth",
+  "displayName": "Deepseek Harness Auth",
+  "summary": "Fail-closed password authentication proxy bundle for the DeepSeek Harness Web profile",
+  "description": "Fail-closed password authentication proxy bundle for the DeepSeek Harness Web profile",
+  "version": "0.4.1",
+  "publisher": {
+    "name": "taichuy",
+    "url": "https://github.com/taichuy"
+  },
+  "authors": [
+    {
+      "name": "taichuy",
+      "url": "https://github.com/taichuy"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taichuy/deepseek-harness-auth",
+    "issues": "https://github.com/taichuy/deepseek-harness-auth/issues"
+  },
+  "homepage": "https://github.com/taichuy/deepseek-harness-auth#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "deepseek-harness-auth"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "security",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "harness",
+    "auth"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
