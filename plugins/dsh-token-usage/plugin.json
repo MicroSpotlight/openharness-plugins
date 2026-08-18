@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-token-usage",
+  "displayName": "DSH Token Usage",
+  "summary": "Persistent token usage records and dashboard for DeepSeek Harness",
+  "description": "Persistent token usage records and dashboard for DeepSeek Harness",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "LeemanCheung",
+    "url": "https://github.com/LeemanCheung"
+  },
+  "authors": [
+    {
+      "name": "LeemanCheung",
+      "url": "https://github.com/LeemanCheung"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeemanCheung/dsh-token-usage",
+    "issues": "https://github.com/LeemanCheung/dsh-token-usage/issues"
+  },
+  "homepage": "https://github.com/LeemanCheung/dsh-token-usage#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-token-usage",
+    "url": "https://github.com/LeemanCheung/dsh-token-usage.git",
+    "ref": "462679bd51d5776bfced4921a1c584e0e89b2273"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "token",
+    "usage"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
