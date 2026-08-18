@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-sentinel",
+  "displayName": "DSH Sentinel",
+  "summary": "DSH 哨兵：条件驱动的 agent 唤醒系统——文件/进程/端口/命令传感器，订阅存为会话事件，重启自动复活；每个订阅、每次触发对用户完全可见",
+  "description": "DSH 哨兵：条件驱动的 agent 唤醒系统——文件/进程/端口/命令传感器，订阅存为会话事件，重启自动复活；每个订阅、每次触发对用户完全可见",
+  "version": "0.11.0",
+  "publisher": {
+    "name": "fuhefei",
+    "url": "https://github.com/fuhefei"
+  },
+  "authors": [
+    {
+      "name": "fuhefei",
+      "url": "https://github.com/fuhefei"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuhefei/dsh-sentinel",
+    "issues": "https://github.com/fuhefei/dsh-sentinel/issues"
+  },
+  "homepage": "https://github.com/fuhefei/dsh-sentinel#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-sentinel",
+    "url": "https://github.com/fuhefei/dsh-sentinel.git",
+    "ref": "0a63241ba0370f516fc951e9d32cc94e874190b0"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "security",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "sentinel"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
