@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-annotation",
+  "displayName": "DSH Annotation",
+  "summary": "DSH Web 选中批注插件：选文字→批注→回车随消息发送；气泡隐藏批注块（零闪烁）；回复按 Annotation N 逐条对照（可悬浮芯片）。官方 bundle，零核心改动",
+  "description": "DSH Web 选中批注插件：选文字→批注→回车随消息发送；气泡隐藏批注块（零闪烁）；回复按 Annotation N 逐条对照（可悬浮芯片）。官方 bundle，零核心改动",
+  "version": "1.4.0",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-annotation",
+    "issues": "https://github.com/omdsh-dev/dsh-annotation/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-annotation#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@omdsh-dev/dsh-annotation",
+    "url": "https://github.com/omdsh-dev/dsh-annotation.git",
+    "ref": "cd356724cb5cab2c1cc3cdb64c50a7ce807bbb84"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "productivity",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "annotation"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
