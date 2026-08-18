@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "opencues-dsh",
+  "displayName": "DSH",
+  "summary": "OpenCues for DeepSeek Harness — LLM word alternatives and `_`-gated blank fill-ins in the dsh composer.",
+  "description": "OpenCues for DeepSeek Harness — LLM word alternatives and `_`-gated blank fill-ins in the dsh composer.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "opencues",
+    "url": "https://github.com/opencues"
+  },
+  "authors": [
+    {
+      "name": "opencues",
+      "url": "https://github.com/opencues"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencues/opencues",
+    "issues": "https://github.com/opencues/opencues/issues"
+  },
+  "homepage": "https://github.com/opencues/opencues#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@opencues/dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "opencues"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
