@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-mini-tui",
+  "displayName": "DSH Mini TUI",
+  "summary": "DSH Mini TUI: a minimalist terminal interface plugin for DeepSeek Harness",
+  "description": "DSH Mini TUI: a minimalist terminal interface plugin for DeepSeek Harness",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "boxeryao",
+    "url": "https://github.com/boxeryao"
+  },
+  "authors": [
+    {
+      "name": "boxeryao",
+      "url": "https://github.com/boxeryao"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boxeryao/dsh-mini-tui",
+    "issues": "https://github.com/boxeryao/dsh-mini-tui/issues"
+  },
+  "homepage": "https://github.com/boxeryao/dsh-mini-tui#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-mini-tui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "dsh-tui"
+    ],
+    "platforms": [
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "mini",
+    "tui"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "bash",
+      "sh"
+    ]
+  }
+}
