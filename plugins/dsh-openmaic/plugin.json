@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-openmaic",
+  "displayName": "DSH Openmaic",
+  "summary": "OpenMAIC for DeepSeek Harness: generate classrooms and render slides, interactive widgets, teaching cards, plus a Socratic teaching skill",
+  "description": "OpenMAIC for DeepSeek Harness: generate classrooms and render slides, interactive widgets, teaching cards, plus a Socratic teaching skill",
+  "version": "0.4.0",
+  "publisher": {
+    "name": "THU-MAIC",
+    "url": "https://github.com/THU-MAIC"
+  },
+  "authors": [
+    {
+      "name": "THU-MAIC",
+      "url": "https://github.com/THU-MAIC"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/THU-MAIC/dsh-openmaic",
+    "issues": "https://github.com/THU-MAIC/dsh-openmaic/issues"
+  },
+  "homepage": "https://github.com/THU-MAIC/dsh-openmaic#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@openmaic/dsh-openmaic",
+    "url": "https://github.com/THU-MAIC/dsh-openmaic.git",
+    "ref": "09c1693cfe83224db89fdd4abd245ac9174d3a05"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "openmaic"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
