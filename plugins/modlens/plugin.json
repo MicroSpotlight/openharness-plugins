@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "modlens",
+  "displayName": "ModLens",
+  "summary": "Give text-only DSH models structured image understanding and OCR.",
+  "description": "Adds image evidence extraction for text-only models, including OCR, layout, and semantic analysis, powered through the Antigravity CLI with DSH Web integration.",
+  "version": "3.18.1",
+  "publisher": {
+    "name": "liustack",
+    "url": "https://github.com/liustack"
+  },
+  "authors": [
+    {
+      "name": "liustack",
+      "url": "https://github.com/liustack"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liustack/modlens",
+    "issues": "https://github.com/liustack/modlens/issues"
+  },
+  "homepage": "https://github.com/liustack/modlens#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@liustack/modlens"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["tool-provider", "ui-extension"],
+  "categories": ["ai", "files"],
+  "keywords": ["dsh", "image", "ocr", "vision"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": ["workspace"],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": ["antigravity"]
+  }
+}
