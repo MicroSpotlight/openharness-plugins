@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-usage-plugin",
+  "displayName": "DSH Usage Plugin",
+  "summary": "DeepSeek Harness usage & cost tracker plugin: per-call token/cache-hit stats, peak/off-peak billing, DeepSeek balance query, CSV/JSON/PNG export with custom destination, and persistent local storag...",
+  "description": "DeepSeek Harness usage & cost tracker plugin: per-call token/cache-hit stats, peak/off-peak billing, DeepSeek balance query, CSV/JSON/PNG export with custom destination, and persistent local storage. Ships a host half plus a web client half in one npm package; installs into a DSH profile as a dsh.bundle with one command (dsh plugin --profile web add @feiyang666/dsh-usage-plugin).",
+  "version": "1.9.1",
+  "publisher": {
+    "name": "feiyang-dev",
+    "url": "https://github.com/feiyang-dev"
+  },
+  "authors": [
+    {
+      "name": "feiyang-dev",
+      "url": "https://github.com/feiyang-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/feiyang-dev/dsh-usage-plugin",
+    "issues": "https://github.com/feiyang-dev/dsh-usage-plugin/issues"
+  },
+  "homepage": "https://github.com/feiyang-dev/dsh-usage-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@feiyang666/dsh-usage-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "command",
+    "tool-provider"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "usage",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
