@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-whale-musume",
+  "displayName": "DSH Whale Musume",
+  "summary": "A whale-girl Kanban Musume mascot for DeepSeek Harness",
+  "description": "A whale-girl Kanban Musume mascot for DeepSeek Harness",
+  "version": "1.3.0",
+  "publisher": {
+    "name": "Sutera-Diffusus",
+    "url": "https://github.com/Sutera-Diffusus"
+  },
+  "authors": [
+    {
+      "name": "Sutera-Diffusus",
+      "url": "https://github.com/Sutera-Diffusus"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sutera-Diffusus/dsh-whale-musume",
+    "issues": "https://github.com/Sutera-Diffusus/dsh-whale-musume/issues"
+  },
+  "homepage": "https://github.com/Sutera-Diffusus/dsh-whale-musume#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-whale-musume",
+    "url": "https://github.com/Sutera-Diffusus/dsh-whale-musume.git",
+    "ref": "047246e47d83b4732ba57648f2d557641fac72bf"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "whale",
+    "musume"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
