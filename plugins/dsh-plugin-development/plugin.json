@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-development",
+  "displayName": "DSH Plugin Development",
+  "summary": "Portable Agent Skill for developing and auditing DeepSeek Harness plugins, with an optional DSH bundle adapter.",
+  "description": "Portable Agent Skill for developing and auditing DeepSeek Harness plugins, with an optional DSH bundle adapter.",
+  "version": "0.2.0-beta.1",
+  "publisher": {
+    "name": "w2112515",
+    "url": "https://github.com/w2112515"
+  },
+  "authors": [
+    {
+      "name": "w2112515",
+      "url": "https://github.com/w2112515"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/w2112515/dsh-plugin-development",
+    "issues": "https://github.com/w2112515/dsh-plugin-development/issues"
+  },
+  "homepage": "https://github.com/w2112515/dsh-plugin-development#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-development",
+    "url": "https://github.com/w2112515/dsh-plugin-development.git",
+    "ref": "4dab80cbeb86f706aa6fa9cc8269049aa809ccc9"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "development"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
