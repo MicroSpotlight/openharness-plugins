@@ -1,0 +1,75 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "local-shell-mcp-dsh",
+  "displayName": "Local Shell MCP DSH",
+  "summary": "DeepSeek Harness bridge for the full local-shell-mcp tool surface and per-session Live Workspace.",
+  "description": "DeepSeek Harness bridge for the full local-shell-mcp tool surface and per-session Live Workspace.",
+  "version": "4.0.2",
+  "publisher": {
+    "name": "fwerkor",
+    "url": "https://github.com/fwerkor"
+  },
+  "authors": [
+    {
+      "name": "fwerkor",
+      "url": "https://github.com/fwerkor"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fwerkor/local-shell-mcp",
+    "issues": "https://github.com/fwerkor/local-shell-mcp/issues"
+  },
+  "homepage": "https://github.com/fwerkor/local-shell-mcp#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "local-shell-mcp-dsh",
+    "url": "https://github.com/fwerkor/local-shell-mcp.git",
+    "ref": "e1e2f31b1b03df5b0eabb0823a6cffa5ba4411b2"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "files",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "local",
+    "shell",
+    "mcp"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": [
+      "bash",
+      "sh"
+    ]
+  }
+}
