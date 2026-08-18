@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-better-sidebar",
+  "displayName": "DSH Better Sidebar",
+  "summary": "Add a VS Code-like sidebar with files, preview, terminal, Git, and browser tabs.",
+  "description": "Adds a session-isolated right sidebar for file browsing and editing, terminal access, Git review, previews, and extensible third-party sidebar tabs.",
+  "version": "0.12.3",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/DSH-better-sidebar",
+    "issues": "https://github.com/omdsh-dev/DSH-better-sidebar/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/DSH-better-sidebar#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-better-sidebar"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["command", "ui-extension"],
+  "categories": ["developer-tools", "files"],
+  "keywords": ["dsh", "editor", "sidebar", "terminal"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": ["workspace"],
+    "filesystemWrite": ["workspace"],
+    "environment": [],
+    "commands": ["bash", "git", "powershell", "pwsh", "sh", "zsh"]
+  }
+}
