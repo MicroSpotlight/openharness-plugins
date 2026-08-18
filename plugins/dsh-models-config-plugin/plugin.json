@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-models-config-plugin",
+  "displayName": "DSH Models Config Plugin",
+  "summary": "Advanced per-model reasoning and capacity settings for DeepSeek Harness",
+  "description": "Advanced per-model reasoning and capacity settings for DeepSeek Harness",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "MarvekG",
+    "url": "https://github.com/MarvekG"
+  },
+  "authors": [
+    {
+      "name": "MarvekG",
+      "url": "https://github.com/MarvekG"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarvekG/deepseek-harness-model-config",
+    "issues": "https://github.com/MarvekG/deepseek-harness-model-config/issues"
+  },
+  "homepage": "https://github.com/MarvekG/deepseek-harness-model-config#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-models-config-plugin",
+    "url": "https://github.com/MarvekG/deepseek-harness-model-config.git",
+    "ref": "11978b207e0e00afc877245fb14ec4edc1bcc7b6"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "models",
+    "config",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
