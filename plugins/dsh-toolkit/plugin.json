@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-toolkit",
+  "displayName": "DSH Toolkit",
+  "summary": "DSH zero-dependency toolkit collection: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema in one entry point",
+  "description": "DSH zero-dependency toolkit collection: time / encoding / json / calculator / csv / regex / markdown / diff / stat / schema in one entry point",
+  "version": "0.0.1",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-toolkit",
+    "issues": "https://github.com/omdsh-dev/dsh-toolkit/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-toolkit#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@deepseek-ai/dsh-toolkit",
+    "url": "https://github.com/omdsh-dev/dsh-toolkit.git",
+    "ref": "fd6ad18814b58ad7d3b445002911bceb4afc4dc2"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "toolkit"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
