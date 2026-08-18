@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-emoji",
+  "displayName": "DSH Emoji",
+  "summary": "Tiny semantic inline emoji for DSH Agent responses",
+  "description": "Tiny semantic inline emoji for DSH Agent responses",
+  "version": "0.2.2-beta.1",
+  "publisher": {
+    "name": "hellodigua",
+    "url": "https://github.com/hellodigua"
+  },
+  "authors": [
+    {
+      "name": "hellodigua",
+      "url": "https://github.com/hellodigua"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hellodigua/dsh-emoji",
+    "issues": "https://github.com/hellodigua/dsh-emoji/issues"
+  },
+  "homepage": "https://github.com/hellodigua/dsh-emoji#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-emoji",
+    "url": "https://github.com/hellodigua/dsh-emoji.git",
+    "ref": "9a63a25d50e4dd1600bab3e38fbc2c773a6a48a7"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "emoji"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
