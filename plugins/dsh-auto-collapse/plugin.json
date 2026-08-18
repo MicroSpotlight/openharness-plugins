@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-auto-collapse",
+  "displayName": "DSH Auto Collapse",
+  "summary": "DeepSeek Harness Web 客户端插件：把会话里的工具卡片与 Think 推理块折叠成一行，折叠态实时显示当前正在进行的工作（工具名 + 正在执行的命令/参数、或思考内容），运行中带流光动画；点击展开/收起。让界面只保留模型说的话。",
+  "description": "DeepSeek Harness Web 客户端插件：把会话里的工具卡片与 Think 推理块折叠成一行，折叠态实时显示当前正在进行的工作（工具名 + 正在执行的命令/参数、或思考内容），运行中带流光动画；点击展开/收起。让界面只保留模型说的话。",
+  "version": "0.1.3",
+  "publisher": {
+    "name": "a179-sanae",
+    "url": "https://github.com/a179-sanae"
+  },
+  "authors": [
+    {
+      "name": "a179-sanae",
+      "url": "https://github.com/a179-sanae"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a179-sanae/dsh-auto-collapse",
+    "issues": "https://github.com/a179-sanae/dsh-auto-collapse/issues"
+  },
+  "homepage": "https://github.com/a179-sanae/dsh-auto-collapse#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-auto-collapse",
+    "url": "https://github.com/a179-sanae/dsh-auto-collapse.git",
+    "ref": "9d02fb02e8dd2fb56c5e82fcc5d68b5a5b62efcd"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "auto",
+    "collapse"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
