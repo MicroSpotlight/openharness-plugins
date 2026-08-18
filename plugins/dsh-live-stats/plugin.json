@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-live-stats",
+  "displayName": "DSH Live Stats",
+  "summary": "Live token estimates and generation throughput for DSH Web",
+  "description": "Live token estimates and generation throughput for DSH Web",
+  "version": "0.2.7",
+  "publisher": {
+    "name": "CAPTAIN1275",
+    "url": "https://github.com/CAPTAIN1275"
+  },
+  "authors": [
+    {
+      "name": "CAPTAIN1275",
+      "url": "https://github.com/CAPTAIN1275"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CAPTAIN1275/dsh-ui-web",
+    "issues": "https://github.com/CAPTAIN1275/dsh-ui-web/issues"
+  },
+  "homepage": "https://github.com/CAPTAIN1275/dsh-ui-web#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@captain1275/dsh-live-stats"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "live",
+    "stats"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
