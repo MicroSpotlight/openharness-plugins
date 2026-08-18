@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-writing-guard",
+  "displayName": "DSH Plugin Writing Guard",
+  "summary": "DeepSeek Harness (DSH) academic writing guard for papers — 论文去AI味 / AI-writing style detection, evidence preservation, journal-fit calibration, manuscript proofreading, writing_audit & automatic ch...",
+  "description": "DeepSeek Harness (DSH) academic writing guard for papers — 论文去AI味 / AI-writing style detection, evidence preservation, journal-fit calibration, manuscript proofreading, writing_audit & automatic checks. Local, zero network, zero LLM.",
+  "version": "1.6.2",
+  "publisher": {
+    "name": "xmutfyh",
+    "url": "https://github.com/xmutfyh"
+  },
+  "authors": [
+    {
+      "name": "xmutfyh",
+      "url": "https://github.com/xmutfyh"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmutfyh/dsh-plugin-writing-guard",
+    "issues": "https://github.com/xmutfyh/dsh-plugin-writing-guard/issues"
+  },
+  "homepage": "https://github.com/xmutfyh/dsh-plugin-writing-guard#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-writing-guard",
+    "url": "https://github.com/xmutfyh/dsh-plugin-writing-guard.git",
+    "ref": "aa037036122d12e6bebf6e9052b16b0425f61a47"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "security",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "writing",
+    "guard"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
