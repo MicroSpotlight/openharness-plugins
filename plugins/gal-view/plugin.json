@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "gal-view",
+  "displayName": "Gal View",
+  "summary": "把dsh会话界面切换成galgame游戏界面的插件",
+  "description": "把dsh会话界面切换成galgame游戏界面的插件",
+  "version": "0.3.3",
+  "publisher": {
+    "name": "Ayase34",
+    "url": "https://github.com/Ayase34"
+  },
+  "authors": [
+    {
+      "name": "Ayase34",
+      "url": "https://github.com/Ayase34"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayase34/gal-view",
+    "issues": "https://github.com/Ayase34/gal-view/issues"
+  },
+  "homepage": "https://github.com/Ayase34/gal-view#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "gal-view",
+    "url": "https://github.com/Ayase34/gal-view.git",
+    "ref": "d002fe0e7051c618a2665af3c653f9838cd6aa8a"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "productivity",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "gal",
+    "view"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
