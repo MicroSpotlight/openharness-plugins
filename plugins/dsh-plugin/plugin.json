@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin",
+  "displayName": "DSH Plugin",
+  "summary": "OpenBiliClaw DeepSeek Harness plugin: the user-consumption side (recommendations, delight, saved, Socratic chat, profile, probes, activity) as a web-GUI sidebar, plus agent-bridge tools and the ope...",
+  "description": "OpenBiliClaw DeepSeek Harness plugin: the user-consumption side (recommendations, delight, saved, Socratic chat, profile, probes, activity) as a web-GUI sidebar, plus agent-bridge tools and the openbiliclaw-adapter skill for closed-loop use inside DSH.",
+  "version": "0.3.205",
+  "publisher": {
+    "name": "whiteguo233",
+    "url": "https://github.com/whiteguo233"
+  },
+  "authors": [
+    {
+      "name": "whiteguo233",
+      "url": "https://github.com/whiteguo233"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whiteguo233/dsh-openbiliclaw",
+    "issues": "https://github.com/whiteguo233/dsh-openbiliclaw/issues"
+  },
+  "homepage": "https://github.com/whiteguo233/dsh-openbiliclaw#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "@openbiliclaw/dsh-plugin",
+    "url": "https://github.com/whiteguo233/dsh-openbiliclaw.git",
+    "ref": "ac13101186e4e35780a1f1e4a68029ae903bf39b"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
