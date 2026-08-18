@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-clawrouter",
+  "displayName": "DSH Clawrouter",
+  "summary": "A second brain for your DeepSeek Harness agent — strong-model review before risky tool calls, plus 67 models from one wallet. No accounts, no API keys.",
+  "description": "A second brain for your DeepSeek Harness agent — strong-model review before risky tool calls, plus 67 models from one wallet. No accounts, no API keys.",
+  "version": "0.10.1",
+  "publisher": {
+    "name": "BlockRunAI",
+    "url": "https://github.com/BlockRunAI"
+  },
+  "authors": [
+    {
+      "name": "BlockRunAI",
+      "url": "https://github.com/BlockRunAI"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockRunAI/dsh-clawrouter",
+    "issues": "https://github.com/BlockRunAI/dsh-clawrouter/issues"
+  },
+  "homepage": "https://github.com/BlockRunAI/dsh-clawrouter#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-clawrouter"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "workflow",
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "clawrouter"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
