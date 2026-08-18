@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-sdr",
+  "displayName": "DSH Sdr",
+  "summary": "DeepSeek Harness plugin for a controllable SDR digital employee",
+  "description": "DeepSeek Harness plugin for a controllable SDR digital employee",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "Xuxchloris",
+    "url": "https://github.com/Xuxchloris"
+  },
+  "authors": [
+    {
+      "name": "Xuxchloris",
+      "url": "https://github.com/Xuxchloris"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xuxchloris/deepseek-harness-sdr-plugin",
+    "issues": "https://github.com/Xuxchloris/deepseek-harness-sdr-plugin/issues"
+  },
+  "homepage": "https://github.com/Xuxchloris/deepseek-harness-sdr-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@xuxchloris/dsh-sdr"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "sdr"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
