@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-balance-plugin",
+  "displayName": "DSH Balance Plugin",
+  "summary": "DeepSeek 余额监控与用量统计（DSH 插件）：余额监控 · 官方充值入口 · Miyu 风格用量统计 · 三方插件管理",
+  "description": "DeepSeek 余额监控与用量统计（DSH 插件）：余额监控 · 官方充值入口 · Miyu 风格用量统计 · 三方插件管理",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "Francis-Xavier-code",
+    "url": "https://github.com/Francis-Xavier-code"
+  },
+  "authors": [
+    {
+      "name": "Francis-Xavier-code",
+      "url": "https://github.com/Francis-Xavier-code"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Francis-Xavier-code/dsh-balance-plugin",
+    "issues": "https://github.com/Francis-Xavier-code/dsh-balance-plugin/issues"
+  },
+  "homepage": "https://github.com/Francis-Xavier-code/dsh-balance-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-balance-plugin",
+    "url": "https://github.com/Francis-Xavier-code/dsh-balance-plugin.git",
+    "ref": "9de5114a03123f5a9f4208a3c8f90f93baaa7c0e"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "balance",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
