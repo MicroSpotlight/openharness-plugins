@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-mobile-nav",
+  "displayName": "DSH Mobile Nav",
+  "summary": "尽可能的使dsh适配竖屏等移动端设备",
+  "description": "尽可能的使dsh适配竖屏等移动端设备 DSH Mobile Nav is a plugin package for DeepSeek Harness.",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "mexiaosqwq",
+    "url": "https://github.com/mexiaosqwq"
+  },
+  "authors": [
+    {
+      "name": "mexiaosqwq",
+      "url": "https://github.com/mexiaosqwq"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mexiaosqwq/dsh-web-mobile",
+    "issues": "https://github.com/mexiaosqwq/dsh-web-mobile/issues"
+  },
+  "homepage": "https://github.com/mexiaosqwq/dsh-web-mobile#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-mobile-nav",
+    "url": "https://github.com/mexiaosqwq/dsh-web-mobile.git",
+    "ref": "29d1412ee0f486516ec85876266ead483d066a53"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "mobile",
+    "nav"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
