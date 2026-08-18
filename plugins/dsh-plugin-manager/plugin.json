@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-manager",
+  "displayName": "DSH Plugin Manager",
+  "summary": "GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, list built-in plugin packages — hot-applied without restart.",
+  "description": "GUI in the DSH settings panel: toggle/delete MCP servers, browse and trash skills, list built-in plugin packages — hot-applied without restart.",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "liqichen",
+    "url": "https://github.com/liqichen"
+  },
+  "authors": [
+    {
+      "name": "liqichen",
+      "url": "https://github.com/liqichen"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liqichen/dsh-plugin-manager",
+    "issues": "https://github.com/liqichen/dsh-plugin-manager/issues"
+  },
+  "homepage": "https://github.com/liqichen/dsh-plugin-manager#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-manager",
+    "url": "https://github.com/liqichen/dsh-plugin-manager.git",
+    "ref": "36a73f0174f0714243ba01afcc9a5ffaa36b0b04"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "manager"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
