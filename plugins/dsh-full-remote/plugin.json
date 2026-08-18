@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-full-remote",
+  "displayName": "DSH Full Remote",
+  "summary": "DeepSeek Harness plugin for remote access: a token-gated reverse proxy keeps settings, credentials, and file access working over public tunnels and on other devices instead of returning 403. Per-de...",
+  "description": "DeepSeek Harness plugin for remote access: a token-gated reverse proxy keeps settings, credentials, and file access working over public tunnels and on other devices instead of returning 403. Per-device sessions.",
+  "version": "0.3.1",
+  "publisher": {
+    "name": "JUANWANG-BUAA",
+    "url": "https://github.com/JUANWANG-BUAA"
+  },
+  "authors": [
+    {
+      "name": "JUANWANG-BUAA",
+      "url": "https://github.com/JUANWANG-BUAA"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JUANWANG-BUAA/dsh-full-remote",
+    "issues": "https://github.com/JUANWANG-BUAA/dsh-full-remote/issues"
+  },
+  "homepage": "https://github.com/JUANWANG-BUAA/dsh-full-remote#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-full-remote"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "files"
+  ],
+  "keywords": [
+    "dsh",
+    "full",
+    "remote"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
