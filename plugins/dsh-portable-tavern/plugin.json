@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-portable-tavern",
+  "displayName": "DSH Portable Tavern",
+  "summary": "Portable Tavern for the DeepSeek Harness web GUI: an RPG-style SillyTavern V2/V3 character-card generator plus tavern roleplay chat, with world-book generation and JSON/PNG import-export.",
+  "description": "Portable Tavern for the DeepSeek Harness web GUI: an RPG-style SillyTavern V2/V3 character-card generator plus tavern roleplay chat, with world-book generation and JSON/PNG import-export.",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "XCNXNXNX",
+    "url": "https://github.com/XCNXNXNX"
+  },
+  "authors": [
+    {
+      "name": "XCNXNXNX",
+      "url": "https://github.com/XCNXNXNX"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XCNXNXNX/dsh-portable-tavern",
+    "issues": "https://github.com/XCNXNXNX/dsh-portable-tavern/issues"
+  },
+  "homepage": "https://github.com/XCNXNXNX/dsh-portable-tavern#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-portable-tavern"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "portable",
+    "tavern"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
