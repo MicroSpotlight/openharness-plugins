@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-im-gateway",
+  "displayName": "DSH IM Gateway",
+  "summary": "聚合 IM 网关插件（DeepSeek Harness）：把 dsh agent 接入 Telegram / Discord / Slack / 飞书 / 微信 / QQ / WhatsApp / Signal / Teams / LINE / Matrix / Mattermost / Google Chat / IRC / Twitch / Nostr / Nextcloud Talk ...",
+  "description": "聚合 IM 网关插件（DeepSeek Harness）：把 dsh agent 接入 Telegram / Discord / Slack / 飞书 / 微信 / QQ / WhatsApp / Signal / Teams / LINE / Matrix / Mattermost / Google Chat / IRC / Twitch / Nostr / Nextcloud Talk / Synology Chat / Zalo / iMessage 等 20+ 渠道，统一会话路由、审批桥、白名单与引导式配置。",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "zhuiyueya",
+    "url": "https://github.com/zhuiyueya"
+  },
+  "authors": [
+    {
+      "name": "zhuiyueya",
+      "url": "https://github.com/zhuiyueya"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhuiyueya/dsh-im-gateway",
+    "issues": "https://github.com/zhuiyueya/dsh-im-gateway/issues"
+  },
+  "homepage": "https://github.com/zhuiyueya/dsh-im-gateway#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-im-gateway",
+    "url": "https://github.com/zhuiyueya/dsh-im-gateway.git",
+    "ref": "f982f5d118458db5812ccc2b7e415f03ad9b7ff9"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "communication",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "im",
+    "gateway"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
