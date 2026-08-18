@@ -1,0 +1,75 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-bash-terminal",
+  "displayName": "DSH Bash Terminal",
+  "summary": "DSH plugin: one shell tool that runs commands through PowerShell, Git Bash, or WSL on Windows, with a user-chosen default terminal in the Web UI settings.",
+  "description": "DSH plugin: one shell tool that runs commands through PowerShell, Git Bash, or WSL on Windows, with a user-chosen default terminal in the Web UI settings.",
+  "version": "0.3.14",
+  "publisher": {
+    "name": "MAXeaglet",
+    "url": "https://github.com/MAXeaglet"
+  },
+  "authors": [
+    {
+      "name": "MAXeaglet",
+      "url": "https://github.com/MAXeaglet"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MAXeaglet/dsh-bash-terminal",
+    "issues": "https://github.com/MAXeaglet/dsh-bash-terminal/issues"
+  },
+  "homepage": "https://github.com/MAXeaglet/dsh-bash-terminal#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-bash-terminal"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "bash",
+    "terminal"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "git",
+      "bash",
+      "sh",
+      "powershell",
+      "pwsh"
+    ]
+  }
+}
