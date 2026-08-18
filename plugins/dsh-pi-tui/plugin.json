@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-pi-tui",
+  "displayName": "DSH Pi TUI",
+  "summary": "The dsh-pi-tui bundle: a TUI surface for DeepSeek Harness profiles (dsh --profile pi-tui)",
+  "description": "The dsh-pi-tui bundle: a TUI surface for DeepSeek Harness profiles (dsh --profile pi-tui)",
+  "version": "0.1.6",
+  "publisher": {
+    "name": "XMoon",
+    "url": "https://github.com/XMoon"
+  },
+  "authors": [
+    {
+      "name": "XMoon",
+      "url": "https://github.com/XMoon"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XMoon/dsh-pi-tui",
+    "issues": "https://github.com/XMoon/dsh-pi-tui/issues"
+  },
+  "homepage": "https://github.com/XMoon/dsh-pi-tui#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@xmoon76/dsh-pi-tui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "dsh-tui"
+    ],
+    "platforms": [
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "pi",
+    "tui"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
