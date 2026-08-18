@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-qq2006",
+  "displayName": "DSH Qq2006",
+  "summary": "QQ2006 skin plugin for DSH (DeepSeek Harness): registers the 'qq2006' theme (coral-blue --dsw-alias-* token overrides), mirrors the active theme onto body[data-ds-skin], and ships the global qq2006...",
+  "description": "QQ2006 skin plugin for DSH (DeepSeek Harness): registers the 'qq2006' theme (coral-blue --dsw-alias-* token overrides), mirrors the active theme onto body[data-ds-skin], and ships the global qq2006.css sheet (retro fonts, scrollbars, nine-slice window chrome kit, .qq-btn).",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "LaplaceYoung",
+    "url": "https://github.com/LaplaceYoung"
+  },
+  "authors": [
+    {
+      "name": "LaplaceYoung",
+      "url": "https://github.com/LaplaceYoung"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LaplaceYoung/dsh-qq2006",
+    "issues": "https://github.com/LaplaceYoung/dsh-qq2006/issues"
+  },
+  "homepage": "https://github.com/LaplaceYoung/dsh-qq2006#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-qq2006",
+    "url": "https://github.com/LaplaceYoung/dsh-qq2006.git",
+    "ref": "fa3493ceb748171728113aba1aaf606d733790a0"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "communication",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "qq2006"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
