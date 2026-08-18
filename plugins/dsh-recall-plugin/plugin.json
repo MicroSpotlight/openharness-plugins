@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-recall-plugin",
+  "displayName": "DSH Recall Plugin",
+  "summary": "DSH 消息撤回插件：在用户消息气泡旁加「撤回」按钮，把项目文件（独立影子 git 仓库快照）与对话历史（官方 fork）一并回退到该消息发送之前。",
+  "description": "DSH 消息撤回插件：在用户消息气泡旁加「撤回」按钮，把项目文件（独立影子 git 仓库快照）与对话历史（官方 fork）一并回退到该消息发送之前。",
+  "version": "1.4.0",
+  "publisher": {
+    "name": "limbo947",
+    "url": "https://github.com/limbo947"
+  },
+  "authors": [
+    {
+      "name": "limbo947",
+      "url": "https://github.com/limbo947"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/limbo947/dsh-recall-plugin",
+    "issues": "https://github.com/limbo947/dsh-recall-plugin/issues"
+  },
+  "homepage": "https://github.com/limbo947/dsh-recall-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-recall-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "recall",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "git"
+    ]
+  }
+}
