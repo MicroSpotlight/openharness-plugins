@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-whale-report",
+  "displayName": "DSH Whale Report",
+  "summary": "鲸鱼记事本 — 你的 Agent 年度/月度/周度/日报：从会话事件日志生成数据新闻官式报告，任意区间、定时生成。",
+  "description": "鲸鱼记事本 — 你的 Agent 年度/月度/周度/日报：从会话事件日志生成数据新闻官式报告，任意区间、定时生成。",
+  "version": "0.4.0",
+  "publisher": {
+    "name": "SenmuuuuW",
+    "url": "https://github.com/SenmuuuuW"
+  },
+  "authors": [
+    {
+      "name": "SenmuuuuW",
+      "url": "https://github.com/SenmuuuuW"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SenmuuuuW/dsh-whale-report",
+    "issues": "https://github.com/SenmuuuuW/dsh-whale-report/issues"
+  },
+  "homepage": "https://github.com/SenmuuuuW/dsh-whale-report#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-whale-report",
+    "url": "https://github.com/SenmuuuuW/dsh-whale-report.git",
+    "ref": "c6522be0683e6feba0ac91fa90693a4a88fcb79a"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "whale",
+    "report"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
