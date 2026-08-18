@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-usage-stats",
+  "displayName": "DSH Usage Stats",
+  "summary": "Provider balances, subscription quotas, and token-usage analytics for the DeepSeek Harness Web GUI (dsh web).",
+  "description": "Provider balances, subscription quotas, and token-usage analytics for the DeepSeek Harness Web GUI (dsh web).",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "Ychris12138",
+    "url": "https://github.com/Ychris12138"
+  },
+  "authors": [
+    {
+      "name": "Ychris12138",
+      "url": "https://github.com/Ychris12138"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ychris12138/dsh-usage-stats",
+    "issues": "https://github.com/Ychris12138/dsh-usage-stats/issues"
+  },
+  "homepage": "https://github.com/Ychris12138/dsh-usage-stats#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-usage-stats",
+    "url": "https://github.com/Ychris12138/dsh-usage-stats.git",
+    "ref": "ee7e5c7f0d36a47e1221ff25d7da6eee7bf3af29"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "usage",
+    "stats"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
