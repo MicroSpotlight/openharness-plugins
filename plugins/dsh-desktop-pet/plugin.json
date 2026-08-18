@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-desktop-pet",
+  "displayName": "DSH Desktop Pet",
+  "summary": "Linux and Windows desktop companion for DeepSeek Harness",
+  "description": "Linux and Windows desktop companion for DeepSeek Harness",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "xiaoshihou514",
+    "url": "https://github.com/xiaoshihou514"
+  },
+  "authors": [
+    {
+      "name": "xiaoshihou514",
+      "url": "https://github.com/xiaoshihou514"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoshihou514/dsh-desktop-pet",
+    "issues": "https://github.com/xiaoshihou514/dsh-desktop-pet/issues"
+  },
+  "homepage": "https://github.com/xiaoshihou514/dsh-desktop-pet#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-desktop-pet",
+    "url": "https://github.com/xiaoshihou514/dsh-desktop-pet.git",
+    "ref": "df79a1403c5eef20a2f438f09bdb00ba6bf0f12f"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "desktop",
+    "pet"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
