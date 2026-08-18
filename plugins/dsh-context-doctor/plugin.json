@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-context-doctor",
+  "displayName": "DSH Context Doctor",
+  "summary": "DSH 上下文注入审计插件：统计 AGENTS.md 指令链 / 技能目录 / 工具 schema / MCP 工具的 token 成本，检测重复与冲突；原生 Context Doctor 面板 + context_audit 工具。",
+  "description": "DSH 上下文注入审计插件：统计 AGENTS.md 指令链 / 技能目录 / 工具 schema / MCP 工具的 token 成本，检测重复与冲突；原生 Context Doctor 面板 + context_audit 工具。",
+  "version": "0.5.0",
+  "publisher": {
+    "name": "Zhenyu98",
+    "url": "https://github.com/Zhenyu98"
+  },
+  "authors": [
+    {
+      "name": "Zhenyu98",
+      "url": "https://github.com/Zhenyu98"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zhenyu98/dsh-context-doctor",
+    "issues": "https://github.com/Zhenyu98/dsh-context-doctor/issues"
+  },
+  "homepage": "https://github.com/Zhenyu98/dsh-context-doctor#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-context-doctor",
+    "url": "https://github.com/Zhenyu98/dsh-context-doctor.git",
+    "ref": "a15e68d68f511db5ae4057c96ae1c727e21bf1b1"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "context",
+    "doctor"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
