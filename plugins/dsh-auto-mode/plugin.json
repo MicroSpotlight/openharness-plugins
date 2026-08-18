@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-auto-mode",
+  "displayName": "DSH Auto Mode",
+  "summary": "Safe automatic permissions for DeepSeek Harness.",
+  "description": "Safe automatic permissions for DeepSeek Harness.",
+  "version": "0.1.4",
+  "publisher": {
+    "name": "NanmiCoder",
+    "url": "https://github.com/NanmiCoder"
+  },
+  "authors": [
+    {
+      "name": "NanmiCoder",
+      "url": "https://github.com/NanmiCoder"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NanmiCoder/dsh-auto-mode",
+    "issues": "https://github.com/NanmiCoder/dsh-auto-mode/issues"
+  },
+  "homepage": "https://github.com/NanmiCoder/dsh-auto-mode#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@nanmicoder/dsh-auto-mode"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "auto",
+    "mode"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
