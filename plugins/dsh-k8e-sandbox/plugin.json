@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-k8e-sandbox",
+  "displayName": "K8E Sandbox for DSH",
+  "summary": "k8e.sh - OpenSource Agentic AI Sandbox Matrix",
+  "description": "k8e.sh - OpenSource Agentic AI Sandbox Matrix",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "xiaods",
+    "url": "https://github.com/xiaods"
+  },
+  "authors": [
+    {
+      "name": "xiaods",
+      "url": "https://github.com/xiaods"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaods/k8e",
+    "issues": "https://github.com/xiaods/k8e/issues"
+  },
+  "homepage": "https://github.com/xiaods/k8e#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@k8e-sandbox/dsh-k8e-sandbox-bundle"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "k8e",
+    "sandbox",
+    "bundle"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
