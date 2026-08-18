@@ -1,0 +1,47 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "aegis",
+  "displayName": "Aegis",
+  "summary": "Add architecture-aware engineering methods and workflow guidance to DSH.",
+  "description": "Installs the Aegis method pack as a native DSH skill provider with architecture baselines, evidence gates, drift checks, review modes, and host-aware update and verification workflows.",
+  "version": "2.8.2",
+  "publisher": {
+    "name": "GanyuanRan",
+    "url": "https://github.com/GanyuanRan"
+  },
+  "authors": [
+    {
+      "name": "GanyuanRan",
+      "url": "https://github.com/GanyuanRan"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GanyuanRan/Aegis",
+    "issues": "https://github.com/GanyuanRan/Aegis/issues"
+  },
+  "homepage": "https://github.com/GanyuanRan/Aegis#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "aegis",
+    "url": "https://github.com/GanyuanRan/Aegis.git",
+    "ref": "169690fd01807341880def4e044de4e312e8c3cd"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web", "headless"],
+    "platforms": ["node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["prompt-provider", "workflow"],
+  "categories": ["developer-tools", "productivity"],
+  "keywords": ["aegis", "architecture", "dsh", "review", "workflow"],
+  "permissions": {
+    "network": ["https://github.com"],
+    "filesystemRead": ["workspace", "~/.dsh"],
+    "filesystemWrite": ["workspace", "~/.dsh"],
+    "environment": [],
+    "commands": ["bash", "git", "python", "python3"]
+  }
+}
