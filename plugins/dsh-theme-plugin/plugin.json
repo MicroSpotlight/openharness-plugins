@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-theme-plugin",
+  "displayName": "DSH Theme Plugin",
+  "summary": "中国传统色 DeepSeek Harness 主题包 · Chinese traditional color themes for DeepSeek Harness",
+  "description": "中国传统色 DeepSeek Harness 主题包 · Chinese traditional color themes for DeepSeek Harness",
+  "version": "0.3.3",
+  "publisher": {
+    "name": "nevertoday",
+    "url": "https://github.com/nevertoday"
+  },
+  "authors": [
+    {
+      "name": "nevertoday",
+      "url": "https://github.com/nevertoday"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nevertoday/dsh-theme-plugin",
+    "issues": "https://github.com/nevertoday/dsh-theme-plugin/issues"
+  },
+  "homepage": "https://github.com/nevertoday/dsh-theme-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-theme-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "theme",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
