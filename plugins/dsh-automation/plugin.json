@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-automation",
+  "displayName": "DSH Automation",
+  "summary": "DSH 自动化插件：让 Coding 任务按计划在全新 Agent Session 中运行，并由用户或 Agent 创建和管理定时任务。 / Run coding tasks in fresh Agent sessions and manage schedules from DSH Web or an Agent.",
+  "description": "DSH 自动化插件：让 Coding 任务按计划在全新 Agent Session 中运行，并由用户或 Agent 创建和管理定时任务。 / Run coding tasks in fresh Agent sessions and manage schedules from DSH Web or an Agent.",
+  "version": "0.1.6",
+  "publisher": {
+    "name": "titanwings",
+    "url": "https://github.com/titanwings"
+  },
+  "authors": [
+    {
+      "name": "titanwings",
+      "url": "https://github.com/titanwings"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/titanwings/dsh-automation",
+    "issues": "https://github.com/titanwings/dsh-automation/issues"
+  },
+  "homepage": "https://github.com/titanwings/dsh-automation#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-automation",
+    "url": "https://github.com/titanwings/dsh-automation.git",
+    "ref": "f8f43b2873a3f9dd57d86d61eb401770b2bc9ca5"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "automation"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
