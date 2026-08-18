@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "odai-dsh",
+  "displayName": "ODAI for DSH",
+  "summary": "AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning, orchestration, and verified delivery.",
+  "description": "AI agent 通用任务治理框架：对齐目标与事实，规划和调度能力，守住授权与风险边界，治理任务执行到真实验收与交付。Governance framework for evidence-driven planning, orchestration, and verified delivery.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "orziz",
+    "url": "https://github.com/orziz"
+  },
+  "authors": [
+    {
+      "name": "orziz",
+      "url": "https://github.com/orziz"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orziz/odai",
+    "issues": "https://github.com/orziz/odai/issues"
+  },
+  "homepage": "https://github.com/orziz/odai#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "odai-dsh-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "odai",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
