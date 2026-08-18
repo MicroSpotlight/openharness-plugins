@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-sidebar-qa",
+  "displayName": "DSH Sidebar Qa",
+  "summary": "DSH web plugin: select conversation text -> ask in a right-side panel -> a dedicated follow-up session (❓追问) in the same workspace, without interrupting the main conversation. Thin consumer of dsh-...",
+  "description": "DSH web plugin: select conversation text -> ask in a right-side panel -> a dedicated follow-up session (❓追问) in the same workspace, without interrupting the main conversation. Thin consumer of dsh-better-sidebar.",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "ChenRuoT",
+    "url": "https://github.com/ChenRuoT"
+  },
+  "authors": [
+    {
+      "name": "ChenRuoT",
+      "url": "https://github.com/ChenRuoT"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChenRuoT/dsh-sidebar-qa",
+    "issues": "https://github.com/ChenRuoT/dsh-sidebar-qa/issues"
+  },
+  "homepage": "https://github.com/ChenRuoT/dsh-sidebar-qa#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-sidebar-qa"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "sidebar",
+    "qa"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
