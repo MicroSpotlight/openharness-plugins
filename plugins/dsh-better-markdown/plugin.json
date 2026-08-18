@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-better-markdown",
+  "displayName": "DSH Better Markdown",
+  "summary": "DeepSeek Harness Web plugin that renders streamed assistant Markdown with markstream-react.",
+  "description": "DeepSeek Harness Web plugin that renders streamed assistant Markdown with markstream-react.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "zerob13",
+    "url": "https://github.com/zerob13"
+  },
+  "authors": [
+    {
+      "name": "zerob13",
+      "url": "https://github.com/zerob13"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zerob13/dsh-better-markdown",
+    "issues": "https://github.com/zerob13/dsh-better-markdown/issues"
+  },
+  "homepage": "https://github.com/zerob13/dsh-better-markdown#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-better-markdown"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "better",
+    "markdown"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
