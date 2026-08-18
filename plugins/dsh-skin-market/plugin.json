@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-skin-market",
+  "displayName": "DSH Skin Market",
+  "summary": "Native skin marketplace and lifecycle manager for DeepSeek Harness",
+  "description": "Native skin marketplace and lifecycle manager for DeepSeek Harness",
+  "version": "0.1.18",
+  "publisher": {
+    "name": "kingOfSoySauce",
+    "url": "https://github.com/kingOfSoySauce"
+  },
+  "authors": [
+    {
+      "name": "kingOfSoySauce",
+      "url": "https://github.com/kingOfSoySauce"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingOfSoySauce/dsh-skin-market",
+    "issues": "https://github.com/kingOfSoySauce/dsh-skin-market/issues"
+  },
+  "homepage": "https://github.com/kingOfSoySauce/dsh-skin-market#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-skin-market",
+    "url": "https://github.com/kingOfSoySauce/dsh-skin-market.git",
+    "ref": "21d792bd443629e3e1fa81a0fd89cc38d36c4308"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "skin",
+    "market"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
