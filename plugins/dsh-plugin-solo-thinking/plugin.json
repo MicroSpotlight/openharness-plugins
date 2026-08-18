@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-solo-thinking",
+  "displayName": "DSH Plugin Solo Thinking",
+  "summary": "Solo-style isolated brainstorm branches and Handoffs for DeepSeek Harness",
+  "description": "Solo-style isolated brainstorm branches and Handoffs for DeepSeek Harness",
+  "version": "0.1.18",
+  "publisher": {
+    "name": "fredalxin",
+    "url": "https://github.com/fredalxin"
+  },
+  "authors": [
+    {
+      "name": "fredalxin",
+      "url": "https://github.com/fredalxin"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fredalxin/dsh-solo-thinking",
+    "issues": "https://github.com/fredalxin/dsh-solo-thinking/issues"
+  },
+  "homepage": "https://github.com/fredalxin/dsh-solo-thinking#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-plugin-solo-thinking"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "solo",
+    "thinking"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
