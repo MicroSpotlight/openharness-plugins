@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-save-money",
+  "displayName": "DSH Save Money",
+  "summary": "DSH save-money plugin — time-window auto pause/resume for peak/off-peak API pricing (no requests sent while paused).",
+  "description": "DSH save-money plugin — time-window auto pause/resume for peak/off-peak API pricing (no requests sent while paused).",
+  "version": "1.4.0",
+  "publisher": {
+    "name": "zhu168",
+    "url": "https://github.com/zhu168"
+  },
+  "authors": [
+    {
+      "name": "zhu168",
+      "url": "https://github.com/zhu168"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhu168/dsh-save-money",
+    "issues": "https://github.com/zhu168/dsh-save-money/issues"
+  },
+  "homepage": "https://github.com/zhu168/dsh-save-money#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-save-money"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "save",
+    "money"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
