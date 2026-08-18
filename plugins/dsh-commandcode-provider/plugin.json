@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-commandcode-provider",
+  "displayName": "DSH Command Code Provider",
+  "summary": "Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported from pi-commandcode-provider (MIT).",
+  "description": "Unofficial DeepSeek Harness LLM provider plugin for Command Code: live model catalog, reasoning-effort support, Models-page card. Ported from pi-commandcode-provider (MIT).",
+  "version": "0.4.1",
+  "publisher": {
+    "name": "Mars-Sea",
+    "url": "https://github.com/Mars-Sea"
+  },
+  "authors": [
+    {
+      "name": "Mars-Sea",
+      "url": "https://github.com/Mars-Sea"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mars-Sea/dsh-commandcode-provider",
+    "issues": "https://github.com/Mars-Sea/dsh-commandcode-provider/issues"
+  },
+  "homepage": "https://github.com/Mars-Sea/dsh-commandcode-provider#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@mars-sea/dsh-commandcode-provider"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "model-provider",
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "commandcode",
+    "provider"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
