@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-deep-research",
+  "displayName": "DSH Deep Research",
+  "summary": "Deep Research orchestrator extension for DeepSeek Harness: an adaptive cybernetics/information-theory deep_research tool on the official workflow engine, reusing built-in web_search/web_fetch.",
+  "description": "Deep Research orchestrator extension for DeepSeek Harness: an adaptive cybernetics/information-theory deep_research tool on the official workflow engine, reusing built-in web_search/web_fetch.",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-deep-research",
+    "issues": "https://github.com/omdsh-dev/dsh-deep-research/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-deep-research#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-deep-research",
+    "url": "https://github.com/omdsh-dev/dsh-deep-research.git",
+    "ref": "c0b329e02cd0195f810a7c3608cb58701a7fe0f1"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "workflow",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "automation"
+  ],
+  "keywords": [
+    "dsh",
+    "deep",
+    "research"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
