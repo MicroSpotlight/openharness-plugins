@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-oomol",
+  "displayName": "DSH Oomol",
+  "summary": "OOMOL Connector integration for DeepSeek Harness: connect apps and call Actions through progressive MCP discovery.",
+  "description": "OOMOL Connector integration for DeepSeek Harness: connect apps and call Actions through progressive MCP discovery.",
+  "version": "0.1.4",
+  "publisher": {
+    "name": "oomol-lab",
+    "url": "https://github.com/oomol-lab"
+  },
+  "authors": [
+    {
+      "name": "oomol-lab",
+      "url": "https://github.com/oomol-lab"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oomol-lab/dsh-oomol",
+    "issues": "https://github.com/oomol-lab/dsh-oomol/issues"
+  },
+  "homepage": "https://github.com/oomol-lab/dsh-oomol#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-oomol"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "oomol"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
