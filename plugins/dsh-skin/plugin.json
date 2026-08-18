@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-skin",
+  "displayName": "DSH Skin",
+  "summary": "Skin switcher + custom wallpaper for DeepSeek Harness: curated --dsw-alias-* palettes, translucent wallpaper with opacity/blur controls, and durable per-user persistence (like Codex themes)",
+  "description": "Skin switcher + custom wallpaper for DeepSeek Harness: curated --dsw-alias-* palettes, translucent wallpaper with opacity/blur controls, and durable per-user persistence (like Codex themes)",
+  "version": "0.3.1",
+  "publisher": {
+    "name": "KinGao294",
+    "url": "https://github.com/KinGao294"
+  },
+  "authors": [
+    {
+      "name": "KinGao294",
+      "url": "https://github.com/KinGao294"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KinGao294/dsh-skin",
+    "issues": "https://github.com/KinGao294/dsh-skin/issues"
+  },
+  "homepage": "https://github.com/KinGao294/dsh-skin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-skin",
+    "url": "https://github.com/KinGao294/dsh-skin.git",
+    "ref": "65c79b09d4c5f23e72076ff6b6b6b26c883f935c"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "skin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
