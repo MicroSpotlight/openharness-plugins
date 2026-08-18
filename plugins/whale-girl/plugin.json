@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "whale-girl",
+  "displayName": "Whale Girl",
+  "summary": "DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。",
+  "description": "DSH Web GUI 桌面宠物插件（QQ 宠物形态）：右下角悬浮、可拖拽/投喂/玩耍的积累型伙伴。",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "vlln",
+    "url": "https://github.com/vlln"
+  },
+  "authors": [
+    {
+      "name": "vlln",
+      "url": "https://github.com/vlln"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlln/whale-girl",
+    "issues": "https://github.com/vlln/whale-girl/issues"
+  },
+  "homepage": "https://github.com/vlln/whale-girl#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "whale-girl",
+    "url": "https://github.com/vlln/whale-girl.git",
+    "ref": "86ee730423b801970a6e799d6cd97e5fd9bf912c"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "productivity",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "whale",
+    "girl"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
