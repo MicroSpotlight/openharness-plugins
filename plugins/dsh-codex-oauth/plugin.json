@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-codex-oauth",
+  "displayName": "DSH Codex OAuth",
+  "summary": "Unified OpenAI Codex subscription plugin for DeepSeek Harness: GPT models, OAuth, quota, image generation, and web search.",
+  "description": "Unified OpenAI Codex subscription plugin for DeepSeek Harness: GPT models, OAuth, quota, image generation, and web search.",
+  "version": "0.4.2",
+  "publisher": {
+    "name": "WNJXYK",
+    "url": "https://github.com/WNJXYK"
+  },
+  "authors": [
+    {
+      "name": "WNJXYK",
+      "url": "https://github.com/WNJXYK"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WNJXYK/dsh-codex-oauth",
+    "issues": "https://github.com/WNJXYK/dsh-codex-oauth/issues"
+  },
+  "homepage": "https://github.com/WNJXYK/dsh-codex-oauth#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@wnjxyk/dsh-codex-oauth"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "codex",
+    "oauth"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
