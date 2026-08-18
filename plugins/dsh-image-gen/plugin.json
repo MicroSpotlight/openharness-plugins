@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-image-gen",
+  "displayName": "DSH Image Gen",
+  "summary": "Bring ChatGPT-like image generation to DeepSeek Harness — Gemini, OpenAI, Seedream & more.",
+  "description": "Bring ChatGPT-like image generation to DeepSeek Harness — Gemini, OpenAI, Seedream & more.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "shanliuling",
+    "url": "https://github.com/shanliuling"
+  },
+  "authors": [
+    {
+      "name": "shanliuling",
+      "url": "https://github.com/shanliuling"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shanliuling/dsh-image-gen",
+    "issues": "https://github.com/shanliuling/dsh-image-gen/issues"
+  },
+  "homepage": "https://github.com/shanliuling/dsh-image-gen#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-image-gen"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "image",
+    "gen"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
