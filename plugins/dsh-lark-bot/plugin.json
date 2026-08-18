@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-lark-bot",
+  "displayName": "DSH Lark Bot",
+  "summary": "把 DeepSeek Harness (dsh) 装进飞书/Lark 的 bot，扫码即用：流式卡片、项目工作区、并行任务、多角色 Agent、安全网守护。| Bridge DeepSeek Harness (dsh) into Feishu / Lark, scan-to-connect: streaming cards, project workspaces, parallel task...",
+  "description": "把 DeepSeek Harness (dsh) 装进飞书/Lark 的 bot，扫码即用：流式卡片、项目工作区、并行任务、多角色 Agent、安全网守护。| Bridge DeepSeek Harness (dsh) into Feishu / Lark, scan-to-connect: streaming cards, project workspaces, parallel tasks, multi-role agents, safety-net guardian.",
+  "version": "0.15.8",
+  "publisher": {
+    "name": "PlutoKeating",
+    "url": "https://github.com/PlutoKeating"
+  },
+  "authors": [
+    {
+      "name": "PlutoKeating",
+      "url": "https://github.com/PlutoKeating"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PlutoKeating/dsh-lark-bot",
+    "issues": "https://github.com/PlutoKeating/dsh-lark-bot/issues"
+  },
+  "homepage": "https://github.com/PlutoKeating/dsh-lark-bot#readme",
+  "license": "AGPL-3.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-lark-bot"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "communication",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "lark",
+    "bot"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
