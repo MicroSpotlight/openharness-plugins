@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-liquid-glass",
+  "displayName": "DSH Liquid Glass",
+  "summary": "Wallpaper plus an optional Liquid Glass overlay for DeepSeek Harness. Sits on official light / dark / system. 官方浅色/深色/跟随系统上的壁纸与液态玻璃叠加。",
+  "description": "Wallpaper plus an optional Liquid Glass overlay for DeepSeek Harness. Sits on official light / dark / system. 官方浅色/深色/跟随系统上的壁纸与液态玻璃叠加。",
+  "version": "0.12.82",
+  "publisher": {
+    "name": "xingyingyuzhui",
+    "url": "https://github.com/xingyingyuzhui"
+  },
+  "authors": [
+    {
+      "name": "xingyingyuzhui",
+      "url": "https://github.com/xingyingyuzhui"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xingyingyuzhui/dsh-liquid-glass",
+    "issues": "https://github.com/xingyingyuzhui/dsh-liquid-glass/issues"
+  },
+  "homepage": "https://github.com/xingyingyuzhui/dsh-liquid-glass#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-liquid-glass",
+    "url": "https://github.com/xingyingyuzhui/dsh-liquid-glass.git",
+    "ref": "573a81d66ddff86216a61ebee4c755ed49ae31de"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "liquid",
+    "glass"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
