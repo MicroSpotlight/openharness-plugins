@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-pocket",
+  "displayName": "DSH Pocket",
+  "summary": "把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）",
+  "description": "把 DeepSeek Harness 装进你的口袋：电脑上跑 dsh web，手机扫码即同步访问（局域网 + 公网，实时同屏）",
+  "version": "1.4.8",
+  "publisher": {
+    "name": "shaobeichen",
+    "url": "https://github.com/shaobeichen"
+  },
+  "authors": [
+    {
+      "name": "shaobeichen",
+      "url": "https://github.com/shaobeichen"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaobeichen/dsh-pocket",
+    "issues": "https://github.com/shaobeichen/dsh-pocket/issues"
+  },
+  "homepage": "https://github.com/shaobeichen/dsh-pocket#readme",
+  "license": "GPL-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-pocket"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "pocket"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
