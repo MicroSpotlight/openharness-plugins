@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-code",
+  "displayName": "DSH Code",
+  "summary": "Claude-Code-style interactive TUI bundle for DeepSeek Harness (dsh): DeepSeek-blue whale banner, live session transcript, and a blended status line",
+  "description": "Claude-Code-style interactive TUI bundle for DeepSeek Harness (dsh): DeepSeek-blue whale banner, live session transcript, and a blended status line",
+  "version": "0.9.1",
+  "publisher": {
+    "name": "UNLINEARITY",
+    "url": "https://github.com/UNLINEARITY"
+  },
+  "authors": [
+    {
+      "name": "UNLINEARITY",
+      "url": "https://github.com/UNLINEARITY"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UNLINEARITY/dsh-code",
+    "issues": "https://github.com/UNLINEARITY/dsh-code/issues"
+  },
+  "homepage": "https://github.com/UNLINEARITY/dsh-code#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-code"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "dsh-tui"
+    ],
+    "platforms": [
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "code"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
