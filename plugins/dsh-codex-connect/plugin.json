@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-codex-connect",
+  "displayName": "DSH Codex Connect",
+  "summary": "ChatGPT OAuth and Codex models for DeepSeek Harness.",
+  "description": "ChatGPT OAuth and Codex models for DeepSeek Harness.",
+  "version": "0.1.0-alpha.4.9",
+  "publisher": {
+    "name": "franksong2702",
+    "url": "https://github.com/franksong2702"
+  },
+  "authors": [
+    {
+      "name": "franksong2702",
+      "url": "https://github.com/franksong2702"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franksong2702/dsh-codex-connect",
+    "issues": "https://github.com/franksong2702/dsh-codex-connect/issues"
+  },
+  "homepage": "https://github.com/franksong2702/dsh-codex-connect#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-codex-connect"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "codex",
+    "connect"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
