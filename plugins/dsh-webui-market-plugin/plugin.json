@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-webui-market-plugin",
+  "displayName": "DSH Web UI Market",
+  "summary": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.",
+  "description": "dsh Web GUI 社区插件市场：浏览 awesome-dsh-plugin.com 插件目录，一键安装/卸载到 profile。Community plugin market for the DeepSeek Harness (dsh) web GUI: browse, install and uninstall plugins into a profile.",
+  "version": "0.5.4",
+  "publisher": {
+    "name": "Sanqi-normal",
+    "url": "https://github.com/Sanqi-normal"
+  },
+  "authors": [
+    {
+      "name": "Sanqi-normal",
+      "url": "https://github.com/Sanqi-normal"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sanqi-normal/dsh-webui-market-plugin",
+    "issues": "https://github.com/Sanqi-normal/dsh-webui-market-plugin/issues"
+  },
+  "homepage": "https://github.com/Sanqi-normal/dsh-webui-market-plugin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@sanqi-normal/dsh-webui-market-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "webui",
+    "market",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
