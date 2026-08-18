@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-science",
+  "displayName": "DSH Science",
+  "summary": "Claude Science-style research workbench for DeepSeek Harness: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomi...",
+  "description": "Claude Science-style research workbench for DeepSeek Harness: ReAct research-loop engine (research_* tools), versioned artifacts with provenance (artifact_* tools), and 10 science skills for genomics / pathogens / bioinformatics.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "biociao",
+    "url": "https://github.com/biociao"
+  },
+  "authors": [
+    {
+      "name": "biociao",
+      "url": "https://github.com/biociao"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/biociao/dsh-science",
+    "issues": "https://github.com/biociao/dsh-science/issues"
+  },
+  "homepage": "https://github.com/biociao/dsh-science#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-science"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "science"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
