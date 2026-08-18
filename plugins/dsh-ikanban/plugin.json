@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-ikanban",
+  "displayName": "DSH Ikanban",
+  "summary": "Keyboard-oriented iKanban web application bundle for DeepSeek Harness",
+  "description": "Keyboard-oriented iKanban web application bundle for DeepSeek Harness",
+  "version": "0.4.8",
+  "publisher": {
+    "name": "isomoes",
+    "url": "https://github.com/isomoes"
+  },
+  "authors": [
+    {
+      "name": "isomoes",
+      "url": "https://github.com/isomoes"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isomoes/ikanban",
+    "issues": "https://github.com/isomoes/ikanban/issues"
+  },
+  "homepage": "https://github.com/isomoes/ikanban#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@isomoes/dsh-ikanban"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "ikanban"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
