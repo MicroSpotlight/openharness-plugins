@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "superdesign-dsh",
+  "displayName": "SuperDesign for DSH",
+  "summary": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered...",
+  "description": "The design skill for Claude Code, Cursor and any coding agent. Stop shipping AI-slop UI: turn it into shippable, tasteful frontend. Install: npx skills add superdesigndev/superdesign-skill. Powered by superdesign.dev",
+  "version": "0.4.4",
+  "publisher": {
+    "name": "superdesigndev",
+    "url": "https://github.com/superdesigndev"
+  },
+  "authors": [
+    {
+      "name": "superdesigndev",
+      "url": "https://github.com/superdesigndev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superdesigndev/superdesign-skill",
+    "issues": "https://github.com/superdesigndev/superdesign-skill/issues"
+  },
+  "homepage": "https://github.com/superdesigndev/superdesign-skill#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "superdesign-dsh",
+    "url": "https://github.com/superdesigndev/superdesign-skill.git",
+    "ref": "fee6e17b43cf74022172106a8a65865a11c1de92"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "superdesign"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
