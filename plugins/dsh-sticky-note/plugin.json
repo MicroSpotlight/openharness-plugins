@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-sticky-note",
+  "displayName": "DSH Sticky Note",
+  "summary": "左下角便签：随手记点子/感想/TODO，实时保存到归档目录，清单+悬浮归档",
+  "description": "左下角便签：随手记点子/感想/TODO，实时保存到归档目录，清单+悬浮归档",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "Meredith2328",
+    "url": "https://github.com/Meredith2328"
+  },
+  "authors": [
+    {
+      "name": "Meredith2328",
+      "url": "https://github.com/Meredith2328"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Meredith2328/dsh-sticky-note",
+    "issues": "https://github.com/Meredith2328/dsh-sticky-note/issues"
+  },
+  "homepage": "https://github.com/Meredith2328/dsh-sticky-note#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-sticky-note",
+    "url": "https://github.com/Meredith2328/dsh-sticky-note.git",
+    "ref": "ebabb6c746b1495c5f077e440d98b6665d7a61b9"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "sticky",
+    "note"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
