@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-code-ide",
+  "displayName": "DSH Code Ide",
+  "summary": "An optional web IDE workbench for DeepSeek Harness",
+  "description": "An optional web IDE workbench for DeepSeek Harness",
+  "version": "0.1.0-alpha.0",
+  "publisher": {
+    "name": "SakalioLabs",
+    "url": "https://github.com/SakalioLabs"
+  },
+  "authors": [
+    {
+      "name": "SakalioLabs",
+      "url": "https://github.com/SakalioLabs"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SakalioLabs/dsh-code-ide",
+    "issues": "https://github.com/SakalioLabs/dsh-code-ide/issues"
+  },
+  "homepage": "https://github.com/SakalioLabs/dsh-code-ide#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-code-ide",
+    "url": "https://github.com/SakalioLabs/dsh-code-ide.git",
+    "ref": "f0cab39070705e4ff895f54b67fb967c38ff88c2"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "code",
+    "ide"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
