@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-web-file-uploader",
+  "displayName": "DSH Web File Uploader",
+  "summary": "A DeepSeek-style paperclip attach button in the DSH web composer; uploads files to the DSH host (model-aware: native image blocks for multimodal models, file paths for text-only models).",
+  "description": "A DeepSeek-style paperclip attach button in the DSH web composer; uploads files to the DSH host (model-aware: native image blocks for multimodal models, file paths for text-only models).",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "Mooling0602",
+    "url": "https://github.com/Mooling0602"
+  },
+  "authors": [
+    {
+      "name": "Mooling0602",
+      "url": "https://github.com/Mooling0602"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooling0602/dsh-web-file-uploader",
+    "issues": "https://github.com/Mooling0602/dsh-web-file-uploader/issues"
+  },
+  "homepage": "https://github.com/Mooling0602/dsh-web-file-uploader#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-web-file-uploader",
+    "url": "https://github.com/Mooling0602/dsh-web-file-uploader.git",
+    "ref": "dedce39b02826dd007ad1d3fed3658a427c4bb2e"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "web",
+    "file",
+    "uploader"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
