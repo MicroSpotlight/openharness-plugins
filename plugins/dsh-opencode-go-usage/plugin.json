@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-opencode-go-usage",
+  "displayName": "DSH Opencode Go Usage",
+  "summary": "OpenCode Go 用量与花费面板 — DeepSeek Harness 插件:可拖拽缩放的悬浮仪表盘,实时展示 OpenCode Go 配额、逐请求用量与花费",
+  "description": "OpenCode Go 用量与花费面板 — DeepSeek Harness 插件:可拖拽缩放的悬浮仪表盘,实时展示 OpenCode Go 配额、逐请求用量与花费",
+  "version": "1.7.1",
+  "publisher": {
+    "name": "Xenia0922",
+    "url": "https://github.com/Xenia0922"
+  },
+  "authors": [
+    {
+      "name": "Xenia0922",
+      "url": "https://github.com/Xenia0922"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xenia0922/dsh-opencode-go-usage",
+    "issues": "https://github.com/Xenia0922/dsh-opencode-go-usage/issues"
+  },
+  "homepage": "https://github.com/Xenia0922/dsh-opencode-go-usage#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-opencode-go-usage",
+    "url": "https://github.com/Xenia0922/dsh-opencode-go-usage.git",
+    "ref": "51600136ba798f2ca66e4ff79081b74088b5c824"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "opencode",
+    "go",
+    "usage"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
