@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-taskboard",
+  "displayName": "DSH Taskboard",
+  "summary": "Native local project taskboard bundle for DeepSeek Harness",
+  "description": "Native local project taskboard bundle for DeepSeek Harness",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "shengsheng90",
+    "url": "https://github.com/shengsheng90"
+  },
+  "authors": [
+    {
+      "name": "shengsheng90",
+      "url": "https://github.com/shengsheng90"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shengsheng90/DSH-taskboard",
+    "issues": "https://github.com/shengsheng90/DSH-taskboard/issues"
+  },
+  "homepage": "https://github.com/shengsheng90/DSH-taskboard#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@shengsheng/dsh-taskboard"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "taskboard"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
