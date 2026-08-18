@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-passwords",
+  "displayName": "DSH Passwords",
+  "summary": "dsh-passwords: a server-grade gateway that turns DeepSeek Harness into a multi-tenant platform — remote access + automatic HTTPS, per-subuser permissions & quotas, sandbox enforcement, first-run se...",
+  "description": "dsh-passwords: a server-grade gateway that turns DeepSeek Harness into a multi-tenant platform — remote access + automatic HTTPS, per-subuser permissions & quotas, sandbox enforcement, first-run setup, SQLite auth with at-rest encryption, rate-limit and audit log (bilingual zh/en UI)",
+  "version": "2.4.8",
+  "publisher": {
+    "name": "slywalker2006",
+    "url": "https://github.com/slywalker2006"
+  },
+  "authors": [
+    {
+      "name": "slywalker2006",
+      "url": "https://github.com/slywalker2006"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slywalker2006/dsh-passwords",
+    "issues": "https://github.com/slywalker2006/dsh-passwords/issues"
+  },
+  "homepage": "https://github.com/slywalker2006/dsh-passwords#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-passwords"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "security",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "passwords"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
