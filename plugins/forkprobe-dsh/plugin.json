@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "forkprobe-dsh",
+  "displayName": "ForkProbe for DSH",
+  "summary": "Compare multiple skills on the same task and pick the winner.",
+  "description": "Compare multiple skills on the same task and pick the winner.",
+  "version": "0.10.0",
+  "publisher": {
+    "name": "Jayden-X-L",
+    "url": "https://github.com/Jayden-X-L"
+  },
+  "authors": [
+    {
+      "name": "Jayden-X-L",
+      "url": "https://github.com/Jayden-X-L"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jayden-X-L/forkprobe",
+    "issues": "https://github.com/Jayden-X-L/forkprobe/issues"
+  },
+  "homepage": "https://github.com/Jayden-X-L/forkprobe#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "forkprobe-dsh",
+    "url": "https://github.com/Jayden-X-L/forkprobe.git",
+    "ref": "defe0b47e0d69c12ce586d4d85bfe4f3ec34edd3"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "forkprobe"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
