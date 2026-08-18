@@ -1,0 +1,73 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-git-graph",
+  "displayName": "DSH Git Graph",
+  "summary": "DSH plugin: embedded git repository graph visualizer for the DeepSeek Harness web GUI - commit history graph, branch filtering, code diffs, VSCode-style uncommitted changes panel",
+  "description": "DSH plugin: embedded git repository graph visualizer for the DeepSeek Harness web GUI - commit history graph, branch filtering, code diffs, VSCode-style uncommitted changes panel",
+  "version": "0.10.0",
+  "publisher": {
+    "name": "1841220388zzzcccxxx-star",
+    "url": "https://github.com/1841220388zzzcccxxx-star"
+  },
+  "authors": [
+    {
+      "name": "1841220388zzzcccxxx-star",
+      "url": "https://github.com/1841220388zzzcccxxx-star"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1841220388zzzcccxxx-star/dsh-git-graph",
+    "issues": "https://github.com/1841220388zzzcccxxx-star/dsh-git-graph/issues"
+  },
+  "homepage": "https://github.com/1841220388zzzcccxxx-star/dsh-git-graph#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-git-graph",
+    "url": "https://github.com/1841220388zzzcccxxx-star/dsh-git-graph.git",
+    "ref": "6b9899060ae28decfad065d9656519591f6013d7"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "git",
+    "graph"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "git",
+      "code"
+    ]
+  }
+}
