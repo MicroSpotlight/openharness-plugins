@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-marketplace-dsh-plugin-marketplace",
+  "displayName": "DSH Plugin Marketplace",
+  "summary": "实时同步 GitHub dsh-plugin topic 的插件市场：Host 定时抓取并缓存，Web 设置页展示可搜索的插件列表，并支持已装插件的更新 / 关闭 / 卸载与市场自更新检查。",
+  "description": "实时同步 GitHub dsh-plugin topic 的插件市场：Host 定时抓取并缓存，Web 设置页展示可搜索的插件列表，并支持已装插件的更新 / 关闭 / 卸载与市场自更新检查。",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "AwesomeHou",
+    "url": "https://github.com/AwesomeHou"
+  },
+  "authors": [
+    {
+      "name": "AwesomeHou",
+      "url": "https://github.com/AwesomeHou"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AwesomeHou/dsh-plugin-marketplace",
+    "issues": "https://github.com/AwesomeHou/dsh-plugin-marketplace/issues"
+  },
+  "homepage": "https://github.com/AwesomeHou/dsh-plugin-marketplace#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-marketplace",
+    "url": "https://github.com/AwesomeHou/dsh-plugin-marketplace.git",
+    "ref": "1df4eb2121e869f48fdeb5de626c3610868a369e"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "marketplace"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
