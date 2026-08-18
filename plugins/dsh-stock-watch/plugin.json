@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-stock-watch",
+  "displayName": "DSH Stock Watch",
+  "summary": "A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗（分时/K线/目标价/主题切换/可拖动/添加股票分组）",
+  "description": "A股自选股实时行情盯盘插件 - DeepSeek Harness Web 右上角可折叠弹窗（分时/K线/目标价/主题切换/可拖动/添加股票分组）",
+  "version": "1.0.8",
+  "publisher": {
+    "name": "Awu12277",
+    "url": "https://github.com/Awu12277"
+  },
+  "authors": [
+    {
+      "name": "Awu12277",
+      "url": "https://github.com/Awu12277"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Awu12277/dsh-stock-watch",
+    "issues": "https://github.com/Awu12277/dsh-stock-watch/issues"
+  },
+  "homepage": "https://github.com/Awu12277/dsh-stock-watch#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-stock-watch",
+    "url": "https://github.com/Awu12277/dsh-stock-watch.git",
+    "ref": "0bd76f3f72b647249b2168fc50ae4955c6c86575"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "stock",
+    "watch"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
