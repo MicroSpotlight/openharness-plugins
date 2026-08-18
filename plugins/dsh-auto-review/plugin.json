@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-auto-review",
+  "displayName": "DSH Auto Review",
+  "summary": "Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent decides allow/deny on the approval answerer chain, with fail-closed fallback and full session-log a...",
+  "description": "Second-model AI auto-review for DeepSeek Harness approval requests: a read-only reviewer subagent decides allow/deny on the approval answerer chain, with fail-closed fallback and full session-log audit.",
+  "version": "0.5.0",
+  "publisher": {
+    "name": "PerryLink",
+    "url": "https://github.com/PerryLink"
+  },
+  "authors": [
+    {
+      "name": "PerryLink",
+      "url": "https://github.com/PerryLink"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PerryLink/dsh-auto-review",
+    "issues": "https://github.com/PerryLink/dsh-auto-review/issues"
+  },
+  "homepage": "https://github.com/PerryLink/dsh-auto-review#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-auto-review"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "security",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "auto",
+    "review"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
