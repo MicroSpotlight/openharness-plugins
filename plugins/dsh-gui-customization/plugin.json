@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-gui-customization",
+  "displayName": "DSH GUI Customization",
+  "summary": "DSH theme plugin for the DeepSeek Harness Web UI: Nous Blue palette, ambient glow, dynamic image/video backgrounds. DSH 界面设定插件：配色 / 氛围光 / 动态背景（中英双语）",
+  "description": "DSH theme plugin for the DeepSeek Harness Web UI: Nous Blue palette, ambient glow, dynamic image/video backgrounds. DSH 界面设定插件：配色 / 氛围光 / 动态背景（中英双语）",
+  "version": "0.6.2",
+  "publisher": {
+    "name": "LAN-TINA-WS",
+    "url": "https://github.com/LAN-TINA-WS"
+  },
+  "authors": [
+    {
+      "name": "LAN-TINA-WS",
+      "url": "https://github.com/LAN-TINA-WS"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LAN-TINA-WS/dsh-gui-customization",
+    "issues": "https://github.com/LAN-TINA-WS/dsh-gui-customization/issues"
+  },
+  "homepage": "https://github.com/LAN-TINA-WS/dsh-gui-customization#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-gui-customization"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "gui",
+    "customization"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
