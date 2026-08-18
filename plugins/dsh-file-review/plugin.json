@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-file-review",
+  "displayName": "DSH File Review",
+  "summary": "Review files produced by DeepSeek Harness turns in a line-numbered unified diff drawer",
+  "description": "Review files produced by DeepSeek Harness turns in a line-numbered unified diff drawer",
+  "version": "0.3.1",
+  "publisher": {
+    "name": "left0ver",
+    "url": "https://github.com/left0ver"
+  },
+  "authors": [
+    {
+      "name": "left0ver",
+      "url": "https://github.com/left0ver"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/left0ver/dsh-file-review",
+    "issues": "https://github.com/left0ver/dsh-file-review/issues"
+  },
+  "homepage": "https://github.com/left0ver/dsh-file-review#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-file-review"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "files",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "file",
+    "review"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
