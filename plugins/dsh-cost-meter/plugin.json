@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-cost-meter",
+  "displayName": "DSH Cost Meter",
+  "summary": "DeepSeek Harness Session Cost Statistics & OpenCode Go Quota Display, DS Official Balance Display, Codex-like Token Heatmap Plugin: Current Session Cost, Daily Cost, Budget Limit Display, History R...",
+  "description": "DeepSeek Harness Session Cost Statistics & OpenCode Go Quota Display, DS Official Balance Display, Codex-like Token Heatmap Plugin: Current Session Cost, Daily Cost, Budget Limit Display, History Records, Peak/off-peak pricing hours display, Synced with Official Pricing, Multi-vendor model pricing (90+ model catalog), Coding Plan quotas (6 vendors)",
+  "version": "1.5.3",
+  "publisher": {
+    "name": "Han-1413141",
+    "url": "https://github.com/Han-1413141"
+  },
+  "authors": [
+    {
+      "name": "Han-1413141",
+      "url": "https://github.com/Han-1413141"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Han-1413141/dsh-cost-meter",
+    "issues": "https://github.com/Han-1413141/dsh-cost-meter/issues"
+  },
+  "homepage": "https://github.com/Han-1413141/dsh-cost-meter#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-cost-meter",
+    "url": "https://github.com/Han-1413141/dsh-cost-meter.git",
+    "ref": "7f9fd76373aa0b6f0258c5c0d2350b10b4deef39"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "cost",
+    "meter"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
