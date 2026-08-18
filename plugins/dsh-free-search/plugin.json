@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-free-search",
+  "displayName": "DSH Free Search",
+  "summary": "Free web search for DeepSeek Harness: 8 engines (Bing/DuckDuckGo/AnySearch/SearXNG/Exa keyless) + platform search + web_fetch, with web settings UI.",
+  "description": "Free web search for DeepSeek Harness: 8 engines (Bing/DuckDuckGo/AnySearch/SearXNG/Exa keyless) + platform search + web_fetch, with web settings UI.",
+  "version": "0.4.5",
+  "publisher": {
+    "name": "DDDMUC",
+    "url": "https://github.com/DDDMUC"
+  },
+  "authors": [
+    {
+      "name": "DDDMUC",
+      "url": "https://github.com/DDDMUC"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DDDMUC/dsh-free-search",
+    "issues": "https://github.com/DDDMUC/dsh-free-search/issues"
+  },
+  "homepage": "https://github.com/DDDMUC/dsh-free-search#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-free-search"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "free",
+    "search"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
