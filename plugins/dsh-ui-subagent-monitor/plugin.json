@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-ui-subagent-monitor",
+  "displayName": "DSH UI Subagent Monitor",
+  "summary": "DSH web extension: a live subagent run monitor with a sidebar trigger and a floating card panel",
+  "description": "DSH web extension: a live subagent run monitor with a sidebar trigger and a floating card panel",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "Mombrane",
+    "url": "https://github.com/Mombrane"
+  },
+  "authors": [
+    {
+      "name": "Mombrane",
+      "url": "https://github.com/Mombrane"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mombrane/dsh-subagent-monitor",
+    "issues": "https://github.com/Mombrane/dsh-subagent-monitor/issues"
+  },
+  "homepage": "https://github.com/Mombrane/dsh-subagent-monitor#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@leetoners/dsh-ui-subagent-monitor"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "ui",
+    "subagent",
+    "monitor"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
