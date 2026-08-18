@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-codex-subscription",
+  "displayName": "DSH Codex Subscription",
+  "summary": "ChatGPT and Codex subscriptions for DeepSeek Harness with OAuth login, image generation, quota, and subscription web search",
+  "description": "ChatGPT and Codex subscriptions for DeepSeek Harness with OAuth login, image generation, quota, and subscription web search",
+  "version": "0.3.7",
+  "publisher": {
+    "name": "WSL043",
+    "url": "https://github.com/WSL043"
+  },
+  "authors": [
+    {
+      "name": "WSL043",
+      "url": "https://github.com/WSL043"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WSL043/dsh-codex-subscription",
+    "issues": "https://github.com/WSL043/dsh-codex-subscription/issues"
+  },
+  "homepage": "https://github.com/WSL043/dsh-codex-subscription#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-codex-subscription"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "codex",
+    "subscription"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
