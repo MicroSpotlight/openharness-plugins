@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-agy",
+  "displayName": "DSH Agy",
+  "summary": "Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CLI and web login.",
+  "description": "Google Antigravity (agy) OAuth auth + model access plugin for DeepSeek Harness: multi-account pool, 429 rotation, device fingerprinting, CLI and web login.",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "chaos-03x",
+    "url": "https://github.com/chaos-03x"
+  },
+  "authors": [
+    {
+      "name": "chaos-03x",
+      "url": "https://github.com/chaos-03x"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chaos-03x/dsh-agy",
+    "issues": "https://github.com/chaos-03x/dsh-agy/issues"
+  },
+  "homepage": "https://github.com/chaos-03x/dsh-agy#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-agy"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "model-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "agy"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
