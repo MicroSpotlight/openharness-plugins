@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-data-agent",
+  "displayName": "DSH Data Agent",
+  "summary": "Connect DSH to your database for conversational data analysis and actionable business insights.",
+  "description": "Connect DSH to your database for conversational data analysis and actionable business insights.",
+  "version": "0.0.12",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-data-agent",
+    "issues": "https://github.com/omdsh-dev/dsh-data-agent/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-data-agent#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@yejiming/dsh-data-agent"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "data",
+    "agent"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
