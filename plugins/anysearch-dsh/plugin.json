@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "anysearch-dsh",
+  "displayName": "AnySearch for DSH",
+  "summary": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
+  "description": "AnySearch web search provider and advanced search tools for DeepSeek Harness (DSH)",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "anysearch-team",
+    "url": "https://github.com/anysearch-team"
+  },
+  "authors": [
+    {
+      "name": "anysearch-team",
+      "url": "https://github.com/anysearch-team"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anysearch-team/anysearch-dsh",
+    "issues": "https://github.com/anysearch-team/anysearch-dsh/issues"
+  },
+  "homepage": "https://github.com/anysearch-team/anysearch-dsh#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@anysearch/anysearch-dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "anysearch"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
