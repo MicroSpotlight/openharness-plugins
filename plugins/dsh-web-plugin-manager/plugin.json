@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-web-plugin-manager",
+  "displayName": "DSH Web Plugin Manager",
+  "summary": "在 Web UI 中一键管理 DeepSeek Harness (DSH) 插件：查看、实时启停、安装/卸载、更新检测、健康检查（依赖/冲突/兼容性分析）、环境管理、插件市场。bundle 与非 bundle 插件全覆盖",
+  "description": "在 Web UI 中一键管理 DeepSeek Harness (DSH) 插件：查看、实时启停、安装/卸载、更新检测、健康检查（依赖/冲突/兼容性分析）、环境管理、插件市场。bundle 与非 bundle 插件全覆盖",
+  "version": "0.4.5",
+  "publisher": {
+    "name": "LX2000WASD",
+    "url": "https://github.com/LX2000WASD"
+  },
+  "authors": [
+    {
+      "name": "LX2000WASD",
+      "url": "https://github.com/LX2000WASD"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LX2000WASD/dsh-web-plugin-manager",
+    "issues": "https://github.com/LX2000WASD/dsh-web-plugin-manager/issues"
+  },
+  "homepage": "https://github.com/LX2000WASD/dsh-web-plugin-manager#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-web-plugin-manager"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "web",
+    "plugin",
+    "manager"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
