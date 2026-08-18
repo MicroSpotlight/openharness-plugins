@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-damage-pulse",
+  "displayName": "DSH Damage Pulse",
+  "summary": "DeepSeek Harness balance monitor with cache-aware damage-number animations for every token charge.",
+  "description": "DeepSeek Harness balance monitor with cache-aware damage-number animations for every token charge.",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "wssfk12138",
+    "url": "https://github.com/wssfk12138"
+  },
+  "authors": [
+    {
+      "name": "wssfk12138",
+      "url": "https://github.com/wssfk12138"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wssfk12138/dsh-damage-pulse",
+    "issues": "https://github.com/wssfk12138/dsh-damage-pulse/issues"
+  },
+  "homepage": "https://github.com/wssfk12138/dsh-damage-pulse#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-damage-pulse",
+    "url": "https://github.com/wssfk12138/dsh-damage-pulse.git",
+    "ref": "34354540fea643fa0d6086e641d6fb69d4c2d840"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "damage",
+    "pulse"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
