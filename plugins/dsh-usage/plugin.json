@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-usage",
+  "displayName": "DSH Usage",
+  "summary": "Persistent balance badge and token usage panel for the dsh web GUI",
+  "description": "Persistent balance badge and token usage panel for the dsh web GUI",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "Aisland-SJL",
+    "url": "https://github.com/Aisland-SJL"
+  },
+  "authors": [
+    {
+      "name": "Aisland-SJL",
+      "url": "https://github.com/Aisland-SJL"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aisland-SJL/dsh-usage",
+    "issues": "https://github.com/Aisland-SJL/dsh-usage/issues"
+  },
+  "homepage": "https://github.com/Aisland-SJL/dsh-usage#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-usage",
+    "url": "https://github.com/Aisland-SJL/dsh-usage.git",
+    "ref": "0b3a5614948fa28f7bee3cc5f5133ca94091a156"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "usage"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
