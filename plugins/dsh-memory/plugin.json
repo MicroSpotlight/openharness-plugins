@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-memory",
+  "displayName": "DSH Memory",
+  "summary": "灵枢（Lingshu·líng shū）DeepSeek Harness 插件：完整大脑——长期记忆/知识飞轮/自我认知/递归反思接入 DSH，对话自动沉淀进记忆库",
+  "description": "灵枢（Lingshu·líng shū）DeepSeek Harness 插件：完整大脑——长期记忆/知识飞轮/自我认知/递归反思接入 DSH，对话自动沉淀进记忆库",
+  "version": "0.2.8",
+  "publisher": {
+    "name": "FuRongJun-1999",
+    "url": "https://github.com/FuRongJun-1999"
+  },
+  "authors": [
+    {
+      "name": "FuRongJun-1999",
+      "url": "https://github.com/FuRongJun-1999"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FuRongJun-1999/dsh-memory",
+    "issues": "https://github.com/FuRongJun-1999/dsh-memory/issues"
+  },
+  "homepage": "https://github.com/FuRongJun-1999/dsh-memory#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@furongjun1999/dsh-memory"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "memory"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
