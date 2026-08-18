@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "plugin-manager",
+  "displayName": "Plugin Manager",
+  "summary": "DSH Web UI 插件应用商店：目录浏览/搜索/一键安装/兼容徽章/已装列表。A plugin store for DSH Web UI — catalog browse, search, one-click install, compat badges, installed list.",
+  "description": "DSH Web UI 插件应用商店：目录浏览/搜索/一键安装/兼容徽章/已装列表。A plugin store for DSH Web UI — catalog browse, search, one-click install, compat badges, installed list.",
+  "version": "0.8.2",
+  "publisher": {
+    "name": "whyihaveyou",
+    "url": "https://github.com/whyihaveyou"
+  },
+  "authors": [
+    {
+      "name": "whyihaveyou",
+      "url": "https://github.com/whyihaveyou"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whyihaveyou/dsh-suite",
+    "issues": "https://github.com/whyihaveyou/dsh-suite/issues"
+  },
+  "homepage": "https://github.com/whyihaveyou/dsh-suite#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@dsh-suite/plugin-manager"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "manager"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
