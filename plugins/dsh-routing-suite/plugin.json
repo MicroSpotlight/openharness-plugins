@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-routing-suite",
+  "displayName": "DSH Routing Suite",
+  "summary": "A lightweight, selectable smart-routing mode for DeepSeek Harness.",
+  "description": "A lightweight, selectable smart-routing mode for DeepSeek Harness.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "dragonbaba",
+    "url": "https://github.com/dragonbaba"
+  },
+  "authors": [
+    {
+      "name": "dragonbaba",
+      "url": "https://github.com/dragonbaba"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonbaba/dsh-routing-suite",
+    "issues": "https://github.com/dragonbaba/dsh-routing-suite/issues"
+  },
+  "homepage": "https://github.com/dragonbaba/dsh-routing-suite#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-routing-suite"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "routing",
+    "suite"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
