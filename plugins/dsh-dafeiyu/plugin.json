@@ -1,0 +1,59 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-dafeiyu",
+  "displayName": "DSH DaFeiYu",
+  "summary": "Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows.",
+  "description": "Desktop-native BigFish companion for DeepSeek Harness — real Agent status, always on top on Windows.",
+  "version": "0.1.0-alpha.14",
+  "publisher": {
+    "name": "QCYTSN",
+    "url": "https://github.com/QCYTSN"
+  },
+  "authors": [
+    {
+      "name": "QCYTSN",
+      "url": "https://github.com/QCYTSN"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/QCYTSN/dsh-dafeiyu",
+    "issues": "https://github.com/QCYTSN/dsh-dafeiyu/issues"
+  },
+  "homepage": "https://github.com/QCYTSN/dsh-dafeiyu#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-dafeiyu"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "windows"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "dafeiyu"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
