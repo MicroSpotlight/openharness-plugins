@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "specfusion-dsh",
+  "displayName": "SpecFusion for DSH",
+  "summary": "在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。",
+  "description": "在 DeepSeek Harness / Claude Code / Cursor / Codex / Gemini CLI 里直接搜索 20 个中国开放平台的 65,600+ 篇 API 文档；零配置，支持 Skill 与 DSH 原生插件。",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "wxkingstar",
+    "url": "https://github.com/wxkingstar"
+  },
+  "authors": [
+    {
+      "name": "wxkingstar",
+      "url": "https://github.com/wxkingstar"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wxkingstar/SpecFusion",
+    "issues": "https://github.com/wxkingstar/SpecFusion/issues"
+  },
+  "homepage": "https://github.com/wxkingstar/SpecFusion#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@wxkingstar/specfusion-dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "specfusion"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
