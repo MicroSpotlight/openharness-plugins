@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-web-lan-access",
+  "displayName": "DSH Web Lan Access",
+  "summary": "LAN / remote access support for the DeepSeek Harness Web UI: self-contained 0.0.0.0 binding + crypto.randomUUID polyfill on plain-HTTP origins.",
+  "description": "LAN / remote access support for the DeepSeek Harness Web UI: self-contained 0.0.0.0 binding + crypto.randomUUID polyfill on plain-HTTP origins.",
+  "version": "1.1.0",
+  "publisher": {
+    "name": "AcidGr",
+    "url": "https://github.com/AcidGr"
+  },
+  "authors": [
+    {
+      "name": "AcidGr",
+      "url": "https://github.com/AcidGr"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AcidGr/dsh-web-lan-access",
+    "issues": "https://github.com/AcidGr/dsh-web-lan-access/issues"
+  },
+  "homepage": "https://github.com/AcidGr/dsh-web-lan-access#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-web-lan-access"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "web",
+    "lan",
+    "access"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
