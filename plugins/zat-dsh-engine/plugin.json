@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "zat-dsh-engine",
+  "displayName": "ZAT DSH Engine",
+  "summary": "Visual plugin marketplace for DeepSeek Harness — browse, search and install community plugins",
+  "description": "Visual plugin marketplace for DeepSeek Harness — browse, search and install community plugins",
+  "version": "0.6.1",
+  "publisher": {
+    "name": "mishibeikejie",
+    "url": "https://github.com/mishibeikejie"
+  },
+  "authors": [
+    {
+      "name": "mishibeikejie",
+      "url": "https://github.com/mishibeikejie"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mishibeikejie/zat-dsh-engine",
+    "issues": "https://github.com/mishibeikejie/zat-dsh-engine/issues"
+  },
+  "homepage": "https://github.com/mishibeikejie/zat-dsh-engine#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "zat-dsh-engine",
+    "url": "https://github.com/mishibeikejie/zat-dsh-engine.git",
+    "ref": "db252f3b08eacc1de3d179a6031b9b5be8063240"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "zat",
+    "engine"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
