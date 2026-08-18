@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-ui-whale",
+  "displayName": "DSH UI Whale",
+  "summary": "DSH Web UI 像素鲸鱼伙伴插件：会话标题栏常驻，平时眨眼/偶尔摆尾/动胸鳍，思考运行时持续动起来，回合完成头顶喷水，点击冒爱心，零核心改动。",
+  "description": "DSH Web UI 像素鲸鱼伙伴插件：会话标题栏常驻，平时眨眼/偶尔摆尾/动胸鳍，思考运行时持续动起来，回合完成头顶喷水，点击冒爱心，零核心改动。",
+  "version": "0.3.3",
+  "publisher": {
+    "name": "lhh010",
+    "url": "https://github.com/lhh010"
+  },
+  "authors": [
+    {
+      "name": "lhh010",
+      "url": "https://github.com/lhh010"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lhh010/dsh-ui-whale",
+    "issues": "https://github.com/lhh010/dsh-ui-whale/issues"
+  },
+  "homepage": "https://github.com/lhh010/dsh-ui-whale#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-ui-whale",
+    "url": "https://github.com/lhh010/dsh-ui-whale.git",
+    "ref": "c11c322986cfbad243bd9bbda7c30228bae70ca5"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "ui",
+    "whale"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
