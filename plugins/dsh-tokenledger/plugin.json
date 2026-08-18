@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-tokenledger",
+  "displayName": "DSH Tokenledger",
+  "summary": "Token usage accounting for DeepSeek Harness, attributed to the relay site that served each request — no configuration, no credentials",
+  "description": "Token usage accounting for DeepSeek Harness, attributed to the relay site that served each request — no configuration, no credentials",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "zh667",
+    "url": "https://github.com/zh667"
+  },
+  "authors": [
+    {
+      "name": "zh667",
+      "url": "https://github.com/zh667"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zh667/TokenLedger",
+    "issues": "https://github.com/zh667/TokenLedger/issues"
+  },
+  "homepage": "https://github.com/zh667/TokenLedger#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-tokenledger"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "tokenledger"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
