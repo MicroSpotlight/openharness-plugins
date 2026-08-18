@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-memoir",
+  "displayName": "DSH Memoir",
+  "summary": "Cache-aware local project memory for DeepSeek Harness (DSH): agents distill session work, lessons and next actions into a local JSON store (~/.dsh/dsh-memoir.json, source of truth) with a per-proje...",
+  "description": "Cache-aware local project memory for DeepSeek Harness (DSH): agents distill session work, lessons and next actions into a local JSON store (~/.dsh/dsh-memoir.json, source of truth) with a per-project PROJECT_MEMORY.md projection; bounded hot-memory (ranked, session-frozen) is auto-injected into the system prompt while long-tail history is served by ranked BM25 retrieval (memoir_read, no embeddings / no external services); a web-GUI 'Memory' panel offers ranked search, hot-memory inspection and retrieval diagnostics over /api/dsh-memoir routes. TypeScript, mounted via the dsh.bundle.patch manifest, no dsh source changes.",
+  "version": "0.4.3",
+  "publisher": {
+    "name": "Qinling-Melon-Farmers",
+    "url": "https://github.com/Qinling-Melon-Farmers"
+  },
+  "authors": [
+    {
+      "name": "Qinling-Melon-Farmers",
+      "url": "https://github.com/Qinling-Melon-Farmers"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qinling-Melon-Farmers/dsh-memoir",
+    "issues": "https://github.com/Qinling-Melon-Farmers/dsh-memoir/issues"
+  },
+  "homepage": "https://github.com/Qinling-Melon-Farmers/dsh-memoir#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-memoir"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "data",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "memoir"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
