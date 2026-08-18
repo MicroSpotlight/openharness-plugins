@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-market",
+  "displayName": "DSH Market",
+  "summary": "Browse, install, update, and remove community plugins inside DSH Web.",
+  "description": "Adds a visual plugin marketplace to DSH settings with catalog search, package details, installed-state tracking, and explicit one-click install, update, or removal actions.",
+  "version": "1.11.1",
+  "publisher": {
+    "name": "dsh-market",
+    "url": "https://github.com/dsh-market"
+  },
+  "authors": [
+    {
+      "name": "dsh-market",
+      "url": "https://github.com/dsh-market"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsh-market/dsh-market",
+    "issues": "https://github.com/dsh-market/dsh-market/issues"
+  },
+  "homepage": "https://dshmarket.com",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dshmarket"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["ui-extension"],
+  "categories": ["developer-tools", "search"],
+  "keywords": ["catalog", "discovery", "dsh", "market", "plugins"],
+  "permissions": {
+    "network": ["https://awesome-dsh-plugin.com", "https://github.com", "https://registry.npmjs.org"],
+    "filesystemRead": ["~/.dsh"],
+    "filesystemWrite": ["~/.dsh"],
+    "environment": [],
+    "commands": []
+  }
+}
