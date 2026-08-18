@@ -1,0 +1,76 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-client-ui-aionui-panel",
+  "displayName": "DSH Client UI Aionui Panel",
+  "summary": "DSH web GUI right-panel system: a pixel-faithful re-implementation of AionUi's Explorer + Preview columns (file tree, filename search, git changes, multi-tab preview of 10+ formats) driven by real ...",
+  "description": "DSH web GUI right-panel system: a pixel-faithful re-implementation of AionUi's Explorer + Preview columns (file tree, filename search, git changes, multi-tab preview of 10+ formats) driven by real host-side fs/git services, hot-pluggable via a profile bundle without any dsh source changes",
+  "version": "0.2.7",
+  "publisher": {
+    "name": "CAPTAIN1275",
+    "url": "https://github.com/CAPTAIN1275"
+  },
+  "authors": [
+    {
+      "name": "CAPTAIN1275",
+      "url": "https://github.com/CAPTAIN1275"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CAPTAIN1275/dsh-ui-web",
+    "issues": "https://github.com/CAPTAIN1275/dsh-ui-web/issues"
+  },
+  "homepage": "https://github.com/CAPTAIN1275/dsh-ui-web#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@captain1275/dsh-client-ui-aionui-panel"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "client",
+    "ui",
+    "aionui",
+    "panel"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "git"
+    ]
+  }
+}
