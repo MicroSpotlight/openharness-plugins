@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-skill-picker",
+  "displayName": "DSH Skill Picker",
+  "summary": "DSH Web GUI skill picker: a button beside the composer opens a searchable list of installed skills; picking one inserts the official `/skill-name` gesture into the input box, so the skill loads wit...",
+  "description": "DSH Web GUI skill picker: a button beside the composer opens a searchable list of installed skills; picking one inserts the official `/skill-name` gesture into the input box, so the skill loads with your message (WorkBuddy-style skill invocation for DeepSeek Harness).",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "a735624258",
+    "url": "https://github.com/a735624258"
+  },
+  "authors": [
+    {
+      "name": "a735624258",
+      "url": "https://github.com/a735624258"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a735624258/dsh-skill-picker",
+    "issues": "https://github.com/a735624258/dsh-skill-picker/issues"
+  },
+  "homepage": "https://github.com/a735624258/dsh-skill-picker#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-skill-picker"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "skill",
+    "picker"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
