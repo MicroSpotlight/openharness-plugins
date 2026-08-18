@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-engramory",
+  "displayName": "Engramory for DSH",
+  "summary": "A portable memory protocol for AI agents — load it as standing rules; a curation discipline + reference spec + optional cap hook.",
+  "description": "A portable memory protocol for AI agents — load it as standing rules; a curation discipline + reference spec + optional cap hook.",
+  "version": "0.2.1",
+  "publisher": {
+    "name": "tinqiao-oss",
+    "url": "https://github.com/tinqiao-oss"
+  },
+  "authors": [
+    {
+      "name": "tinqiao-oss",
+      "url": "https://github.com/tinqiao-oss"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinqiao-oss/engramory",
+    "issues": "https://github.com/tinqiao-oss/engramory/issues"
+  },
+  "homepage": "https://github.com/tinqiao-oss/engramory#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-engramory"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "ai",
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "engramory"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
