@@ -1,0 +1,73 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-auth-in-one",
+  "displayName": "DSH Auth In One",
+  "summary": "Self-contained DeepSeek Harness plugin for Provider login, model switching, image fallback, usage analytics, and same-port Web restart",
+  "description": "Self-contained DeepSeek Harness plugin for Provider login, model switching, image fallback, usage analytics, and same-port Web restart",
+  "version": "0.2.0-alpha.4",
+  "publisher": {
+    "name": "Stormycry-cryp",
+    "url": "https://github.com/Stormycry-cryp"
+  },
+  "authors": [
+    {
+      "name": "Stormycry-cryp",
+      "url": "https://github.com/Stormycry-cryp"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stormycry-cryp/dsh-AuthInOne",
+    "issues": "https://github.com/Stormycry-cryp/dsh-AuthInOne/issues"
+  },
+  "homepage": "https://github.com/Stormycry-cryp/dsh-AuthInOne#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-auth-in-one",
+    "url": "https://github.com/Stormycry-cryp/dsh-AuthInOne.git",
+    "ref": "190ecc2d834ba06da008522684e689324a9c2706"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider"
+  ],
+  "categories": [
+    "data",
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "auth",
+    "in",
+    "one"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
