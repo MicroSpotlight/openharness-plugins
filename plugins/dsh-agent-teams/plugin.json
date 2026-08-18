@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-agent-teams",
+  "displayName": "DSH Agent Teams",
+  "summary": "AgentTeams plugin for DeepSeek Harness",
+  "description": "AgentTeams plugin for DeepSeek Harness",
+  "version": "0.1.7",
+  "publisher": {
+    "name": "NanmiCoder",
+    "url": "https://github.com/NanmiCoder"
+  },
+  "authors": [
+    {
+      "name": "NanmiCoder",
+      "url": "https://github.com/NanmiCoder"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NanmiCoder/dsh-agent-teams",
+    "issues": "https://github.com/NanmiCoder/dsh-agent-teams/issues"
+  },
+  "homepage": "https://github.com/NanmiCoder/dsh-agent-teams#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@nanmicoder/dsh-agent-teams"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "workflow"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "agent",
+    "teams"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
