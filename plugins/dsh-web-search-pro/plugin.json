@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-web-search-pro",
+  "displayName": "DSH Web Search Pro",
+  "summary": "Enhanced, persistent web search plugin for DeepSeek Harness — multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style e...",
+  "description": "Enhanced, persistent web search plugin for DeepSeek Harness — multi-engine routing (DeepSeek/Exa/DDG/Bing/Jina + GitHub/B站/YouTube/V2EX/小红书/Twitter/Reddit/RSS), SQLite+LRU cache, userscript-style extraction, and Playwright rendering.",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "anweat",
+    "url": "https://github.com/anweat"
+  },
+  "authors": [
+    {
+      "name": "anweat",
+      "url": "https://github.com/anweat"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anweat/dsh-web-search-pro",
+    "issues": "https://github.com/anweat/dsh-web-search-pro/issues"
+  },
+  "homepage": "https://github.com/anweat/dsh-web-search-pro#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-web-search-pro"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "web",
+    "search",
+    "pro"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
