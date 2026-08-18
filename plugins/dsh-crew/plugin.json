@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-crew",
+  "displayName": "DSH Crew",
+  "summary": "DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the...",
+  "description": "DeepSeek Harness (DSH) plugin: dispatch work to DSH agents from Claude Code / Codex — native subagent progress, in-host worker sessions with per-tier presets, and a multimodal bridge that lends the text-only harness vision and image generation.",
+  "version": "0.1.0-rc.1",
+  "publisher": {
+    "name": "ZSeven-W",
+    "url": "https://github.com/ZSeven-W"
+  },
+  "authors": [
+    {
+      "name": "ZSeven-W",
+      "url": "https://github.com/ZSeven-W"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZSeven-W/dsh-crew",
+    "issues": "https://github.com/ZSeven-W/dsh-crew/issues"
+  },
+  "homepage": "https://github.com/ZSeven-W/dsh-crew#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@zseven-w/dsh-crew"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider",
+    "workflow"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "crew"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
