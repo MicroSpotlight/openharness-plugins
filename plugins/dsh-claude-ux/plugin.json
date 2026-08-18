@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-claude-ux",
+  "displayName": "DSH Claude UX",
+  "summary": "DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web",
+  "description": "DSH plugin: Claude-style Chinese risk control & conversation autonomy for DeepSeek Harness web",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "eri64",
+    "url": "https://github.com/eri64"
+  },
+  "authors": [
+    {
+      "name": "eri64",
+      "url": "https://github.com/eri64"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eri64/dsh-claude-ux",
+    "issues": "https://github.com/eri64/dsh-claude-ux/issues"
+  },
+  "homepage": "https://github.com/eri64/dsh-claude-ux#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-claude-ux",
+    "url": "https://github.com/eri64/dsh-claude-ux.git",
+    "ref": "5cb3d4973ca627288df2ae2e99a87ede5c6759d5"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "productivity",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "claude",
+    "ux"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
