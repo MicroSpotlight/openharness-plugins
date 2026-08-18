@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-client-pricing",
+  "displayName": "DSH Client Pricing",
+  "summary": "DeepSeek Harness client plugin: session-header DeepSeek API pricing badge with live peak/off-peak prices for flash/pro and a hover price table",
+  "description": "DeepSeek Harness client plugin: session-header DeepSeek API pricing badge with live peak/off-peak prices for flash/pro and a hover price table",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "Miyazawai",
+    "url": "https://github.com/Miyazawai"
+  },
+  "authors": [
+    {
+      "name": "Miyazawai",
+      "url": "https://github.com/Miyazawai"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miyazawai/dsh-client-pricing",
+    "issues": "https://github.com/Miyazawai/dsh-client-pricing/issues"
+  },
+  "homepage": "https://github.com/Miyazawai/dsh-client-pricing#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-client-pricing",
+    "url": "https://github.com/Miyazawai/dsh-client-pricing.git",
+    "ref": "32abdf803c339dab06b9e46c6a31349e5221b2ed"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "client",
+    "pricing"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
