@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-security-audit",
+  "displayName": "DSH Security Audit",
+  "summary": "DSH local security audit tool: read-only scans of config, credential metadata, plugin provenance, session structure and network exposure; redacted, reproducible, locatable risk reports",
+  "description": "DSH local security audit tool: read-only scans of config, credential metadata, plugin provenance, session structure and network exposure; redacted, reproducible, locatable risk reports",
+  "version": "0.0.1",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-security-audit",
+    "issues": "https://github.com/omdsh-dev/dsh-security-audit/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-security-audit#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@deepseek-ai/dsh-security-audit",
+    "url": "https://github.com/omdsh-dev/dsh-security-audit.git",
+    "ref": "b1974e1ac18c5dfd83eef414ea0b1187d076e431"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "security",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "security",
+    "audit"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
