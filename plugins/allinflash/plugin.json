@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "allinflash",
+  "displayName": "Allinflash",
+  "summary": "DeepSeek Harness Cordis tools for All in Flash, powered by All in Luna",
+  "description": "DeepSeek Harness Cordis tools for All in Flash, powered by All in Luna",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "zenx0x",
+    "url": "https://github.com/zenx0x"
+  },
+  "authors": [
+    {
+      "name": "zenx0x",
+      "url": "https://github.com/zenx0x"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenx0x/allinluna",
+    "issues": "https://github.com/zenx0x/allinluna/issues"
+  },
+  "homepage": "https://github.com/zenx0x/allinluna#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@zenx0x/allinflash"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "allinflash"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
