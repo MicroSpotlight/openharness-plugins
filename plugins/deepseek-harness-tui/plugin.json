@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-harness-tui",
+  "displayName": "Deepseek Harness TUI",
+  "summary": "Terminal-native ACP client UI; Cordis client tree, any ACP agent",
+  "description": "Terminal-native ACP client UI; Cordis client tree, any ACP agent",
+  "version": "0.2.5",
+  "publisher": {
+    "name": "openma-ai",
+    "url": "https://github.com/openma-ai"
+  },
+  "authors": [
+    {
+      "name": "openma-ai",
+      "url": "https://github.com/openma-ai"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openma-ai/deepseek-harness-tui",
+    "issues": "https://github.com/openma-ai/deepseek-harness-tui/issues"
+  },
+  "homepage": "https://github.com/openma-ai/deepseek-harness-tui#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@openma/deepseek-harness-tui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "dsh-tui"
+    ],
+    "platforms": [
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "harness",
+    "tui"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": [
+      "bash",
+      "sh"
+    ]
+  }
+}
