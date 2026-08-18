@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "loongsuite-dsh-plugin",
+  "displayName": "DSH Plugin",
+  "summary": "Standalone OpenTelemetry GenAI observability plugin for DeepSeek Harness",
+  "description": "Standalone OpenTelemetry GenAI observability plugin for DeepSeek Harness",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "loongsuite",
+    "url": "https://github.com/loongsuite"
+  },
+  "authors": [
+    {
+      "name": "loongsuite",
+      "url": "https://github.com/loongsuite"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loongsuite/dsh-plugin",
+    "issues": "https://github.com/loongsuite/dsh-plugin/issues"
+  },
+  "homepage": "https://github.com/loongsuite/dsh-plugin#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@loongsuite/dsh-plugin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "loongsuite",
+    "plugin"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
