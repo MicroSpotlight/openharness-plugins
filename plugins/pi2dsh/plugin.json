@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "pi2dsh",
+  "displayName": "Pi2dsh",
+  "summary": "Bridge the Pi and DeepSeek Harness ecosystems: a general Pi Host ABI that runs unmodified Pi extensions as native DSH plugins, plus per-package conversion and MCP config translation.",
+  "description": "Bridge the Pi and DeepSeek Harness ecosystems: a general Pi Host ABI that runs unmodified Pi extensions as native DSH plugins, plus per-package conversion and MCP config translation.",
+  "version": "0.12.3",
+  "publisher": {
+    "name": "weijiafu14",
+    "url": "https://github.com/weijiafu14"
+  },
+  "authors": [
+    {
+      "name": "weijiafu14",
+      "url": "https://github.com/weijiafu14"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weijiafu14/pi2dsh",
+    "issues": "https://github.com/weijiafu14/pi2dsh/issues"
+  },
+  "homepage": "https://github.com/weijiafu14/pi2dsh#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "pi2dsh"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "pi2dsh"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
