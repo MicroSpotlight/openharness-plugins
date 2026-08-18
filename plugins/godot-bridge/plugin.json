@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "godot-bridge",
+  "displayName": "Godot Bridge",
+  "summary": "DSH (DeepSeek Harness) plugin: launch and drive a running Godot 4.x game through its in-game TCP interaction server — replaces the godot-mcp MCP server with native agent tools.",
+  "description": "DSH (DeepSeek Harness) plugin: launch and drive a running Godot 4.x game through its in-game TCP interaction server — replaces the godot-mcp MCP server with native agent tools.",
+  "version": "0.1.4",
+  "publisher": {
+    "name": "Smalldy",
+    "url": "https://github.com/Smalldy"
+  },
+  "authors": [
+    {
+      "name": "Smalldy",
+      "url": "https://github.com/Smalldy"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Smalldy/godot-bridge",
+    "issues": "https://github.com/Smalldy/godot-bridge/issues"
+  },
+  "homepage": "https://github.com/Smalldy/godot-bridge#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "godot-bridge",
+    "url": "https://github.com/Smalldy/godot-bridge.git",
+    "ref": "801ff2d33c2b6a0b40f1277c8296ce58f1abcd3c"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "godot",
+    "bridge"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
