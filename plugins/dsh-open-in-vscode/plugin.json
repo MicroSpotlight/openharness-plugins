@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-open-in-vscode",
+  "displayName": "DSH Open In VS Code",
+  "summary": "Open a workspace directory in VS Code from the web GUI: an Open in VSCode row in every workspace's overflow menu",
+  "description": "Open a workspace directory in VS Code from the web GUI: an Open in VSCode row in every workspace's overflow menu",
+  "version": "0.1.6",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode",
+    "issues": "https://github.com/omdsh-dev/dsh-open-in-vscode/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-open-in-vscode#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-open-in-vscode",
+    "url": "https://github.com/omdsh-dev/dsh-open-in-vscode.git",
+    "ref": "8aed144abdc158a332aa73bce42fc217d962f751"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "files",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "open",
+    "in",
+    "vscode"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": [
+      "code"
+    ]
+  }
+}
