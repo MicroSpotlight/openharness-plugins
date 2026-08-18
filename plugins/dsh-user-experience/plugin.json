@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-user-experience",
+  "displayName": "DSH User Experience",
+  "summary": "DeepSeek Harness UX walkthrough plugin: persona-driven source-code UX review for React (TypeScript/JavaScript) and Vue 3 projects, with change-triggered automatic walkthroughs",
+  "description": "DeepSeek Harness UX walkthrough plugin: persona-driven source-code UX review for React (TypeScript/JavaScript) and Vue 3 projects, with change-triggered automatic walkthroughs",
+  "version": "0.4.2",
+  "publisher": {
+    "name": "DietCokewithSugar",
+    "url": "https://github.com/DietCokewithSugar"
+  },
+  "authors": [
+    {
+      "name": "DietCokewithSugar",
+      "url": "https://github.com/DietCokewithSugar"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DietCokewithSugar/dsh-user-experience",
+    "issues": "https://github.com/DietCokewithSugar/dsh-user-experience/issues"
+  },
+  "homepage": "https://github.com/DietCokewithSugar/dsh-user-experience#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-user-experience"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "user",
+    "experience"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
