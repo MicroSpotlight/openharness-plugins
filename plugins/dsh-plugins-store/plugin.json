@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugins-store",
+  "displayName": "DSH Plugins Store",
+  "summary": "自动分类、收录和验证 DeepSeek-Harness 社区插件的市场。 Automatically categorize, curate, and validate the DeepSeek-Harness community plugin marketplace.",
+  "description": "自动分类、收录和验证 DeepSeek-Harness 社区插件的市场。 Automatically categorize, curate, and validate the DeepSeek-Harness community plugin marketplace.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "ZASENJC",
+    "url": "https://github.com/ZASENJC"
+  },
+  "authors": [
+    {
+      "name": "ZASENJC",
+      "url": "https://github.com/ZASENJC"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZASENJC/dsh-plugins-store",
+    "issues": "https://github.com/ZASENJC/dsh-plugins-store/issues"
+  },
+  "homepage": "https://github.com/ZASENJC/dsh-plugins-store#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-plugins-store"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "plugins",
+    "store"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
