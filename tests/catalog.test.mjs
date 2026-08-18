@@ -13,7 +13,10 @@ test('builds the repository catalog deterministically', async () => {
   const names = first.plugins.map(plugin => plugin.name)
   assert.deepEqual(names, [...names].sort())
   assert.ok(names.includes('openharness-find-plugin'))
-  assert.equal(first.plugins.find(plugin => plugin.name === 'openharness-find-plugin').distribution.ref.length, 40)
+  assert.deepEqual(
+    first.plugins.find(plugin => plugin.name === 'openharness-find-plugin').distribution,
+    { type: 'npm', package: '@microspotlight/openharness-find-plugin' },
+  )
 })
 
 test('rejects a descriptor whose folder and name differ', async () => {

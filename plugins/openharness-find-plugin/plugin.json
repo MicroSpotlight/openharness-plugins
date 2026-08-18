@@ -3,8 +3,8 @@
   "schemaVersion": 1,
   "name": "openharness-find-plugin",
   "displayName": "OpenHarness Find Plugin",
-  "summary": "Discover curated DSH plugins from the OpenHarness catalog.",
-  "description": "Adds a searchable Discover tab to the DSH plugin settings and a read-only discovery tool for agents. Discovery never installs code; installation remains an explicit user action delegated to the OpenHarness host.",
+  "summary": "Discover, install, and upgrade curated DSH plugins from the OpenHarness catalog.",
+  "description": "Adds a searchable Discover tab to the DSH plugin settings and a read-only catalog search tool for agents. User-confirmed install and upgrade operations are validated and executed by the same-origin Host API, with cancellation, rollback, post-install verification, and activation status.",
   "version": "0.1.0",
   "publisher": {
     "name": "MicroSpotlight",
@@ -24,10 +24,8 @@
   "homepage": "https://github.com/MicroSpotlight/openharness-find-plugin#readme",
   "license": "Apache-2.0",
   "distribution": {
-    "type": "git",
-    "package": "@microspotlight/openharness-find-plugin",
-    "url": "https://github.com/MicroSpotlight/openharness-find-plugin.git",
-    "ref": "15429b01e77b16cd200c2297fe3695316f6821b4"
+    "type": "npm",
+    "package": "@microspotlight/openharness-find-plugin"
   },
   "compatibility": {
     "dsh": "0.1.0-rc.6",
@@ -39,17 +37,17 @@
   "categories": ["developer-tools", "search"],
   "keywords": ["catalog", "discovery", "dsh", "openharness", "plugins"],
   "permissions": {
-    "network": ["https://microspotlight.github.io"],
-    "filesystemRead": [],
-    "filesystemWrite": [],
-    "environment": [],
-    "commands": []
+    "network": ["https://*"],
+    "filesystemRead": ["$DSH_HOME/profiles", "~/.dsh/profiles"],
+    "filesystemWrite": ["$DSH_HOME/profiles", "~/.dsh/profiles"],
+    "environment": ["DSH_HOME", "HOME", "PATH", "PATHEXT", "USERPROFILE"],
+    "commands": ["dsh", "node", "pnpm", "taskkill"]
   },
   "localizations": {
     "zh-CN": {
       "displayName": "OpenHarness 插件发现",
-      "summary": "从 OpenHarness 目录中查找经过收录的 DSH 插件。",
-      "description": "在 DSH 插件设置中加入可搜索的发现页面，并为智能体提供只读的插件发现工具。发现过程不会安装代码；安装必须由用户明确触发，并交由 OpenHarness 宿主执行。"
+      "summary": "从 OpenHarness 目录中发现、安装和升级经过收录的 DSH 插件。",
+      "description": "在 DSH 插件设置中加入可搜索的发现页面，并为智能体提供只读的目录搜索工具。用户确认后，安装和升级操作由同源 Host API 校验并执行，支持取消、失败回滚、安装后验证和激活状态反馈。"
     }
   }
 }
