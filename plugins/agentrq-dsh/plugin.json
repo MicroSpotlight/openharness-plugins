@@ -1,0 +1,45 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "agentrq-dsh",
+  "displayName": "AgentRQ for DSH",
+  "summary": "Create, manage, and automatically pull AgentRQ tasks from DSH.",
+  "description": "Connects DSH to an AgentRQ task manager so agents can create, manage, claim, and update conversational tasks without leaving the harness.",
+  "version": "0.2.5",
+  "publisher": {
+    "name": "AgentRQ",
+    "url": "https://github.com/agentrq"
+  },
+  "authors": [
+    {
+      "name": "AgentRQ",
+      "url": "https://github.com/agentrq"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentrq/agentrq",
+    "issues": "https://github.com/agentrq/agentrq/issues"
+  },
+  "homepage": "https://github.com/agentrq/agentrq/tree/main/plugins/deepseek-harness",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@agentrq/dsh-plugin-agentrq"
+  },
+  "compatibility": {
+    "dsh": ">=0.1.0-rc.1 <0.2.0",
+    "profiles": ["web"],
+    "platforms": ["web", "node", "macos", "windows", "linux"]
+  },
+  "capabilities": ["tool-provider", "workflow"],
+  "categories": ["automation", "productivity"],
+  "keywords": ["agentrq", "dsh", "tasks", "workflow"],
+  "permissions": {
+    "network": ["https://*"],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
