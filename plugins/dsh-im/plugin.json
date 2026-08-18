@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-im",
+  "displayName": "DSH IM",
+  "summary": "通过扫码、App Manifest或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。",
+  "description": "通过扫码、App Manifest或机器人凭据把IM机器人接入DeepSeek Harness（支持飞书、微信、钉钉、企业微信、QQ、Slack、Telegram、Discord和WhatsApp）。",
+  "version": "0.7.0",
+  "publisher": {
+    "name": "xmanrui",
+    "url": "https://github.com/xmanrui"
+  },
+  "authors": [
+    {
+      "name": "xmanrui",
+      "url": "https://github.com/xmanrui"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xmanrui/dsh-im",
+    "issues": "https://github.com/xmanrui/dsh-im/issues"
+  },
+  "homepage": "https://github.com/xmanrui/dsh-im#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@xmanrui/dsh-im"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "communication",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "im"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
