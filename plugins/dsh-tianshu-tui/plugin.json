@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-tianshu-tui",
+  "displayName": "DSH Tianshu TUI",
+  "summary": "官方 DeepSeek Harness 的交互式终端 UI 插件：自研 ANSI 极简渲染核心（由作者自己的开源项目天枢 Tui 演进）、流式 Markdown/工具卡、多会话 tab、16+ 主题、slash 命令与选择器、输入历史与本地偏好持久化、LSP 诊断、成本统计、启动自更新。纯展示层。",
+  "description": "官方 DeepSeek Harness 的交互式终端 UI 插件：自研 ANSI 极简渲染核心（由作者自己的开源项目天枢 Tui 演进）、流式 Markdown/工具卡、多会话 tab、16+ 主题、slash 命令与选择器、输入历史与本地偏好持久化、LSP 诊断、成本统计、启动自更新。纯展示层。",
+  "version": "0.1.2-rc.10",
+  "publisher": {
+    "name": "huiliyi37",
+    "url": "https://github.com/huiliyi37"
+  },
+  "authors": [
+    {
+      "name": "huiliyi37",
+      "url": "https://github.com/huiliyi37"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huiliyi37/dsh-tianshu-tui",
+    "issues": "https://github.com/huiliyi37/dsh-tianshu-tui/issues"
+  },
+  "homepage": "https://github.com/huiliyi37/dsh-tianshu-tui#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@huiliyi37/dsh-tianshu-tui"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "dsh-tui"
+    ],
+    "platforms": [
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "tianshu",
+    "tui"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
