@@ -1,0 +1,61 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-harmony",
+  "displayName": "DSH Harmony",
+  "summary": "A library for patching, replacing and decorating DeepSeek Harness plugins during runtime",
+  "description": "A library for patching, replacing and decorating DeepSeek Harness plugins during runtime",
+  "version": "0.3.2",
+  "publisher": {
+    "name": "CH4ACKO3",
+    "url": "https://github.com/CH4ACKO3"
+  },
+  "authors": [
+    {
+      "name": "CH4ACKO3",
+      "url": "https://github.com/CH4ACKO3"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CH4ACKO3/dsh-harmony",
+    "issues": "https://github.com/CH4ACKO3/dsh-harmony/issues"
+  },
+  "homepage": "https://github.com/CH4ACKO3/dsh-harmony#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-harmony"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "harmony"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
