@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-smooth-stream",
+  "displayName": "DSH Smooth Stream",
+  "summary": "DeepSeek Harness (dsh) plugin: silky streaming reveal, no flicker. dsh 丝滑流式渲染插件。",
+  "description": "DeepSeek Harness (dsh) plugin: silky streaming reveal, no flicker. dsh 丝滑流式渲染插件。",
+  "version": "0.3.2",
+  "publisher": {
+    "name": "Laplace-bit",
+    "url": "https://github.com/Laplace-bit"
+  },
+  "authors": [
+    {
+      "name": "Laplace-bit",
+      "url": "https://github.com/Laplace-bit"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Laplace-bit/dsh-smooth-stream",
+    "issues": "https://github.com/Laplace-bit/dsh-smooth-stream/issues"
+  },
+  "homepage": "https://github.com/Laplace-bit/dsh-smooth-stream#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-smooth-stream"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "smooth",
+    "stream"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
