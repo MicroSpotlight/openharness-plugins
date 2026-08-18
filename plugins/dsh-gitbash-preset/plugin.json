@@ -1,0 +1,60 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-gitbash-preset",
+  "displayName": "DSH Git Bash Preset",
+  "summary": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。",
+  "description": "DeepSeek Harness 插件：一键安装「极简模式 (Git Bash)」agent preset —— 把 DSH 自带极简模式中的 bash 调用映射到 Git for Windows 的 bash（MSYS），让 Windows 上的极简模式真正可用。",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "liceses",
+    "url": "https://github.com/liceses"
+  },
+  "authors": [
+    {
+      "name": "liceses",
+      "url": "https://github.com/liceses"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liceses/dsh-gitbash-preset",
+    "issues": "https://github.com/liceses/dsh-gitbash-preset/issues"
+  },
+  "homepage": "https://github.com/liceses/dsh-gitbash-preset#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@icelily/dsh-gitbash-preset"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "windows"
+    ]
+  },
+  "capabilities": [
+    "agent-preset"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "gitbash",
+    "preset"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
