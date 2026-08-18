@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-custom-tool",
+  "displayName": "DSH Custom Tool",
+  "summary": "DSH custom tools: manage user-defined JavaScript tools in the settings UI with a Monaco editor; the model creates its own tools through custom_tool_create",
+  "description": "DSH custom tools: manage user-defined JavaScript tools in the settings UI with a Monaco editor; the model creates its own tools through custom_tool_create",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "omdsh-dev",
+    "url": "https://github.com/omdsh-dev"
+  },
+  "authors": [
+    {
+      "name": "omdsh-dev",
+      "url": "https://github.com/omdsh-dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omdsh-dev/dsh-custom-tool",
+    "issues": "https://github.com/omdsh-dev/dsh-custom-tool/issues"
+  },
+  "homepage": "https://github.com/omdsh-dev/dsh-custom-tool#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-custom-tool",
+    "url": "https://github.com/omdsh-dev/dsh-custom-tool.git",
+    "ref": "7cb95649dca9b380c9a30af96bdbef87a76a2259"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "custom",
+    "tool"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
