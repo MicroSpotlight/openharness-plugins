@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-import-agents",
+  "displayName": "DSH Import Agents",
+  "summary": "Import pi / opencode sessions, chat history, and agents into DeepSeek Harness (dsh): slash commands, session-start migration prompt, and a one-click Sync button in the composer.",
+  "description": "Import pi / opencode sessions, chat history, and agents into DeepSeek Harness (dsh): slash commands, session-start migration prompt, and a one-click Sync button in the composer.",
+  "version": "0.2.6",
+  "publisher": {
+    "name": "Chang-Tong",
+    "url": "https://github.com/Chang-Tong"
+  },
+  "authors": [
+    {
+      "name": "Chang-Tong",
+      "url": "https://github.com/Chang-Tong"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chang-Tong/dsh-import-agents",
+    "issues": "https://github.com/Chang-Tong/dsh-import-agents/issues"
+  },
+  "homepage": "https://github.com/Chang-Tong/dsh-import-agents#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-import-agents",
+    "url": "https://github.com/Chang-Tong/dsh-import-agents.git",
+    "ref": "df54e0079f9bb95f580c2249914e2a39e576a67d"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "import",
+    "agents"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
