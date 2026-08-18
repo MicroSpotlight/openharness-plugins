@@ -1,0 +1,73 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-anchored-standard",
+  "displayName": "DSH Anchored Standard",
+  "summary": "Task-aware two-phase DeepSeek Harness preset: spec/react/weak first-request anchors (bash+read±edit/write), then the full Standard tool catalog after the first tool call.",
+  "description": "Task-aware two-phase DeepSeek Harness preset: spec/react/weak first-request anchors (bash+read±edit/write), then the full Standard tool catalog after the first tool call.",
+  "version": "1.2.1",
+  "publisher": {
+    "name": "Jungod1121",
+    "url": "https://github.com/Jungod1121"
+  },
+  "authors": [
+    {
+      "name": "Jungod1121",
+      "url": "https://github.com/Jungod1121"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jungod1121/dsh-anchored-standard",
+    "issues": "https://github.com/Jungod1121/dsh-anchored-standard/issues"
+  },
+  "homepage": "https://github.com/Jungod1121/dsh-anchored-standard#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-anchored-standard",
+    "url": "https://github.com/Jungod1121/dsh-anchored-standard.git",
+    "ref": "560530f0e1af6dba3528ac8962f5e5e63951b1bb"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "agent-preset",
+    "tool-provider"
+  ],
+  "categories": [
+    "automation",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "anchored",
+    "standard"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "bash",
+      "sh"
+    ]
+  }
+}
