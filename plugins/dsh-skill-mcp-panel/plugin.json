@@ -1,0 +1,69 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-skill-mcp-panel",
+  "displayName": "DSH Skill and MCP Panel",
+  "summary": "DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）",
+  "description": "DSH Web UI plugin: skill and MCP management（Web界面的skill/MCP管理工具）",
+  "version": "2.0.1",
+  "publisher": {
+    "name": "Fishquito7",
+    "url": "https://github.com/Fishquito7"
+  },
+  "authors": [
+    {
+      "name": "Fishquito7",
+      "url": "https://github.com/Fishquito7"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fishquito7/dsh-skill-mcp-panel",
+    "issues": "https://github.com/Fishquito7/dsh-skill-mcp-panel/issues"
+  },
+  "homepage": "https://github.com/Fishquito7/dsh-skill-mcp-panel#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-skill-mcp-panel",
+    "url": "https://github.com/Fishquito7/dsh-skill-mcp-panel.git",
+    "ref": "8e772005329de9dc81ffdfd00ae4dbed22a1f73a"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "skill",
+    "mcp",
+    "panel"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
