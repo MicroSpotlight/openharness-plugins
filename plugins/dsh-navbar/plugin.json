@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-navbar",
+  "displayName": "DSH Navbar",
+  "summary": "对话节点导航条——user 消息快速跳转（自渲染 DOM，官方 client 通道）",
+  "description": "对话节点导航条——user 消息快速跳转（自渲染 DOM，官方 client 通道）",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "vlln",
+    "url": "https://github.com/vlln"
+  },
+  "authors": [
+    {
+      "name": "vlln",
+      "url": "https://github.com/vlln"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlln/dsh-navbar",
+    "issues": "https://github.com/vlln/dsh-navbar/issues"
+  },
+  "homepage": "https://github.com/vlln/dsh-navbar#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@vlln/dsh-navbar",
+    "url": "https://github.com/vlln/dsh-navbar.git",
+    "ref": "10e9d1546db28c499687d66a369e548cd3f52237"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "navbar"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
