@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-guard",
+  "displayName": "DSH Plugin Guard",
+  "summary": "Install safety net for DeepSeek Harness: pre-install snapshots, one-click/automatic rollback, guarded boot, and incident reports that auto-trigger agent analysis. DeepSeek Harness 插件安装安全网：安装前自动快照、一...",
+  "description": "Install safety net for DeepSeek Harness: pre-install snapshots, one-click/automatic rollback, guarded boot, and incident reports that auto-trigger agent analysis. DeepSeek Harness 插件安装安全网：安装前自动快照、一键/自动回退、守护启动、事故报告自动触发 Agent 分析。",
+  "version": "0.2.2",
+  "publisher": {
+    "name": "lxzy-7",
+    "url": "https://github.com/lxzy-7"
+  },
+  "authors": [
+    {
+      "name": "lxzy-7",
+      "url": "https://github.com/lxzy-7"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxzy-7/dsh-plugin-guard",
+    "issues": "https://github.com/lxzy-7/dsh-plugin-guard/issues"
+  },
+  "homepage": "https://github.com/lxzy-7/dsh-plugin-guard#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-guard",
+    "url": "https://github.com/lxzy-7/dsh-plugin-guard.git",
+    "ref": "d0372eb1703d6fca5165245d5b3f780ac7c755a7"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "security",
+    "ai"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "guard"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
