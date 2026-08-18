@@ -1,0 +1,72 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "captain1275-dsh-web-ui-all",
+  "displayName": "DSH Web UI All",
+  "summary": "DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board / git-graph / pet / live-stats / web-ui-settings / compat shim）+ 皮肤全家桶（dsh-skins，皮肤资产内置）。compat 桥接层已并入本包（src/client），无需独立 compat npm 包。",
+  "description": "DSH Web UI 全家桶聚合插件：一键安装全部功能插件（task-board / git-graph / pet / live-stats / web-ui-settings / compat shim）+ 皮肤全家桶（dsh-skins，皮肤资产内置）。compat 桥接层已并入本包（src/client），无需独立 compat npm 包。",
+  "version": "0.2.8",
+  "publisher": {
+    "name": "CAPTAIN1275",
+    "url": "https://github.com/CAPTAIN1275"
+  },
+  "authors": [
+    {
+      "name": "CAPTAIN1275",
+      "url": "https://github.com/CAPTAIN1275"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CAPTAIN1275/dsh-ui-web",
+    "issues": "https://github.com/CAPTAIN1275/dsh-ui-web/issues"
+  },
+  "homepage": "https://github.com/CAPTAIN1275/dsh-ui-web#readme",
+  "license": "Apache-2.0",
+  "distribution": {
+    "type": "npm",
+    "package": "@captain1275/dsh-web-ui-all"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "workflow"
+  ],
+  "categories": [
+    "files",
+    "automation",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "captain1275",
+    "web",
+    "ui",
+    "all"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [
+      "workspace"
+    ],
+    "environment": [],
+    "commands": [
+      "git"
+    ]
+  }
+}
