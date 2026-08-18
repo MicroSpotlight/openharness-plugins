@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-balance",
+  "displayName": "DSH Balance",
+  "summary": "DeepSeek Harness plugin that shows API balances and models in Settings, with balance below the chat composer",
+  "description": "DeepSeek Harness plugin that shows API balances and models in Settings, with balance below the chat composer",
+  "version": "0.4.1",
+  "publisher": {
+    "name": "crazywoola",
+    "url": "https://github.com/crazywoola"
+  },
+  "authors": [
+    {
+      "name": "crazywoola",
+      "url": "https://github.com/crazywoola"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crazywoola/dsh-balance",
+    "issues": "https://github.com/crazywoola/dsh-balance/issues"
+  },
+  "homepage": "https://github.com/crazywoola/dsh-balance#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@pinkbanana/dsh-balance"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "data",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "balance"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
