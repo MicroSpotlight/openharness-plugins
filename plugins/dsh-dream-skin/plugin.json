@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-dream-skin",
+  "displayName": "DSH Dream Skin",
+  "summary": "DeepSeek Harness 换肤插件 (Dream Skin for DeepSeek Harness): curated --dsw-alias-* theme presets, a custom translucent wallpaper with opacity/blur controls, theme-pack import/export + share links, per-...",
+  "description": "DeepSeek Harness 换肤插件 (Dream Skin for DeepSeek Harness): curated --dsw-alias-* theme presets, a custom translucent wallpaper with opacity/blur controls, theme-pack import/export + share links, per-user accent, favorites & surprise-me, and durable per-browser persistence — in the spirit of the Codex Dream Skin project.",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "RevolutionLA",
+    "url": "https://github.com/RevolutionLA"
+  },
+  "authors": [
+    {
+      "name": "RevolutionLA",
+      "url": "https://github.com/RevolutionLA"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RevolutionLA/dsh-dream-skin",
+    "issues": "https://github.com/RevolutionLA/dsh-dream-skin/issues"
+  },
+  "homepage": "https://github.com/RevolutionLA/dsh-dream-skin#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-dream-skin"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "dream",
+    "skin"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "workspace",
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
