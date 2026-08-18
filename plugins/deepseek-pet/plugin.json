@@ -1,0 +1,68 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "deepseek-pet",
+  "displayName": "Deepseek Pet",
+  "summary": "DeepSeek Pet plugin: an interactive, state-aware companion embedded in DeepSeek Harness Web",
+  "description": "DeepSeek Pet plugin: an interactive, state-aware companion embedded in DeepSeek Harness Web",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "keleus",
+    "url": "https://github.com/keleus"
+  },
+  "authors": [
+    {
+      "name": "keleus",
+      "url": "https://github.com/keleus"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keleus/deepseek-pet",
+    "issues": "https://github.com/keleus/deepseek-pet/issues"
+  },
+  "homepage": "https://github.com/keleus/deepseek-pet#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "deepseek-pet",
+    "url": "https://github.com/keleus/deepseek-pet.git",
+    "ref": "6c05c7ddd34696c6761168c116be781d74707e26"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek",
+    "pet"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
