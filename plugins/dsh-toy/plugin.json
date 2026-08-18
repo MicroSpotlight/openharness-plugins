@@ -1,0 +1,65 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-toy",
+  "displayName": "DSH Toy",
+  "summary": "Toy Control Protocol for DSH",
+  "description": "Toy Control Protocol for DSH",
+  "version": "0.2.0",
+  "publisher": {
+    "name": "c3ll256",
+    "url": "https://github.com/c3ll256"
+  },
+  "authors": [
+    {
+      "name": "c3ll256",
+      "url": "https://github.com/c3ll256"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/c3ll256/dsh-toy",
+    "issues": "https://github.com/c3ll256/dsh-toy/issues"
+  },
+  "homepage": "https://github.com/c3ll256/dsh-toy#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-toy",
+    "url": "https://github.com/c3ll256/dsh-toy.git",
+    "ref": "adece3467506c9e40e1393baca89f20caff20c2c"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "toy"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
