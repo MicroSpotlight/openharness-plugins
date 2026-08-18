@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-recommend",
+  "displayName": "DSH Recommend",
+  "summary": "DSH 插件透明排行与推荐：每日自动抓取 dsh-plugin 话题生态 + 公开评分模型 + rank/recommend/search 工具 + 设置页排行标签",
+  "description": "DSH 插件透明排行与推荐：每日自动抓取 dsh-plugin 话题生态 + 公开评分模型 + rank/recommend/search 工具 + 设置页排行标签",
+  "version": "0.3.0",
+  "publisher": {
+    "name": "zp-home",
+    "url": "https://github.com/zp-home"
+  },
+  "authors": [
+    {
+      "name": "zp-home",
+      "url": "https://github.com/zp-home"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zp-home/dsh-recommend",
+    "issues": "https://github.com/zp-home/dsh-recommend/issues"
+  },
+  "homepage": "https://github.com/zp-home/dsh-recommend#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-recommend",
+    "url": "https://github.com/zp-home/dsh-recommend.git",
+    "ref": "9cffc34b2fb5938102ee10ecbc1043e966599349"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "recommend"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
