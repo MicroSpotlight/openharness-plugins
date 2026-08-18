@@ -1,0 +1,66 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-reverse-skill",
+  "displayName": "DSH Reverse Skill",
+  "summary": "Complete reverse-skill (85 skills) as a DeepSeek Harness Cordis plugin — reverse engineering, authorized pentesting and security research skill router pack.",
+  "description": "Complete reverse-skill (85 skills) as a DeepSeek Harness Cordis plugin — reverse engineering, authorized pentesting and security research skill router pack.",
+  "version": "1.0.3",
+  "publisher": {
+    "name": "dhicoc",
+    "url": "https://github.com/dhicoc"
+  },
+  "authors": [
+    {
+      "name": "dhicoc",
+      "url": "https://github.com/dhicoc"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhicoc/dsh-reverse-skill",
+    "issues": "https://github.com/dhicoc/dsh-reverse-skill/issues"
+  },
+  "homepage": "https://github.com/dhicoc/dsh-reverse-skill#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@dhicoc/dsh-reverse-skill"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "model-provider"
+  ],
+  "categories": [
+    "security",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "reverse",
+    "skill"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
