@@ -1,0 +1,63 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-visualize",
+  "displayName": "DSH Visualize",
+  "summary": "在 DSH 对话中生成交互式可视化｜Render model-generated interactive cards inside DSH conversations",
+  "description": "在 DSH 对话中生成交互式可视化｜Render model-generated interactive cards inside DSH conversations",
+  "version": "0.1.2",
+  "publisher": {
+    "name": "Nagi-ovo",
+    "url": "https://github.com/Nagi-ovo"
+  },
+  "authors": [
+    {
+      "name": "Nagi-ovo",
+      "url": "https://github.com/Nagi-ovo"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nagi-ovo/dsh-visualize",
+    "issues": "https://github.com/Nagi-ovo/dsh-visualize/issues"
+  },
+  "homepage": "https://github.com/Nagi-ovo/dsh-visualize#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-visualize",
+    "url": "https://github.com/Nagi-ovo/dsh-visualize.git",
+    "ref": "e86f68fe66b980a0ebeed8ef7409522b0b720bed"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "visualize"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
