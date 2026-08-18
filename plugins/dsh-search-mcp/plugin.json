@@ -1,0 +1,73 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-search-mcp",
+  "displayName": "DSH Search MCP",
+  "summary": "Replace dsh's built-in web search with search MCP servers (Tavily / Brave / Exa / Perplexity / DuckDuckGo / custom), configured from the web Settings page. When this plugin is enabled the built-in ...",
+  "description": "Replace dsh's built-in web search with search MCP servers (Tavily / Brave / Exa / Perplexity / DuckDuckGo / custom), configured from the web Settings page. When this plugin is enabled the built-in DeepSeek search provider is disabled.",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "gxpppp",
+    "url": "https://github.com/gxpppp"
+  },
+  "authors": [
+    {
+      "name": "gxpppp",
+      "url": "https://github.com/gxpppp"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gxpppp/dsh-search-mcp",
+    "issues": "https://github.com/gxpppp/dsh-search-mcp/issues"
+  },
+  "homepage": "https://github.com/gxpppp/dsh-search-mcp#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-search-mcp",
+    "url": "https://github.com/gxpppp/dsh-search-mcp.git",
+    "ref": "9562b966d2fe058676fe3163533d003c6913d7cc"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "model-provider",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "ai",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "search",
+    "mcp"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
