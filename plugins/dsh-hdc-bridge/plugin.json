@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-hdc-bridge",
+  "displayName": "DSH Hdc Bridge",
+  "summary": "DSH-native HarmonyOS dev-assistant plugin: hdc device bridge with a live device panel, official-first versioned API docs (SDK .d.ts + offline bundled Tier-1 knowledge), and an optional DevEco CLI b...",
+  "description": "DSH-native HarmonyOS dev-assistant plugin: hdc device bridge with a live device panel, official-first versioned API docs (SDK .d.ts + offline bundled Tier-1 knowledge), and an optional DevEco CLI backend for build/sign/lint.",
+  "version": "0.7.2",
+  "publisher": {
+    "name": "1na-ko",
+    "url": "https://github.com/1na-ko"
+  },
+  "authors": [
+    {
+      "name": "1na-ko",
+      "url": "https://github.com/1na-ko"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1na-ko/dsh-hdc-bridge",
+    "issues": "https://github.com/1na-ko/dsh-hdc-bridge/issues"
+  },
+  "homepage": "https://github.com/1na-ko/dsh-hdc-bridge#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-hdc-bridge"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "hdc",
+    "bridge"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": [
+      "hdc"
+    ]
+  }
+}
