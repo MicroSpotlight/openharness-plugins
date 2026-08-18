@@ -1,0 +1,64 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-llm-codebuddy",
+  "displayName": "DSH Llm Codebuddy",
+  "summary": "使用 WorkBuddy API Key 为 DeepSeek Harness 接入 CodeBuddy 模型",
+  "description": "使用 WorkBuddy API Key 为 DeepSeek Harness 接入 CodeBuddy 模型",
+  "version": "1.3.4",
+  "publisher": {
+    "name": "Axiaohungry",
+    "url": "https://github.com/Axiaohungry"
+  },
+  "authors": [
+    {
+      "name": "Axiaohungry",
+      "url": "https://github.com/Axiaohungry"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Axiaohungry/dsh-llm-codebuddy",
+    "issues": "https://github.com/Axiaohungry/dsh-llm-codebuddy/issues"
+  },
+  "homepage": "https://github.com/Axiaohungry/dsh-llm-codebuddy#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-llm-codebuddy"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "ai",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "llm",
+    "codebuddy"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
