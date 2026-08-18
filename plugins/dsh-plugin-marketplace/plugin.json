@@ -1,0 +1,70 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-marketplace",
+  "displayName": "DSH Plugin Marketplace",
+  "summary": "DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 | browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI",
+  "description": "DSH插件市场 / DSH Plugin Marketplace: 在 DeepSeek Harness Web GUI 中一键浏览、安装与更新 GitHub topic:dsh-plugin 的全部插件 | browse, install & update all GitHub dsh-plugin plugins in the DSH Web GUI",
+  "version": "1.5.2",
+  "publisher": {
+    "name": "bradeGithub",
+    "url": "https://github.com/bradeGithub"
+  },
+  "authors": [
+    {
+      "name": "bradeGithub",
+      "url": "https://github.com/bradeGithub"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradeGithub/DSH-Plugins-Marketplace",
+    "issues": "https://github.com/bradeGithub/DSH-Plugins-Marketplace/issues"
+  },
+  "homepage": "https://github.com/bradeGithub/DSH-Plugins-Marketplace#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "dsh-plugin-marketplace",
+    "url": "https://github.com/bradeGithub/DSH-Plugins-Marketplace.git",
+    "ref": "7db47bb9dee8fe88032081dfe9667319bf853a6c"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "developer-tools",
+    "search"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "marketplace"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
