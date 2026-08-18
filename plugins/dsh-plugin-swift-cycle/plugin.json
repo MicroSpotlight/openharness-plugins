@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-swift-cycle",
+  "displayName": "DSH Plugin Swift Cycle",
+  "summary": "DeepSeek Harness adapter for the Swift Cycle governance skill.",
+  "description": "DeepSeek Harness adapter for the Swift Cycle governance skill.",
+  "version": "0.1.1",
+  "publisher": {
+    "name": "Solismuchengxue",
+    "url": "https://github.com/Solismuchengxue"
+  },
+  "authors": [
+    {
+      "name": "Solismuchengxue",
+      "url": "https://github.com/Solismuchengxue"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Solismuchengxue/dsh_plugin_swift_cycle",
+    "issues": "https://github.com/Solismuchengxue/dsh_plugin_swift_cycle/issues"
+  },
+  "homepage": "https://github.com/Solismuchengxue/dsh_plugin_swift_cycle#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "dsh-plugin-swift-cycle"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "tool-provider"
+  ],
+  "categories": [
+    "developer-tools",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "swift",
+    "cycle"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
