@@ -1,0 +1,71 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-plugin-workshop",
+  "displayName": "DSH Plugin Workshop",
+  "summary": "Steam Workshop-style plugin browser for the DeepSeek Harness (DSH) web UI: search, hot/newest/trending windows, Chinese keyword mapping, bilingual description & README translation, plugin-signature...",
+  "description": "Steam Workshop-style plugin browser for the DeepSeek Harness (DSH) web UI: search, hot/newest/trending windows, Chinese keyword mapping, bilingual description & README translation, plugin-signature filtering, one-click install/update/uninstall, and an installed-plugins manager.",
+  "version": "1.6.2",
+  "publisher": {
+    "name": "yyyyukari",
+    "url": "https://github.com/yyyyukari"
+  },
+  "authors": [
+    {
+      "name": "yyyyukari",
+      "url": "https://github.com/yyyyukari"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyyyukari/dsh-plugin-workshop",
+    "issues": "https://github.com/yyyyukari/dsh-plugin-workshop/issues"
+  },
+  "homepage": "https://github.com/yyyyukari/dsh-plugin-workshop#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "git",
+    "package": "@dsh-external/dsh-plugin-workshop",
+    "url": "https://github.com/yyyyukari/dsh-plugin-workshop.git",
+    "ref": "f53a7e466948a6c5636f2079b2382976a1eea4c8"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension",
+    "tool-provider"
+  ],
+  "categories": [
+    "search",
+    "web"
+  ],
+  "keywords": [
+    "dsh",
+    "plugin",
+    "workshop"
+  ],
+  "permissions": {
+    "network": [
+      "https://*"
+    ],
+    "filesystemRead": [
+      "~/.dsh"
+    ],
+    "filesystemWrite": [
+      "~/.dsh"
+    ],
+    "environment": [],
+    "commands": []
+  }
+}
