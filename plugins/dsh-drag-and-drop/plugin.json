@@ -1,0 +1,67 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-drag-and-drop",
+  "displayName": "DSH Drag And Drop",
+  "summary": "Drag local files into the DSH Web UI and insert their original filesystem paths without uploading or copying them",
+  "description": "Drag local files into the DSH Web UI and insert their original filesystem paths without uploading or copying them",
+  "version": "0.1.5",
+  "publisher": {
+    "name": "bill9109",
+    "url": "https://github.com/bill9109"
+  },
+  "authors": [
+    {
+      "name": "bill9109",
+      "url": "https://github.com/bill9109"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bill9109/dsh-drag-and-drop",
+    "issues": "https://github.com/bill9109/dsh-drag-and-drop/issues"
+  },
+  "homepage": "https://github.com/bill9109/dsh-drag-and-drop#readme",
+  "license": "BSD-3-Clause",
+  "distribution": {
+    "type": "git",
+    "package": "@omdsh-dev/dsh-drag-and-drop",
+    "url": "https://github.com/bill9109/dsh-drag-and-drop.git",
+    "ref": "09088d6890866eda57adee6864cd2fbf8281f679"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "drag",
+    "and",
+    "drop"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [
+      "workspace"
+    ],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
