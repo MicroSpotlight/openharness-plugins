@@ -1,0 +1,62 @@
+{
+  "$schema": "https://microspotlight.github.io/openharness-plugins/schemas/plugin-v1.schema.json",
+  "schemaVersion": 1,
+  "name": "dsh-computer-use",
+  "displayName": "DSH Computer Use",
+  "summary": "Accessibility-first macOS Computer Use capability for DeepSeek Harness with stale-observation protection, app leases, confirmations, screenshots, and Web diagnostics",
+  "description": "Accessibility-first macOS Computer Use capability for DeepSeek Harness with stale-observation protection, app leases, confirmations, screenshots, and Web diagnostics",
+  "version": "0.1.0",
+  "publisher": {
+    "name": "Anionex",
+    "url": "https://github.com/Anionex"
+  },
+  "authors": [
+    {
+      "name": "Anionex",
+      "url": "https://github.com/Anionex"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Anionex/dsh-computer-use",
+    "issues": "https://github.com/Anionex/dsh-computer-use/issues"
+  },
+  "homepage": "https://github.com/Anionex/dsh-computer-use#readme",
+  "license": "MIT",
+  "distribution": {
+    "type": "npm",
+    "package": "@anionex/dsh-computer-use"
+  },
+  "compatibility": {
+    "dsh": "0.1.0-rc.6",
+    "profiles": [
+      "web"
+    ],
+    "platforms": [
+      "web",
+      "node",
+      "macos",
+      "windows",
+      "linux"
+    ]
+  },
+  "capabilities": [
+    "ui-extension"
+  ],
+  "categories": [
+    "web",
+    "productivity"
+  ],
+  "keywords": [
+    "dsh",
+    "computer",
+    "use"
+  ],
+  "permissions": {
+    "network": [],
+    "filesystemRead": [],
+    "filesystemWrite": [],
+    "environment": [],
+    "commands": []
+  }
+}
